@@ -50,6 +50,41 @@ Discarded input sections
  .text          0x00000000        0x0 ./Generated_Code/pin_mux.o
  .data          0x00000000        0x0 ./Generated_Code/pin_mux.o
  .bss           0x00000000        0x0 ./Generated_Code/pin_mux.o
+ .group         0x00000000        0x8 ./Generated_Code/flexTimer2.o
+ .group         0x00000000        0x8 ./Generated_Code/flexTimer2.o
+ .group         0x00000000        0x8 ./Generated_Code/flexTimer2.o
+ .group         0x00000000        0x8 ./Generated_Code/flexTimer2.o
+ .group         0x00000000        0x8 ./Generated_Code/flexTimer2.o
+ .group         0x00000000        0x8 ./Generated_Code/flexTimer2.o
+ .group         0x00000000        0x8 ./Generated_Code/flexTimer2.o
+ .group         0x00000000        0x8 ./Generated_Code/flexTimer2.o
+ .group         0x00000000        0x8 ./Generated_Code/flexTimer2.o
+ .group         0x00000000        0x8 ./Generated_Code/flexTimer2.o
+ .group         0x00000000        0x8 ./Generated_Code/flexTimer2.o
+ .group         0x00000000        0x8 ./Generated_Code/flexTimer2.o
+ .group         0x00000000        0x8 ./Generated_Code/flexTimer2.o
+ .group         0x00000000        0x8 ./Generated_Code/flexTimer2.o
+ .group         0x00000000        0x8 ./Generated_Code/flexTimer2.o
+ .group         0x00000000        0x8 ./Generated_Code/flexTimer2.o
+ .group         0x00000000        0x8 ./Generated_Code/flexTimer2.o
+ .group         0x00000000        0x8 ./Generated_Code/flexTimer2.o
+ .group         0x00000000        0x8 ./Generated_Code/flexTimer2.o
+ .group         0x00000000        0x8 ./Generated_Code/flexTimer2.o
+ .group         0x00000000        0x8 ./Generated_Code/flexTimer2.o
+ .text          0x00000000        0x0 ./Generated_Code/flexTimer2.o
+ .data          0x00000000        0x0 ./Generated_Code/flexTimer2.o
+ .bss           0x00000000        0x0 ./Generated_Code/flexTimer2.o
+ .debug_macro   0x00000000      0x86e ./Generated_Code/flexTimer2.o
+ .debug_macro   0x00000000       0x16 ./Generated_Code/flexTimer2.o
+ .debug_macro   0x00000000       0x64 ./Generated_Code/flexTimer2.o
+ .debug_macro   0x00000000      0x1b5 ./Generated_Code/flexTimer2.o
+ .debug_macro   0x00000000      0x147 ./Generated_Code/flexTimer2.o
+ .debug_macro   0x00000000       0x9d ./Generated_Code/flexTimer2.o
+ .debug_macro   0x00000000       0x10 ./Generated_Code/flexTimer2.o
+ .debug_macro   0x00000000      0x1a1 ./Generated_Code/flexTimer2.o
+ .debug_macro   0x00000000       0x10 ./Generated_Code/flexTimer2.o
+ .debug_macro   0x00000000      0x7be ./Generated_Code/flexTimer2.o
+ .debug_macro   0x00000000       0x58 ./Generated_Code/flexTimer2.o
  .group         0x00000000        0x8 ./Generated_Code/flexTimer1.o
  .group         0x00000000        0x8 ./Generated_Code/flexTimer1.o
  .group         0x00000000        0x8 ./Generated_Code/flexTimer1.o
@@ -79,12 +114,22 @@ Discarded input sections
  .debug_macro   0x00000000       0x64 ./Generated_Code/flexTimer1.o
  .debug_macro   0x00000000      0x1b5 ./Generated_Code/flexTimer1.o
  .debug_macro   0x00000000      0x147 ./Generated_Code/flexTimer1.o
+ .debug_macro   0x00000000       0x16 ./Generated_Code/flexTimer1.o
  .debug_macro   0x00000000       0x9d ./Generated_Code/flexTimer1.o
  .debug_macro   0x00000000       0x10 ./Generated_Code/flexTimer1.o
  .debug_macro   0x00000000      0x1a1 ./Generated_Code/flexTimer1.o
  .debug_macro   0x00000000       0x10 ./Generated_Code/flexTimer1.o
+ .debug_macro   0x00000000     0xdfa2 ./Generated_Code/flexTimer1.o
  .debug_macro   0x00000000      0x7be ./Generated_Code/flexTimer1.o
  .debug_macro   0x00000000       0x58 ./Generated_Code/flexTimer1.o
+ .debug_macro   0x00000000       0x16 ./Generated_Code/flexTimer1.o
+ .debug_macro   0x00000000       0x16 ./Generated_Code/flexTimer1.o
+ .debug_macro   0x00000000       0x16 ./Generated_Code/flexTimer1.o
+ .debug_macro   0x00000000       0x10 ./Generated_Code/flexTimer1.o
+ .debug_macro   0x00000000       0xe6 ./Generated_Code/flexTimer1.o
+ .debug_macro   0x00000000       0x10 ./Generated_Code/flexTimer1.o
+ .debug_macro   0x00000000       0x22 ./Generated_Code/flexTimer1.o
+ .debug_macro   0x00000000       0x16 ./Generated_Code/flexTimer1.o
  .group         0x00000000        0x8 ./Generated_Code/clockMan1.o
  .group         0x00000000        0x8 ./Generated_Code/clockMan1.o
  .group         0x00000000        0x8 ./Generated_Code/clockMan1.o
@@ -1497,6 +1542,7 @@ Discarded input sections
  .group         0x00000000        0x8 ./Sources/main.o
  .group         0x00000000        0x8 ./Sources/main.o
  .group         0x00000000        0x8 ./Sources/main.o
+ .group         0x00000000        0x8 ./Sources/main.o
  .text          0x00000000        0x0 ./Sources/main.o
  .data          0x00000000        0x0 ./Sources/main.o
  .bss           0x00000000        0x0 ./Sources/main.o
@@ -1680,6 +1726,7 @@ LOAD c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-
 LOAD c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
 LOAD C:/NXP/S32DS_ARM_v1.3/Cross_Tools/gcc-arm-none-eabi-4_9/arm-none-eabi/newlib/lib/armv7e-m/fpu/crt0.o
 LOAD ./Generated_Code/pin_mux.o
+LOAD ./Generated_Code/flexTimer2.o
 LOAD ./Generated_Code/flexTimer1.o
 LOAD ./Generated_Code/clockMan1.o
 LOAD ./Generated_Code/Cpu.o
@@ -1746,7 +1793,7 @@ LOAD c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-
  .FlashConfig   0x00000400       0x10 ./Project_Settings/Startup_Code/startup_S32K144.o
                 0x00000410                . = ALIGN (0x4)
 
-.text           0x00000410     0x8d48
+.text           0x00000410     0x8d88
                 0x00000410                . = ALIGN (0x4)
  *(.text)
  .text          0x00000410       0x5c c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
@@ -2629,149 +2676,149 @@ LOAD c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-
  .text.test_function
                 0x0000892c       0x44 ./Sources/main.o
                 0x0000892c                test_function
- .text.main     0x00008970      0x17c ./Sources/main.o
+ .text.main     0x00008970      0x1bc ./Sources/main.o
                 0x00008970                main
  .text.SOSC_init_8MHz
-                0x00008aec       0x4c ./Sources/clocks_and_modes.o
-                0x00008aec                SOSC_init_8MHz
+                0x00008b2c       0x4c ./Sources/clocks_and_modes.o
+                0x00008b2c                SOSC_init_8MHz
  .text.SPLL_init_160MHz
-                0x00008b38       0x64 ./Sources/clocks_and_modes.o
-                0x00008b38                SPLL_init_160MHz
+                0x00008b78       0x64 ./Sources/clocks_and_modes.o
+                0x00008b78                SPLL_init_160MHz
  .text.NormalRUNmode_80MHz
-                0x00008b9c       0x20 ./Sources/clocks_and_modes.o
-                0x00008b9c                NormalRUNmode_80MHz
+                0x00008bdc       0x20 ./Sources/clocks_and_modes.o
+                0x00008bdc                NormalRUNmode_80MHz
  .text.CAN_Init
-                0x00008bbc      0x114 ./Sources/can_driver.o
-                0x00008bbc                CAN_Init
+                0x00008bfc      0x114 ./Sources/can_driver.o
+                0x00008bfc                CAN_Init
  .text.CAN_enable_rx_interruption
-                0x00008cd0       0x18 ./Sources/can_driver.o
-                0x00008cd0                CAN_enable_rx_interruption
+                0x00008d10       0x18 ./Sources/can_driver.o
+                0x00008d10                CAN_enable_rx_interruption
  .text.CAN_send_message
-                0x00008ce8       0xdc ./Sources/can_driver.o
-                0x00008ce8                CAN_send_message
+                0x00008d28       0xdc ./Sources/can_driver.o
+                0x00008d28                CAN_send_message
  .text.CAN_receive_message
-                0x00008dc4       0xe8 ./Sources/can_driver.o
-                0x00008dc4                CAN_receive_message
+                0x00008e04       0xe8 ./Sources/can_driver.o
+                0x00008e04                CAN_receive_message
  .text.CAN_get_tx_status
-                0x00008eac       0x20 ./Sources/can_driver.o
-                0x00008eac                CAN_get_tx_status
+                0x00008eec       0x20 ./Sources/can_driver.o
+                0x00008eec                CAN_get_tx_status
  .text.ADC_init
-                0x00008ecc       0x68 ./Sources/ADC.o
-                0x00008ecc                ADC_init
+                0x00008f0c       0x68 ./Sources/ADC.o
+                0x00008f0c                ADC_init
  .text.convertAdcChan
-                0x00008f34       0x30 ./Sources/ADC.o
-                0x00008f34                convertAdcChan
+                0x00008f74       0x30 ./Sources/ADC.o
+                0x00008f74                convertAdcChan
  .text.adc_complete
-                0x00008f64       0x20 ./Sources/ADC.o
-                0x00008f64                adc_complete
+                0x00008fa4       0x20 ./Sources/ADC.o
+                0x00008fa4                adc_complete
  .text.read_adc_chx
-                0x00008f84       0x3c ./Sources/ADC.o
-                0x00008f84                read_adc_chx
- .text.memcpy   0x00008fc0       0x16 C:/NXP/S32DS_ARM_v1.3/Cross_Tools/gcc-arm-none-eabi-4_9/arm-none-eabi/newlib/lib/armv7e-m/fpu\libc_nano.a(lib_a-memcpy.o)
-                0x00008fc0                memcpy
- .text.memset   0x00008fd6       0x10 C:/NXP/S32DS_ARM_v1.3/Cross_Tools/gcc-arm-none-eabi-4_9/arm-none-eabi/newlib/lib/armv7e-m/fpu\libc_nano.a(lib_a-memset.o)
-                0x00008fd6                memset
+                0x00008fc4       0x3c ./Sources/ADC.o
+                0x00008fc4                read_adc_chx
+ .text.memcpy   0x00009000       0x16 C:/NXP/S32DS_ARM_v1.3/Cross_Tools/gcc-arm-none-eabi-4_9/arm-none-eabi/newlib/lib/armv7e-m/fpu\libc_nano.a(lib_a-memcpy.o)
+                0x00009000                memcpy
+ .text.memset   0x00009016       0x10 C:/NXP/S32DS_ARM_v1.3/Cross_Tools/gcc-arm-none-eabi-4_9/arm-none-eabi/newlib/lib/armv7e-m/fpu\libc_nano.a(lib_a-memset.o)
+                0x00009016                memset
  *(.rodata)
- *fill*         0x00008fe6        0x2 
- .rodata        0x00008fe8        0x8 ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
- .rodata        0x00008ff0        0x5 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
- *fill*         0x00008ff5        0x3 
- .rodata        0x00008ff8        0xc ./Sources/transceiver.o
- .rodata        0x00009004       0x3b ./Sources/main.o
+ *fill*         0x00009026        0x2 
+ .rodata        0x00009028        0x8 ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
+ .rodata        0x00009030        0x5 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
+ *fill*         0x00009035        0x3 
+ .rodata        0x00009038        0xc ./Sources/transceiver.o
+ .rodata        0x00009044       0x3b ./Sources/main.o
  *(.rodata*)
- *fill*         0x0000903f        0x1 
+ *fill*         0x0000907f        0x1 
  .rodata.g_ftmBase
-                0x00009040       0x10 ./SDK/platform/drivers/src/ftm/ftm_driver.o
-                0x00009040                g_ftmBase
+                0x00009080       0x10 ./SDK/platform/drivers/src/ftm/ftm_driver.o
+                0x00009080                g_ftmBase
  .rodata.g_ftmOverflowIrqId
-                0x00009050        0x4 ./SDK/platform/drivers/src/ftm/ftm_driver.o
-                0x00009050                g_ftmOverflowIrqId
+                0x00009090        0x4 ./SDK/platform/drivers/src/ftm/ftm_driver.o
+                0x00009090                g_ftmOverflowIrqId
  .rodata.g_ftmExtClockSel
-                0x00009054        0x8 ./SDK/platform/drivers/src/ftm/ftm_driver.o
+                0x00009094        0x8 ./SDK/platform/drivers/src/ftm/ftm_driver.o
  .rodata.clockNameMappings
-                0x0000905c       0x9e ./SDK/platform/hal/src/pcc/pcc_hal.o
-                0x0000905c                clockNameMappings
- *fill*         0x000090fa        0x2 
+                0x0000909c       0x9e ./SDK/platform/hal/src/pcc/pcc_hal.o
+                0x0000909c                clockNameMappings
+ *fill*         0x0000913a        0x2 
  .rodata.maxClocksFreq.5346
-                0x000090fc       0x24 ./SDK/platform/hal/src/scg/scg_hal.o
+                0x0000913c       0x24 ./SDK/platform/hal/src/scg/scg_hal.o
  .rodata.systemClockDividerValues.5368
-                0x00009120       0x10 ./SDK/platform/hal/src/scg/scg_hal.o
+                0x00009160       0x10 ./SDK/platform/hal/src/scg/scg_hal.o
  .rodata.fircFreq.5456
-                0x00009130       0x10 ./SDK/platform/hal/src/scg/scg_hal.o
+                0x00009170       0x10 ./SDK/platform/hal/src/scg/scg_hal.o
  *(.glue_7)
  .glue_7        0x00000000        0x0 linker stubs
  *(.glue_7t)
  .glue_7t       0x00000000        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x00009140        0x0 c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
+ .eh_frame      0x00009180        0x0 c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
  *(.init)
- .init          0x00009140        0x4 c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crti.o
-                0x00009140                _init
- .init          0x00009144        0x8 c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtn.o
+ .init          0x00009180        0x4 c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crti.o
+                0x00009180                _init
+ .init          0x00009184        0x8 c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtn.o
  *(.fini)
- .fini          0x0000914c        0x4 c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crti.o
-                0x0000914c                _fini
- .fini          0x00009150        0x8 c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtn.o
-                0x00009158                . = ALIGN (0x4)
+ .fini          0x0000918c        0x4 c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crti.o
+                0x0000918c                _fini
+ .fini          0x00009190        0x8 c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtn.o
+                0x00009198                . = ALIGN (0x4)
 
-.vfp11_veneer   0x00009158        0x0
+.vfp11_veneer   0x00009198        0x0
  .vfp11_veneer  0x00000000        0x0 linker stubs
 
-.v4_bx          0x00009158        0x0
+.v4_bx          0x00009198        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.iplt           0x00009158        0x0
+.iplt           0x00009198        0x0
  .iplt          0x00000000        0x0 c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
 
-.rel.dyn        0x00009158        0x0
+.rel.dyn        0x00009198        0x0
  .rel.iplt      0x00000000        0x0 c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x00009158        0x0
-                0x00009158                __exidx_start = .
+.ARM            0x00009198        0x0
+                0x00009198                __exidx_start = .
  *(.ARM.exidx*)
-                0x00009158                __exidx_end = .
+                0x00009198                __exidx_end = .
 
-.ctors          0x00009158        0x0
-                0x00009158                __CTOR_LIST__ = .
+.ctors          0x00009198        0x0
+                0x00009198                __CTOR_LIST__ = .
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
  *(SORT(.ctors.*))
  *(.ctors)
-                0x00009158                __CTOR_END__ = .
+                0x00009198                __CTOR_END__ = .
 
-.dtors          0x00009158        0x0
-                0x00009158                __DTOR_LIST__ = .
+.dtors          0x00009198        0x0
+                0x00009198                __DTOR_LIST__ = .
  *crtbegin.o(.dtors)
  *crtbegin?.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
  *(SORT(.dtors.*))
  *(.dtors)
-                0x00009158                __DTOR_END__ = .
+                0x00009198                __DTOR_END__ = .
 
-.preinit_array  0x00009158        0x0
-                0x00009158                PROVIDE (__preinit_array_start, .)
+.preinit_array  0x00009198        0x0
+                0x00009198                PROVIDE (__preinit_array_start, .)
  *(.preinit_array*)
-                0x00009158                PROVIDE (__preinit_array_end, .)
+                0x00009198                PROVIDE (__preinit_array_end, .)
 
-.init_array     0x00009158        0x4
-                0x00009158                PROVIDE (__init_array_start, .)
+.init_array     0x00009198        0x4
+                0x00009198                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array*)
- .init_array    0x00009158        0x4 c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
-                0x0000915c                PROVIDE (__init_array_end, .)
+ .init_array    0x00009198        0x4 c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
+                0x0000919c                PROVIDE (__init_array_end, .)
 
-.fini_array     0x0000915c        0x4
-                0x0000915c                PROVIDE (__fini_array_start, .)
+.fini_array     0x0000919c        0x4
+                0x0000919c                PROVIDE (__fini_array_start, .)
  *(SORT(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0000915c        0x4 c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
-                0x00009160                PROVIDE (__fini_array_end, .)
-                0x00009160                __etext = .
-                0x00009160                __DATA_ROM = .
+ .fini_array    0x0000919c        0x4 c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
+                0x000091a0                PROVIDE (__fini_array_end, .)
+                0x000091a0                __etext = .
+                0x000091a0                __DATA_ROM = .
 
 .interrupts_ram
                 0x1fff8000      0x400
@@ -2786,7 +2833,7 @@ LOAD c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-
                 0x1fff8000                __VECTOR_RAM = DEFINED (__flash_vector_table__)?ORIGIN (m_interrupts):__VECTOR_RAM__
                 0x00000400                __RAM_VECTOR_TABLE_SIZE = DEFINED (__flash_vector_table__)?0x0:(__interrupts_ram_end__ - __interrupts_ram_start__)
 
-.data           0x1fff8400      0xfb8 load address 0x00009160
+.data           0x1fff8400     0x1008 load address 0x000091a0
                 0x1fff8400                . = ALIGN (0x4)
                 0x1fff8400                __DATA_RAM = .
                 0x1fff8400                __data_start__ = .
@@ -2795,198 +2842,211 @@ LOAD c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-
  .data.g_pin_mux_InitConfigArr
                 0x1fff8400      0xde8 ./Generated_Code/pin_mux.o
                 0x1fff8400                g_pin_mux_InitConfigArr
+ .data.flexTimer2_IndependentChannelsConfig
+                0x1fff91e8        0x8 ./Generated_Code/flexTimer2.o
+                0x1fff91e8                flexTimer2_IndependentChannelsConfig
+ .data.flexTimer2_PwmConfig
+                0x1fff91f0       0x18 ./Generated_Code/flexTimer2.o
+                0x1fff91f0                flexTimer2_PwmConfig
+ .data.flexTimer2_InitConfig
+                0x1fff9208       0x30 ./Generated_Code/flexTimer2.o
+                0x1fff9208                flexTimer2_InitConfig
  .data.flexTimer1_IndependentChannelsConfig
-                0x1fff91e8        0x8 ./Generated_Code/flexTimer1.o
-                0x1fff91e8                flexTimer1_IndependentChannelsConfig
+                0x1fff9238        0x8 ./Generated_Code/flexTimer1.o
+                0x1fff9238                flexTimer1_IndependentChannelsConfig
  .data.flexTimer1_PwmConfig
-                0x1fff91f0       0x18 ./Generated_Code/flexTimer1.o
-                0x1fff91f0                flexTimer1_PwmConfig
+                0x1fff9240       0x18 ./Generated_Code/flexTimer1.o
+                0x1fff9240                flexTimer1_PwmConfig
  .data.flexTimer1_InitConfig
-                0x1fff9208       0x30 ./Generated_Code/flexTimer1.o
-                0x1fff9208                flexTimer1_InitConfig
+                0x1fff9258       0x30 ./Generated_Code/flexTimer1.o
+                0x1fff9258                flexTimer1_InitConfig
  .data.peripheralClockConfig0
-                0x1fff9238       0x6c ./Generated_Code/clockMan1.o
-                0x1fff9238                peripheralClockConfig0
+                0x1fff9288       0x6c ./Generated_Code/clockMan1.o
+                0x1fff9288                peripheralClockConfig0
  .data.clockMan1_InitConfig0
-                0x1fff92a4       0xf0 ./Generated_Code/clockMan1.o
-                0x1fff92a4                clockMan1_InitConfig0
+                0x1fff92f4       0xf0 ./Generated_Code/clockMan1.o
+                0x1fff92f4                clockMan1_InitConfig0
  .data.g_clockManConfigsArr
-                0x1fff9394        0x4 ./Generated_Code/clockMan1.o
-                0x1fff9394                g_clockManConfigsArr
+                0x1fff93e4        0x4 ./Generated_Code/clockMan1.o
+                0x1fff93e4                g_clockManConfigsArr
  .data.uxCriticalNesting
-                0x1fff9398        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
+                0x1fff93e8        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
  .data.xFreeBytesRemaining
-                0x1fff939c        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/portable/MemMang/heap_2.o
+                0x1fff93ec        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/portable/MemMang/heap_2.o
  .data.tx_task_period
-                0x1fff93a0        0x4 ./Sources/rtos_driver.o
+                0x1fff93f0        0x4 ./Sources/rtos_driver.o
  .data.adc_tx_task_period
-                0x1fff93a4        0x4 ./Sources/rtos_driver.o
+                0x1fff93f4        0x4 ./Sources/rtos_driver.o
  .data.red_treshold
-                0x1fff93a8        0x2 ./Sources/rtos_driver.o
+                0x1fff93f8        0x2 ./Sources/rtos_driver.o
  .data.yellow_treshold
-                0x1fff93aa        0x2 ./Sources/rtos_driver.o
+                0x1fff93fa        0x2 ./Sources/rtos_driver.o
  .data.green_treshold
-                0x1fff93ac        0x2 ./Sources/rtos_driver.o
- *fill*         0x1fff93ae        0x2 
- .data.per_msg.8006
-                0x1fff93b0        0x3 ./Sources/main.o
+                0x1fff93fc        0x2 ./Sources/rtos_driver.o
+ *fill*         0x1fff93fe        0x2 
+ .data.per_msg.8014
+                0x1fff9400        0x3 ./Sources/main.o
  *(.jcr*)
- *fill*         0x1fff93b3        0x1 
- .jcr           0x1fff93b4        0x0 c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
- .jcr           0x1fff93b4        0x4 c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtend.o
-                0x1fff93b8                . = ALIGN (0x4)
-                0x1fff93b8                __data_end__ = .
-                0x0000a118                __DATA_END = (__DATA_ROM + (__data_end__ - __data_start__))
-                0x0000a118                __CODE_ROM = __DATA_END
+ *fill*         0x1fff9403        0x1 
+ .jcr           0x1fff9404        0x0 c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
+ .jcr           0x1fff9404        0x4 c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtend.o
+                0x1fff9408                . = ALIGN (0x4)
+                0x1fff9408                __data_end__ = .
+                0x0000a1a8                __DATA_END = (__DATA_ROM + (__data_end__ - __data_start__))
+                0x0000a1a8                __CODE_ROM = __DATA_END
 
-.igot.plt       0x1fff93b8        0x0 load address 0x0000a118
+.igot.plt       0x1fff9408        0x0 load address 0x0000a1a8
  .igot.plt      0x00000000        0x0 c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
 
-.code           0x1fff93b8        0x0 load address 0x0000a118
-                0x1fff93b8                . = ALIGN (0x4)
-                0x1fff93b8                __CODE_RAM = .
-                0x1fff93b8                __code_start__ = .
+.code           0x1fff9408        0x0 load address 0x0000a1a8
+                0x1fff9408                . = ALIGN (0x4)
+                0x1fff9408                __CODE_RAM = .
+                0x1fff9408                __code_start__ = .
  *(.code_ram)
-                0x1fff93b8                . = ALIGN (0x4)
-                0x1fff93b8                __code_end__ = .
-                0x0000a118                __CODE_END = (__CODE_ROM + (__code_end__ - __code_start__))
+                0x1fff9408                . = ALIGN (0x4)
+                0x1fff9408                __code_end__ = .
+                0x0000a1a8                __CODE_END = (__CODE_ROM + (__code_end__ - __code_start__))
 
 .customSectionBlock
  *(.customSection)
 
-.bss            0x20000000     0x2310
+.bss            0x20000000     0x234c
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                __BSS_START = .
                 0x20000000                __bss_start__ = .
  *(.bss)
  .bss           0x20000000       0x1c c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
  *(.bss*)
+ .bss.flexTimer2_FaultConfig
+                0x2000001c       0x3c ./Generated_Code/flexTimer2.o
+                0x2000001c                flexTimer2_FaultConfig
  .bss.flexTimer1_FaultConfig
-                0x2000001c       0x3c ./Generated_Code/flexTimer1.o
-                0x2000001c                flexTimer1_FaultConfig
+                0x20000058       0x3c ./Generated_Code/flexTimer1.o
+                0x20000058                flexTimer1_FaultConfig
  .bss.g_clockManCallbacksArr
-                0x20000058        0x4 ./Generated_Code/clockMan1.o
-                0x20000058                g_clockManCallbacksArr
+                0x20000094        0x4 ./Generated_Code/clockMan1.o
+                0x20000094                g_clockManCallbacksArr
  .bss.g_clockState
-                0x2000005c       0x10 ./SDK/platform/drivers/src/clock/clock_manager.o
+                0x20000098       0x10 ./SDK/platform/drivers/src/clock/clock_manager.o
  .bss.ftmStatePtr
-                0x2000006c       0x10 ./SDK/platform/drivers/src/ftm/ftm_driver.o
-                0x2000006c                ftmStatePtr
+                0x200000a8       0x10 ./SDK/platform/drivers/src/ftm/ftm_driver.o
+                0x200000a8                ftmStatePtr
  .bss.g_interruptDisableCount
-                0x2000007c        0x4 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
+                0x200000b8        0x4 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
  .bss.ucMaxSysCallPriority
-                0x20000080        0x1 ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
- *fill*         0x20000081        0x3 
+                0x200000bc        0x1 ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
+ *fill*         0x200000bd        0x3 
  .bss.ulMaxPRIGROUPValue
-                0x20000084        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
- .bss.ucHeap    0x20000088     0x2000 ./SDK/rtos/FreeRTOS_S32K/Source/portable/MemMang/heap_2.o
- .bss.xStart    0x20002088        0x8 ./SDK/rtos/FreeRTOS_S32K/Source/portable/MemMang/heap_2.o
- .bss.xEnd      0x20002090        0x8 ./SDK/rtos/FreeRTOS_S32K/Source/portable/MemMang/heap_2.o
+                0x200000c0        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
+ .bss.ucHeap    0x200000c4     0x2000 ./SDK/rtos/FreeRTOS_S32K/Source/portable/MemMang/heap_2.o
+ .bss.xStart    0x200020c4        0x8 ./SDK/rtos/FreeRTOS_S32K/Source/portable/MemMang/heap_2.o
+ .bss.xEnd      0x200020cc        0x8 ./SDK/rtos/FreeRTOS_S32K/Source/portable/MemMang/heap_2.o
  .bss.xHeapHasBeenInitialised.4526
-                0x20002098        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/portable/MemMang/heap_2.o
+                0x200020d4        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/portable/MemMang/heap_2.o
  .bss.xActiveTimerList1
-                0x2000209c       0x14 ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
+                0x200020d8       0x14 ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
  .bss.xActiveTimerList2
-                0x200020b0       0x14 ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
+                0x200020ec       0x14 ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
  .bss.pxCurrentTimerList
-                0x200020c4        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
+                0x20002100        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
  .bss.pxOverflowTimerList
-                0x200020c8        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
+                0x20002104        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
  .bss.xTimerQueue
-                0x200020cc        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
+                0x20002108        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
  .bss.xLastTime.4766
-                0x200020d0        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
+                0x2000210c        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
  .bss.pxCurrentTCB
-                0x200020d4        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
-                0x200020d4                pxCurrentTCB
+                0x20002110        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
+                0x20002110                pxCurrentTCB
  .bss.pxReadyTasksLists
-                0x200020d8       0xa0 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
+                0x20002114       0xa0 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
  .bss.xDelayedTaskList1
-                0x20002178       0x14 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
+                0x200021b4       0x14 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
  .bss.xDelayedTaskList2
-                0x2000218c       0x14 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
+                0x200021c8       0x14 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
  .bss.pxDelayedTaskList
-                0x200021a0        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
+                0x200021dc        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
  .bss.pxOverflowDelayedTaskList
-                0x200021a4        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
+                0x200021e0        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
  .bss.xPendingReadyList
-                0x200021a8       0x14 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
+                0x200021e4       0x14 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
  .bss.xTasksWaitingTermination
-                0x200021bc       0x14 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
+                0x200021f8       0x14 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
  .bss.uxTasksDeleted
-                0x200021d0        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
- .bss.xSuspendedTaskList
-                0x200021d4       0x14 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
- .bss.uxCurrentNumberOfTasks
-                0x200021e8        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
- .bss.xTickCount
-                0x200021ec        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
- .bss.uxTopReadyPriority
-                0x200021f0        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
- .bss.xSchedulerRunning
-                0x200021f4        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
- .bss.uxPendedTicks
-                0x200021f8        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
- .bss.xYieldPending
-                0x200021fc        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
- .bss.xNumOfOverflows
-                0x20002200        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
- .bss.uxTaskNumber
-                0x20002204        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
- .bss.xNextTaskUnblockTime
-                0x20002208        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
- .bss.uxSchedulerSuspended
                 0x2000220c        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
+ .bss.xSuspendedTaskList
+                0x20002210       0x14 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
+ .bss.uxCurrentNumberOfTasks
+                0x20002224        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
+ .bss.xTickCount
+                0x20002228        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
+ .bss.uxTopReadyPriority
+                0x2000222c        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
+ .bss.xSchedulerRunning
+                0x20002230        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
+ .bss.uxPendedTicks
+                0x20002234        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
+ .bss.xYieldPending
+                0x20002238        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
+ .bss.xNumOfOverflows
+                0x2000223c        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
+ .bss.uxTaskNumber
+                0x20002240        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
+ .bss.xNextTaskUnblockTime
+                0x20002244        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
+ .bss.uxSchedulerSuspended
+                0x20002248        0x4 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
  .bss.can_handler
-                0x20002210       0x10 ./Sources/rtos_driver.o
- .bss.ID_SW     0x20002220        0x1 ./Sources/rtos_driver.o
- *fill*         0x20002221        0x3 
- .bss.msg_SW    0x20002224        0x8 ./Sources/rtos_driver.o
- .bss.DLC_SW    0x2000222c        0x1 ./Sources/rtos_driver.o
- *fill*         0x2000222d        0x1 
- .bss.adc_read  0x2000222e        0x2 ./Sources/rtos_driver.o
+                0x2000224c       0x10 ./Sources/rtos_driver.o
+ .bss.ID_SW     0x2000225c        0x1 ./Sources/rtos_driver.o
+ *fill*         0x2000225d        0x3 
+ .bss.msg_SW    0x20002260        0x8 ./Sources/rtos_driver.o
+ .bss.DLC_SW    0x20002268        0x1 ./Sources/rtos_driver.o
+ *fill*         0x20002269        0x1 
+ .bss.adc_read  0x2000226a        0x2 ./Sources/rtos_driver.o
  .bss.ID_function
-                0x20002230       0x78 ./Sources/rtos_driver.o
+                0x2000226c       0x78 ./Sources/rtos_driver.o
  .bss.ID_func_counter
-                0x200022a8        0x1 ./Sources/rtos_driver.o
- *fill*         0x200022a9        0x3 
+                0x200022e4        0x1 ./Sources/rtos_driver.o
+ *fill*         0x200022e5        0x3 
  .bss.rx_message
-                0x200022ac       0x10 ./Sources/rtos_driver.o
+                0x200022e8       0x10 ./Sources/rtos_driver.o
  .bss.tx_message
-                0x200022bc       0x10 ./Sources/rtos_driver.o
+                0x200022f8       0x10 ./Sources/rtos_driver.o
  .bss.message_to_send
-                0x200022cc       0x10 ./Sources/rtos_driver.o
- .bss.can_base  0x200022dc        0x4 ./Sources/rtos_driver.o
- .bss.periodic_msg.8010
-                0x200022e0       0x10 ./Sources/main.o
- .bss.RxCODE    0x200022f0        0x4 ./Sources/can_driver.o
- .bss.RxID      0x200022f4        0x4 ./Sources/can_driver.o
- .bss.RxLENGTH  0x200022f8        0x4 ./Sources/can_driver.o
+                0x20002308       0x10 ./Sources/rtos_driver.o
+ .bss.can_base  0x20002318        0x4 ./Sources/rtos_driver.o
+ .bss.periodic_msg.8018
+                0x2000231c       0x10 ./Sources/main.o
+ .bss.RxCODE    0x2000232c        0x4 ./Sources/can_driver.o
+ .bss.RxID      0x20002330        0x4 ./Sources/can_driver.o
+ .bss.RxLENGTH  0x20002334        0x4 ./Sources/can_driver.o
  *(COMMON)
- COMMON         0x200022fc       0x14 ./SDK/platform/drivers/src/clock/S32K144/clock_S32K144.o
-                0x200022fc                g_xtal0ClkFreq
-                0x20002300                g_RtcClkInFreq
-                0x20002304                g_TClkFreq
-                0x20002310                . = ALIGN (0x4)
-                0x20002310                __bss_end__ = .
-                0x20002310                __BSS_END = .
+ COMMON         0x20002338       0x14 ./SDK/platform/drivers/src/clock/S32K144/clock_S32K144.o
+                0x20002338                g_xtal0ClkFreq
+                0x2000233c                g_RtcClkInFreq
+                0x20002340                g_TClkFreq
+                0x2000234c                . = ALIGN (0x4)
+                0x2000234c                __bss_end__ = .
+                0x2000234c                __BSS_END = .
 
-.heap           0x20002310      0x400
-                0x20002310                . = ALIGN (0x8)
-                0x20002310                __end__ = .
-                0x20002310                PROVIDE (end, .)
-                0x20002310                PROVIDE (_end, .)
-                0x20002310                PROVIDE (__end, .)
-                0x20002310                __HeapBase = .
-                0x20002710                . = (. + HEAP_SIZE)
- *fill*         0x20002310      0x400 
-                0x20002710                __HeapLimit = .
-                0x20002710                __heap_limit = .
+.heap           0x2000234c      0x404
+                0x20002350                . = ALIGN (0x8)
+ *fill*         0x2000234c        0x4 
+                0x20002350                __end__ = .
+                0x20002350                PROVIDE (end, .)
+                0x20002350                PROVIDE (_end, .)
+                0x20002350                PROVIDE (__end, .)
+                0x20002350                __HeapBase = .
+                0x20002750                . = (. + HEAP_SIZE)
+ *fill*         0x20002350      0x400 
+                0x20002750                __HeapLimit = .
+                0x20002750                __heap_limit = .
 
-.stack          0x20002710      0x400
-                0x20002710                . = ALIGN (0x8)
-                0x20002b10                . = (. + STACK_SIZE)
- *fill*         0x20002710      0x400 
+.stack          0x20002750      0x400
+                0x20002750                . = ALIGN (0x8)
+                0x20002b50                . = (. + STACK_SIZE)
+ *fill*         0x20002750      0x400 
                 0x20007000                __StackTop = (ORIGIN (m_data_2) + 0x7000)
                 0x20006c00                __StackLimit = (__StackTop - STACK_SIZE)
                 0x20007000                PROVIDE (__stack, __StackTop)
@@ -3001,189 +3061,195 @@ LOAD c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-
  .ARM.attributes
                 0x00000056       0x39 ./Generated_Code/pin_mux.o
  .ARM.attributes
-                0x0000008f       0x39 ./Generated_Code/flexTimer1.o
+                0x0000008f       0x39 ./Generated_Code/flexTimer2.o
  .ARM.attributes
-                0x000000c8       0x39 ./Generated_Code/clockMan1.o
+                0x000000c8       0x39 ./Generated_Code/flexTimer1.o
  .ARM.attributes
-                0x00000101       0x1f ./Project_Settings/Startup_Code/startup_S32K144.o
+                0x00000101       0x39 ./Generated_Code/clockMan1.o
  .ARM.attributes
-                0x00000120       0x39 ./SDK/platform/devices/S32K144/startup/system_S32K144.o
+                0x0000013a       0x1f ./Project_Settings/Startup_Code/startup_S32K144.o
  .ARM.attributes
-                0x00000159       0x39 ./SDK/platform/devices/startup.o
+                0x00000159       0x39 ./SDK/platform/devices/S32K144/startup/system_S32K144.o
  .ARM.attributes
-                0x00000192       0x39 ./SDK/platform/drivers/src/clock/S32K144/clock_S32K144.o
+                0x00000192       0x39 ./SDK/platform/devices/startup.o
  .ARM.attributes
-                0x000001cb       0x39 ./SDK/platform/drivers/src/clock/clock_manager.o
+                0x000001cb       0x39 ./SDK/platform/drivers/src/clock/S32K144/clock_S32K144.o
  .ARM.attributes
-                0x00000204       0x39 ./SDK/platform/drivers/src/ftm/ftm_driver.o
+                0x00000204       0x39 ./SDK/platform/drivers/src/clock/clock_manager.o
  .ARM.attributes
-                0x0000023d       0x39 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
+                0x0000023d       0x39 ./SDK/platform/drivers/src/ftm/ftm_driver.o
  .ARM.attributes
-                0x00000276       0x39 ./SDK/platform/drivers/src/pins/pins_driver.o
+                0x00000276       0x39 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
  .ARM.attributes
-                0x000002af       0x39 ./SDK/platform/hal/src/ftm/ftm_hal.o
+                0x000002af       0x39 ./SDK/platform/drivers/src/pins/pins_driver.o
  .ARM.attributes
-                0x000002e8       0x39 ./SDK/platform/hal/src/pcc/pcc_hal.o
+                0x000002e8       0x39 ./SDK/platform/hal/src/ftm/ftm_hal.o
  .ARM.attributes
-                0x00000321       0x39 ./SDK/platform/hal/src/scg/scg_hal.o
+                0x00000321       0x39 ./SDK/platform/hal/src/pcc/pcc_hal.o
  .ARM.attributes
-                0x0000035a       0x39 ./SDK/platform/hal/src/sim/S32K144/sim_hal_S32K144.o
+                0x0000035a       0x39 ./SDK/platform/hal/src/scg/scg_hal.o
  .ARM.attributes
-                0x00000393       0x39 ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
+                0x00000393       0x39 ./SDK/platform/hal/src/sim/S32K144/sim_hal_S32K144.o
  .ARM.attributes
-                0x000003cc       0x39 ./SDK/rtos/FreeRTOS_S32K/Source/portable/MemMang/heap_2.o
+                0x000003cc       0x39 ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
  .ARM.attributes
-                0x00000405       0x39 ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
+                0x00000405       0x39 ./SDK/rtos/FreeRTOS_S32K/Source/portable/MemMang/heap_2.o
  .ARM.attributes
-                0x0000043e       0x39 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
+                0x0000043e       0x39 ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
  .ARM.attributes
-                0x00000477       0x39 ./SDK/rtos/FreeRTOS_S32K/Source/queue.o
+                0x00000477       0x39 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
  .ARM.attributes
-                0x000004b0       0x39 ./SDK/rtos/FreeRTOS_S32K/Source/list.o
+                0x000004b0       0x39 ./SDK/rtos/FreeRTOS_S32K/Source/queue.o
  .ARM.attributes
-                0x000004e9       0x39 ./SDK/rtos/FreeRTOS_S32K/Source/event_groups.o
+                0x000004e9       0x39 ./SDK/rtos/FreeRTOS_S32K/Source/list.o
  .ARM.attributes
-                0x00000522       0x39 ./Sources/transceiver.o
+                0x00000522       0x39 ./SDK/rtos/FreeRTOS_S32K/Source/event_groups.o
  .ARM.attributes
-                0x0000055b       0x39 ./Sources/rtos_driver.o
+                0x0000055b       0x39 ./Sources/transceiver.o
  .ARM.attributes
-                0x00000594       0x39 ./Sources/main.o
+                0x00000594       0x39 ./Sources/rtos_driver.o
  .ARM.attributes
-                0x000005cd       0x39 ./Sources/clocks_and_modes.o
+                0x000005cd       0x39 ./Sources/main.o
  .ARM.attributes
-                0x00000606       0x39 ./Sources/can_driver.o
+                0x00000606       0x39 ./Sources/clocks_and_modes.o
  .ARM.attributes
-                0x0000063f       0x39 ./Sources/ADC.o
+                0x0000063f       0x39 ./Sources/can_driver.o
  .ARM.attributes
-                0x00000678       0x34 C:/NXP/S32DS_ARM_v1.3/Cross_Tools/gcc-arm-none-eabi-4_9/arm-none-eabi/newlib/lib/armv7e-m/fpu\libc_nano.a(lib_a-memcpy.o)
+                0x00000678       0x39 ./Sources/ADC.o
  .ARM.attributes
-                0x000006ac       0x34 C:/NXP/S32DS_ARM_v1.3/Cross_Tools/gcc-arm-none-eabi-4_9/arm-none-eabi/newlib/lib/armv7e-m/fpu\libc_nano.a(lib_a-memset.o)
+                0x000006b1       0x34 C:/NXP/S32DS_ARM_v1.3/Cross_Tools/gcc-arm-none-eabi-4_9/arm-none-eabi/newlib/lib/armv7e-m/fpu\libc_nano.a(lib_a-memcpy.o)
  .ARM.attributes
-                0x000006e0       0x34 c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtend.o
+                0x000006e5       0x34 C:/NXP/S32DS_ARM_v1.3/Cross_Tools/gcc-arm-none-eabi-4_9/arm-none-eabi/newlib/lib/armv7e-m/fpu\libc_nano.a(lib_a-memset.o)
  .ARM.attributes
-                0x00000714       0x22 c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtn.o
+                0x00000719       0x34 c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtend.o
+ .ARM.attributes
+                0x0000074d       0x22 c:/nxp/s32ds_arm_v1.3/cross_tools/gcc-arm-none-eabi-4_9/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtn.o
                 0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region m_data_2 overflowed with stack and heap)
 OUTPUT(S32K144_FreeRTOS.elf elf32-littlearm)
 
-.debug_info     0x00000000    0x14b2c
+.debug_info     0x00000000    0x1530b
  .debug_info    0x00000000      0x379 ./Generated_Code/pin_mux.o
- .debug_info    0x00000379      0x7ba ./Generated_Code/flexTimer1.o
- .debug_info    0x00000b33      0xf66 ./Generated_Code/clockMan1.o
- .debug_info    0x00001a99       0x8e ./Project_Settings/Startup_Code/startup_S32K144.o
- .debug_info    0x00001b27      0x4f2 ./SDK/platform/devices/S32K144/startup/system_S32K144.o
- .debug_info    0x00002019      0x3e4 ./SDK/platform/devices/startup.o
- .debug_info    0x000023fd     0x20af ./SDK/platform/drivers/src/clock/S32K144/clock_S32K144.o
- .debug_info    0x000044ac     0x1087 ./SDK/platform/drivers/src/clock/clock_manager.o
- .debug_info    0x00005533     0x34c4 ./SDK/platform/drivers/src/ftm/ftm_driver.o
- .debug_info    0x000089f7      0x554 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
- .debug_info    0x00008f4b      0x7f7 ./SDK/platform/drivers/src/pins/pins_driver.o
- .debug_info    0x00009742      0x433 ./SDK/platform/hal/src/ftm/ftm_hal.o
- .debug_info    0x00009b75      0x436 ./SDK/platform/hal/src/pcc/pcc_hal.o
- .debug_info    0x00009fab     0x110b ./SDK/platform/hal/src/scg/scg_hal.o
- .debug_info    0x0000b0b6      0xbcb ./SDK/platform/hal/src/sim/S32K144/sim_hal_S32K144.o
- .debug_info    0x0000bc81      0x512 ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
- .debug_info    0x0000c193      0x2bf ./SDK/rtos/FreeRTOS_S32K/Source/portable/MemMang/heap_2.o
- .debug_info    0x0000c452      0xb3c ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
- .debug_info    0x0000cf8e     0x1ac3 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
- .debug_info    0x0000ea51     0x1133 ./SDK/rtos/FreeRTOS_S32K/Source/queue.o
- .debug_info    0x0000fb84      0x28f ./SDK/rtos/FreeRTOS_S32K/Source/list.o
- .debug_info    0x0000fe13      0x865 ./SDK/rtos/FreeRTOS_S32K/Source/event_groups.o
- .debug_info    0x00010678      0x469 ./Sources/transceiver.o
- .debug_info    0x00010ae1     0x1737 ./Sources/rtos_driver.o
- .debug_info    0x00012218     0x1d1c ./Sources/main.o
- .debug_info    0x00013f34      0x262 ./Sources/clocks_and_modes.o
- .debug_info    0x00014196      0x694 ./Sources/can_driver.o
- .debug_info    0x0001482a      0x302 ./Sources/ADC.o
+ .debug_info    0x00000379      0x7ba ./Generated_Code/flexTimer2.o
+ .debug_info    0x00000b33      0x7ba ./Generated_Code/flexTimer1.o
+ .debug_info    0x000012ed      0xf66 ./Generated_Code/clockMan1.o
+ .debug_info    0x00002253       0x8e ./Project_Settings/Startup_Code/startup_S32K144.o
+ .debug_info    0x000022e1      0x4f2 ./SDK/platform/devices/S32K144/startup/system_S32K144.o
+ .debug_info    0x000027d3      0x3e4 ./SDK/platform/devices/startup.o
+ .debug_info    0x00002bb7     0x20af ./SDK/platform/drivers/src/clock/S32K144/clock_S32K144.o
+ .debug_info    0x00004c66     0x1087 ./SDK/platform/drivers/src/clock/clock_manager.o
+ .debug_info    0x00005ced     0x34c4 ./SDK/platform/drivers/src/ftm/ftm_driver.o
+ .debug_info    0x000091b1      0x554 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
+ .debug_info    0x00009705      0x7f7 ./SDK/platform/drivers/src/pins/pins_driver.o
+ .debug_info    0x00009efc      0x433 ./SDK/platform/hal/src/ftm/ftm_hal.o
+ .debug_info    0x0000a32f      0x436 ./SDK/platform/hal/src/pcc/pcc_hal.o
+ .debug_info    0x0000a765     0x110b ./SDK/platform/hal/src/scg/scg_hal.o
+ .debug_info    0x0000b870      0xbcb ./SDK/platform/hal/src/sim/S32K144/sim_hal_S32K144.o
+ .debug_info    0x0000c43b      0x512 ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
+ .debug_info    0x0000c94d      0x2bf ./SDK/rtos/FreeRTOS_S32K/Source/portable/MemMang/heap_2.o
+ .debug_info    0x0000cc0c      0xb3c ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
+ .debug_info    0x0000d748     0x1ac3 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
+ .debug_info    0x0000f20b     0x1133 ./SDK/rtos/FreeRTOS_S32K/Source/queue.o
+ .debug_info    0x0001033e      0x28f ./SDK/rtos/FreeRTOS_S32K/Source/list.o
+ .debug_info    0x000105cd      0x865 ./SDK/rtos/FreeRTOS_S32K/Source/event_groups.o
+ .debug_info    0x00010e32      0x469 ./Sources/transceiver.o
+ .debug_info    0x0001129b     0x1737 ./Sources/rtos_driver.o
+ .debug_info    0x000129d2     0x1d41 ./Sources/main.o
+ .debug_info    0x00014713      0x262 ./Sources/clocks_and_modes.o
+ .debug_info    0x00014975      0x694 ./Sources/can_driver.o
+ .debug_info    0x00015009      0x302 ./Sources/ADC.o
 
-.debug_abbrev   0x00000000     0x29a0
+.debug_abbrev   0x00000000     0x2a82
  .debug_abbrev  0x00000000       0xe9 ./Generated_Code/pin_mux.o
- .debug_abbrev  0x000000e9       0xe2 ./Generated_Code/flexTimer1.o
- .debug_abbrev  0x000001cb      0x12a ./Generated_Code/clockMan1.o
- .debug_abbrev  0x000002f5       0x14 ./Project_Settings/Startup_Code/startup_S32K144.o
- .debug_abbrev  0x00000309      0x118 ./SDK/platform/devices/S32K144/startup/system_S32K144.o
- .debug_abbrev  0x00000421      0x101 ./SDK/platform/devices/startup.o
- .debug_abbrev  0x00000522      0x274 ./SDK/platform/drivers/src/clock/S32K144/clock_S32K144.o
- .debug_abbrev  0x00000796      0x18b ./SDK/platform/drivers/src/clock/clock_manager.o
- .debug_abbrev  0x00000921      0x22a ./SDK/platform/drivers/src/ftm/ftm_driver.o
- .debug_abbrev  0x00000b4b      0x131 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
- .debug_abbrev  0x00000c7c      0x1b6 ./SDK/platform/drivers/src/pins/pins_driver.o
- .debug_abbrev  0x00000e32      0x151 ./SDK/platform/hal/src/ftm/ftm_hal.o
- .debug_abbrev  0x00000f83      0x123 ./SDK/platform/hal/src/pcc/pcc_hal.o
- .debug_abbrev  0x000010a6      0x215 ./SDK/platform/hal/src/scg/scg_hal.o
- .debug_abbrev  0x000012bb      0x1c7 ./SDK/platform/hal/src/sim/S32K144/sim_hal_S32K144.o
- .debug_abbrev  0x00001482      0x1c0 ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
- .debug_abbrev  0x00001642      0x155 ./SDK/rtos/FreeRTOS_S32K/Source/portable/MemMang/heap_2.o
- .debug_abbrev  0x00001797      0x1ea ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
- .debug_abbrev  0x00001981      0x276 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
- .debug_abbrev  0x00001bf7      0x1d7 ./SDK/rtos/FreeRTOS_S32K/Source/queue.o
- .debug_abbrev  0x00001dce       0xc1 ./SDK/rtos/FreeRTOS_S32K/Source/list.o
- .debug_abbrev  0x00001e8f      0x1ca ./SDK/rtos/FreeRTOS_S32K/Source/event_groups.o
- .debug_abbrev  0x00002059      0x132 ./Sources/transceiver.o
- .debug_abbrev  0x0000218b      0x29c ./Sources/rtos_driver.o
- .debug_abbrev  0x00002427      0x1da ./Sources/main.o
- .debug_abbrev  0x00002601       0xc2 ./Sources/clocks_and_modes.o
- .debug_abbrev  0x000026c3      0x1a7 ./Sources/can_driver.o
- .debug_abbrev  0x0000286a      0x136 ./Sources/ADC.o
+ .debug_abbrev  0x000000e9       0xe2 ./Generated_Code/flexTimer2.o
+ .debug_abbrev  0x000001cb       0xe2 ./Generated_Code/flexTimer1.o
+ .debug_abbrev  0x000002ad      0x12a ./Generated_Code/clockMan1.o
+ .debug_abbrev  0x000003d7       0x14 ./Project_Settings/Startup_Code/startup_S32K144.o
+ .debug_abbrev  0x000003eb      0x118 ./SDK/platform/devices/S32K144/startup/system_S32K144.o
+ .debug_abbrev  0x00000503      0x101 ./SDK/platform/devices/startup.o
+ .debug_abbrev  0x00000604      0x274 ./SDK/platform/drivers/src/clock/S32K144/clock_S32K144.o
+ .debug_abbrev  0x00000878      0x18b ./SDK/platform/drivers/src/clock/clock_manager.o
+ .debug_abbrev  0x00000a03      0x22a ./SDK/platform/drivers/src/ftm/ftm_driver.o
+ .debug_abbrev  0x00000c2d      0x131 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
+ .debug_abbrev  0x00000d5e      0x1b6 ./SDK/platform/drivers/src/pins/pins_driver.o
+ .debug_abbrev  0x00000f14      0x151 ./SDK/platform/hal/src/ftm/ftm_hal.o
+ .debug_abbrev  0x00001065      0x123 ./SDK/platform/hal/src/pcc/pcc_hal.o
+ .debug_abbrev  0x00001188      0x215 ./SDK/platform/hal/src/scg/scg_hal.o
+ .debug_abbrev  0x0000139d      0x1c7 ./SDK/platform/hal/src/sim/S32K144/sim_hal_S32K144.o
+ .debug_abbrev  0x00001564      0x1c0 ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
+ .debug_abbrev  0x00001724      0x155 ./SDK/rtos/FreeRTOS_S32K/Source/portable/MemMang/heap_2.o
+ .debug_abbrev  0x00001879      0x1ea ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
+ .debug_abbrev  0x00001a63      0x276 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
+ .debug_abbrev  0x00001cd9      0x1d7 ./SDK/rtos/FreeRTOS_S32K/Source/queue.o
+ .debug_abbrev  0x00001eb0       0xc1 ./SDK/rtos/FreeRTOS_S32K/Source/list.o
+ .debug_abbrev  0x00001f71      0x1ca ./SDK/rtos/FreeRTOS_S32K/Source/event_groups.o
+ .debug_abbrev  0x0000213b      0x132 ./Sources/transceiver.o
+ .debug_abbrev  0x0000226d      0x29c ./Sources/rtos_driver.o
+ .debug_abbrev  0x00002509      0x1da ./Sources/main.o
+ .debug_abbrev  0x000026e3       0xc2 ./Sources/clocks_and_modes.o
+ .debug_abbrev  0x000027a5      0x1a7 ./Sources/can_driver.o
+ .debug_abbrev  0x0000294c      0x136 ./Sources/ADC.o
 
-.debug_aranges  0x00000000     0x1068
+.debug_aranges  0x00000000     0x1080
  .debug_aranges
                 0x00000000       0x18 ./Generated_Code/pin_mux.o
  .debug_aranges
-                0x00000018       0x18 ./Generated_Code/flexTimer1.o
+                0x00000018       0x18 ./Generated_Code/flexTimer2.o
  .debug_aranges
-                0x00000030       0x18 ./Generated_Code/clockMan1.o
+                0x00000030       0x18 ./Generated_Code/flexTimer1.o
  .debug_aranges
-                0x00000048       0x20 ./Project_Settings/Startup_Code/startup_S32K144.o
+                0x00000048       0x18 ./Generated_Code/clockMan1.o
  .debug_aranges
-                0x00000068       0x30 ./SDK/platform/devices/S32K144/startup/system_S32K144.o
+                0x00000060       0x20 ./Project_Settings/Startup_Code/startup_S32K144.o
  .debug_aranges
-                0x00000098       0x20 ./SDK/platform/devices/startup.o
+                0x00000080       0x30 ./SDK/platform/devices/S32K144/startup/system_S32K144.o
  .debug_aranges
-                0x000000b8      0x180 ./SDK/platform/drivers/src/clock/S32K144/clock_S32K144.o
+                0x000000b0       0x20 ./SDK/platform/devices/startup.o
  .debug_aranges
-                0x00000238       0x38 ./SDK/platform/drivers/src/clock/clock_manager.o
+                0x000000d0      0x180 ./SDK/platform/drivers/src/clock/S32K144/clock_S32K144.o
  .debug_aranges
-                0x00000270      0x450 ./SDK/platform/drivers/src/ftm/ftm_driver.o
+                0x00000250       0x38 ./SDK/platform/drivers/src/clock/clock_manager.o
  .debug_aranges
-                0x000006c0       0x40 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
+                0x00000288      0x450 ./SDK/platform/drivers/src/ftm/ftm_driver.o
  .debug_aranges
-                0x00000700       0x60 ./SDK/platform/drivers/src/pins/pins_driver.o
+                0x000006d8       0x40 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
  .debug_aranges
-                0x00000760       0x48 ./SDK/platform/hal/src/ftm/ftm_hal.o
+                0x00000718       0x60 ./SDK/platform/drivers/src/pins/pins_driver.o
  .debug_aranges
-                0x000007a8       0x20 ./SDK/platform/hal/src/pcc/pcc_hal.o
+                0x00000778       0x48 ./SDK/platform/hal/src/ftm/ftm_hal.o
  .debug_aranges
-                0x000007c8       0xe8 ./SDK/platform/hal/src/scg/scg_hal.o
+                0x000007c0       0x20 ./SDK/platform/hal/src/pcc/pcc_hal.o
  .debug_aranges
-                0x000008b0       0xe0 ./SDK/platform/hal/src/sim/S32K144/sim_hal_S32K144.o
+                0x000007e0       0xe8 ./SDK/platform/hal/src/scg/scg_hal.o
  .debug_aranges
-                0x00000990       0x80 ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
+                0x000008c8       0xe0 ./SDK/platform/hal/src/sim/S32K144/sim_hal_S32K144.o
  .debug_aranges
-                0x00000a10       0x40 ./SDK/rtos/FreeRTOS_S32K/Source/portable/MemMang/heap_2.o
+                0x000009a8       0x80 ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
  .debug_aranges
-                0x00000a50       0xa8 ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
+                0x00000a28       0x40 ./SDK/rtos/FreeRTOS_S32K/Source/portable/MemMang/heap_2.o
  .debug_aranges
-                0x00000af8      0x1a8 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
+                0x00000a68       0xa8 ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
  .debug_aranges
-                0x00000ca0       0xe0 ./SDK/rtos/FreeRTOS_S32K/Source/queue.o
+                0x00000b10      0x1a8 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
  .debug_aranges
-                0x00000d80       0x40 ./SDK/rtos/FreeRTOS_S32K/Source/list.o
+                0x00000cb8       0xe0 ./SDK/rtos/FreeRTOS_S32K/Source/queue.o
  .debug_aranges
-                0x00000dc0       0x68 ./SDK/rtos/FreeRTOS_S32K/Source/event_groups.o
+                0x00000d98       0x40 ./SDK/rtos/FreeRTOS_S32K/Source/list.o
  .debug_aranges
-                0x00000e28       0x48 ./Sources/transceiver.o
+                0x00000dd8       0x68 ./SDK/rtos/FreeRTOS_S32K/Source/event_groups.o
  .debug_aranges
-                0x00000e70      0x118 ./Sources/rtos_driver.o
+                0x00000e40       0x48 ./Sources/transceiver.o
  .debug_aranges
-                0x00000f88       0x28 ./Sources/main.o
+                0x00000e88      0x118 ./Sources/rtos_driver.o
  .debug_aranges
-                0x00000fb0       0x30 ./Sources/clocks_and_modes.o
+                0x00000fa0       0x28 ./Sources/main.o
  .debug_aranges
-                0x00000fe0       0x50 ./Sources/can_driver.o
+                0x00000fc8       0x30 ./Sources/clocks_and_modes.o
  .debug_aranges
-                0x00001030       0x38 ./Sources/ADC.o
+                0x00000ff8       0x50 ./Sources/can_driver.o
+ .debug_aranges
+                0x00001048       0x38 ./Sources/ADC.o
 
-.debug_macro    0x00000000    0x20939
+.debug_macro    0x00000000    0x20b1f
  .debug_macro   0x00000000       0xfa ./Generated_Code/pin_mux.o
  .debug_macro   0x000000fa      0x86e ./Generated_Code/pin_mux.o
  .debug_macro   0x00000968       0x10 ./Generated_Code/pin_mux.o
@@ -3199,150 +3265,156 @@ OUTPUT(S32K144_FreeRTOS.elf elf32-littlearm)
  .debug_macro   0x0000eee2      0x7be ./Generated_Code/pin_mux.o
  .debug_macro   0x0000f6a0       0x58 ./Generated_Code/pin_mux.o
  .debug_macro   0x0000f6f8       0x1c ./Generated_Code/pin_mux.o
- .debug_macro   0x0000f714      0x1c9 ./Generated_Code/flexTimer1.o
- .debug_macro   0x0000f8dd       0x16 ./Generated_Code/flexTimer1.o
- .debug_macro   0x0000f8f3     0xdfa2 ./Generated_Code/flexTimer1.o
- .debug_macro   0x0001d895       0x16 ./Generated_Code/flexTimer1.o
- .debug_macro   0x0001d8ab       0x16 ./Generated_Code/flexTimer1.o
- .debug_macro   0x0001d8c1       0x16 ./Generated_Code/flexTimer1.o
- .debug_macro   0x0001d8d7       0x10 ./Generated_Code/flexTimer1.o
- .debug_macro   0x0001d8e7       0xe6 ./Generated_Code/flexTimer1.o
- .debug_macro   0x0001d9cd       0x10 ./Generated_Code/flexTimer1.o
- .debug_macro   0x0001d9dd       0x22 ./Generated_Code/flexTimer1.o
- .debug_macro   0x0001d9ff       0x16 ./Generated_Code/flexTimer1.o
- .debug_macro   0x0001da15      0x1b9 ./Generated_Code/clockMan1.o
- .debug_macro   0x0001dbce       0xc6 ./SDK/platform/devices/S32K144/startup/system_S32K144.o
- .debug_macro   0x0001dc94       0xc7 ./SDK/platform/devices/startup.o
- .debug_macro   0x0001dd5b      0x15d ./SDK/platform/drivers/src/clock/S32K144/clock_S32K144.o
- .debug_macro   0x0001deb8      0x163 ./SDK/platform/drivers/src/clock/clock_manager.o
- .debug_macro   0x0001e01b      0x17b ./SDK/platform/drivers/src/ftm/ftm_driver.o
- .debug_macro   0x0001e196       0xc7 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
- .debug_macro   0x0001e25d      0x171 ./SDK/platform/drivers/src/pins/pins_driver.o
- .debug_macro   0x0001e3ce      0x115 ./SDK/platform/hal/src/ftm/ftm_hal.o
- .debug_macro   0x0001e4e3       0xe0 ./SDK/platform/hal/src/ftm/ftm_hal.o
- .debug_macro   0x0001e5c3      0x10a ./SDK/platform/hal/src/pcc/pcc_hal.o
- .debug_macro   0x0001e6cd      0x12c ./SDK/platform/hal/src/scg/scg_hal.o
- .debug_macro   0x0001e7f9      0x12c ./SDK/platform/hal/src/sim/S32K144/sim_hal_S32K144.o
- .debug_macro   0x0001e925      0x1e4 ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
- .debug_macro   0x0001eb09      0x167 ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
- .debug_macro   0x0001ec70      0x15d ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
- .debug_macro   0x0001edcd       0xe4 ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
- .debug_macro   0x0001eeb1       0x10 ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
- .debug_macro   0x0001eec1       0x1f ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
- .debug_macro   0x0001eee0      0x345 ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
- .debug_macro   0x0001f225       0xc0 ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
- .debug_macro   0x0001f2e5       0x8c ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
- .debug_macro   0x0001f371      0x168 ./SDK/rtos/FreeRTOS_S32K/Source/portable/MemMang/heap_2.o
- .debug_macro   0x0001f4d9       0x2e ./SDK/rtos/FreeRTOS_S32K/Source/portable/MemMang/heap_2.o
- .debug_macro   0x0001f507      0x177 ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
- .debug_macro   0x0001f67e       0xb0 ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
- .debug_macro   0x0001f72e       0x91 ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
- .debug_macro   0x0001f7bf      0x1f6 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
- .debug_macro   0x0001f9b5       0x10 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
- .debug_macro   0x0001f9c5       0x16 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
- .debug_macro   0x0001f9db      0x1ba ./SDK/rtos/FreeRTOS_S32K/Source/queue.o
- .debug_macro   0x0001fb95      0x13a ./SDK/rtos/FreeRTOS_S32K/Source/list.o
- .debug_macro   0x0001fccf      0x193 ./SDK/rtos/FreeRTOS_S32K/Source/event_groups.o
- .debug_macro   0x0001fe62       0x19 ./SDK/rtos/FreeRTOS_S32K/Source/event_groups.o
- .debug_macro   0x0001fe7b       0x95 ./Sources/transceiver.o
- .debug_macro   0x0001ff10      0x3d1 ./Sources/rtos_driver.o
- .debug_macro   0x000202e1       0x1c ./Sources/rtos_driver.o
- .debug_macro   0x000202fd       0x7f ./Sources/rtos_driver.o
- .debug_macro   0x0002037c       0x16 ./Sources/rtos_driver.o
- .debug_macro   0x00020392      0x311 ./Sources/main.o
- .debug_macro   0x000206a3       0x8f ./Sources/clocks_and_modes.o
- .debug_macro   0x00020732      0x178 ./Sources/can_driver.o
- .debug_macro   0x000208aa       0x8f ./Sources/ADC.o
+ .debug_macro   0x0000f714      0x1c9 ./Generated_Code/flexTimer2.o
+ .debug_macro   0x0000f8dd       0x16 ./Generated_Code/flexTimer2.o
+ .debug_macro   0x0000f8f3     0xdfa2 ./Generated_Code/flexTimer2.o
+ .debug_macro   0x0001d895       0x16 ./Generated_Code/flexTimer2.o
+ .debug_macro   0x0001d8ab       0x16 ./Generated_Code/flexTimer2.o
+ .debug_macro   0x0001d8c1       0x16 ./Generated_Code/flexTimer2.o
+ .debug_macro   0x0001d8d7       0x10 ./Generated_Code/flexTimer2.o
+ .debug_macro   0x0001d8e7       0xe6 ./Generated_Code/flexTimer2.o
+ .debug_macro   0x0001d9cd       0x10 ./Generated_Code/flexTimer2.o
+ .debug_macro   0x0001d9dd       0x22 ./Generated_Code/flexTimer2.o
+ .debug_macro   0x0001d9ff       0x16 ./Generated_Code/flexTimer2.o
+ .debug_macro   0x0001da15      0x1c9 ./Generated_Code/flexTimer1.o
+ .debug_macro   0x0001dbde      0x1b9 ./Generated_Code/clockMan1.o
+ .debug_macro   0x0001dd97       0xc6 ./SDK/platform/devices/S32K144/startup/system_S32K144.o
+ .debug_macro   0x0001de5d       0xc7 ./SDK/platform/devices/startup.o
+ .debug_macro   0x0001df24      0x15d ./SDK/platform/drivers/src/clock/S32K144/clock_S32K144.o
+ .debug_macro   0x0001e081      0x163 ./SDK/platform/drivers/src/clock/clock_manager.o
+ .debug_macro   0x0001e1e4      0x17b ./SDK/platform/drivers/src/ftm/ftm_driver.o
+ .debug_macro   0x0001e35f       0xc7 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
+ .debug_macro   0x0001e426      0x171 ./SDK/platform/drivers/src/pins/pins_driver.o
+ .debug_macro   0x0001e597      0x115 ./SDK/platform/hal/src/ftm/ftm_hal.o
+ .debug_macro   0x0001e6ac       0xe0 ./SDK/platform/hal/src/ftm/ftm_hal.o
+ .debug_macro   0x0001e78c      0x10a ./SDK/platform/hal/src/pcc/pcc_hal.o
+ .debug_macro   0x0001e896      0x12c ./SDK/platform/hal/src/scg/scg_hal.o
+ .debug_macro   0x0001e9c2      0x12c ./SDK/platform/hal/src/sim/S32K144/sim_hal_S32K144.o
+ .debug_macro   0x0001eaee      0x1e4 ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
+ .debug_macro   0x0001ecd2      0x167 ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
+ .debug_macro   0x0001ee39      0x15d ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
+ .debug_macro   0x0001ef96       0xe4 ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
+ .debug_macro   0x0001f07a       0x10 ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
+ .debug_macro   0x0001f08a       0x1f ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
+ .debug_macro   0x0001f0a9      0x345 ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
+ .debug_macro   0x0001f3ee       0xc0 ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
+ .debug_macro   0x0001f4ae       0x8c ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
+ .debug_macro   0x0001f53a      0x168 ./SDK/rtos/FreeRTOS_S32K/Source/portable/MemMang/heap_2.o
+ .debug_macro   0x0001f6a2       0x2e ./SDK/rtos/FreeRTOS_S32K/Source/portable/MemMang/heap_2.o
+ .debug_macro   0x0001f6d0      0x177 ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
+ .debug_macro   0x0001f847       0xb0 ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
+ .debug_macro   0x0001f8f7       0x91 ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
+ .debug_macro   0x0001f988      0x1f6 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
+ .debug_macro   0x0001fb7e       0x10 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
+ .debug_macro   0x0001fb8e       0x16 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
+ .debug_macro   0x0001fba4      0x1ba ./SDK/rtos/FreeRTOS_S32K/Source/queue.o
+ .debug_macro   0x0001fd5e      0x13a ./SDK/rtos/FreeRTOS_S32K/Source/list.o
+ .debug_macro   0x0001fe98      0x193 ./SDK/rtos/FreeRTOS_S32K/Source/event_groups.o
+ .debug_macro   0x0002002b       0x19 ./SDK/rtos/FreeRTOS_S32K/Source/event_groups.o
+ .debug_macro   0x00020044       0x95 ./Sources/transceiver.o
+ .debug_macro   0x000200d9      0x3d1 ./Sources/rtos_driver.o
+ .debug_macro   0x000204aa       0x1c ./Sources/rtos_driver.o
+ .debug_macro   0x000204c6       0x7f ./Sources/rtos_driver.o
+ .debug_macro   0x00020545       0x16 ./Sources/rtos_driver.o
+ .debug_macro   0x0002055b      0x31e ./Sources/main.o
+ .debug_macro   0x00020879       0x10 ./Sources/main.o
+ .debug_macro   0x00020889       0x8f ./Sources/clocks_and_modes.o
+ .debug_macro   0x00020918      0x178 ./Sources/can_driver.o
+ .debug_macro   0x00020a90       0x8f ./Sources/ADC.o
 
-.debug_line     0x00000000     0xa570
+.debug_line     0x00000000     0xaaf9
  .debug_line    0x00000000      0x35a ./Generated_Code/pin_mux.o
- .debug_line    0x0000035a      0x576 ./Generated_Code/flexTimer1.o
- .debug_line    0x000008d0      0x565 ./Generated_Code/clockMan1.o
- .debug_line    0x00000e35       0x83 ./Project_Settings/Startup_Code/startup_S32K144.o
- .debug_line    0x00000eb8      0x322 ./SDK/platform/devices/S32K144/startup/system_S32K144.o
- .debug_line    0x000011da      0x292 ./SDK/platform/devices/startup.o
- .debug_line    0x0000146c      0xb94 ./SDK/platform/drivers/src/clock/S32K144/clock_S32K144.o
- .debug_line    0x00002000      0x570 ./SDK/platform/drivers/src/clock/clock_manager.o
- .debug_line    0x00002570     0x13df ./SDK/platform/drivers/src/ftm/ftm_driver.o
- .debug_line    0x0000394f      0x36b ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
- .debug_line    0x00003cba      0x5d0 ./SDK/platform/drivers/src/pins/pins_driver.o
- .debug_line    0x0000428a      0x3de ./SDK/platform/hal/src/ftm/ftm_hal.o
- .debug_line    0x00004668      0x392 ./SDK/platform/hal/src/pcc/pcc_hal.o
- .debug_line    0x000049fa      0x75b ./SDK/platform/hal/src/scg/scg_hal.o
- .debug_line    0x00005155      0x72c ./SDK/platform/hal/src/sim/S32K144/sim_hal_S32K144.o
- .debug_line    0x00005881      0x4eb ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
- .debug_line    0x00005d6c      0x3d0 ./SDK/rtos/FreeRTOS_S32K/Source/portable/MemMang/heap_2.o
- .debug_line    0x0000613c      0x60d ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
- .debug_line    0x00006749      0xe38 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
- .debug_line    0x00007581      0xaa5 ./SDK/rtos/FreeRTOS_S32K/Source/queue.o
- .debug_line    0x00008026      0x37e ./SDK/rtos/FreeRTOS_S32K/Source/list.o
- .debug_line    0x000083a4      0x598 ./SDK/rtos/FreeRTOS_S32K/Source/event_groups.o
- .debug_line    0x0000893c      0x257 ./Sources/transceiver.o
- .debug_line    0x00008b93      0xb89 ./Sources/rtos_driver.o
- .debug_line    0x0000971c      0x7a9 ./Sources/main.o
- .debug_line    0x00009ec5      0x210 ./Sources/clocks_and_modes.o
- .debug_line    0x0000a0d5      0x2b8 ./Sources/can_driver.o
- .debug_line    0x0000a38d      0x1e3 ./Sources/ADC.o
+ .debug_line    0x0000035a      0x576 ./Generated_Code/flexTimer2.o
+ .debug_line    0x000008d0      0x576 ./Generated_Code/flexTimer1.o
+ .debug_line    0x00000e46      0x565 ./Generated_Code/clockMan1.o
+ .debug_line    0x000013ab       0x83 ./Project_Settings/Startup_Code/startup_S32K144.o
+ .debug_line    0x0000142e      0x322 ./SDK/platform/devices/S32K144/startup/system_S32K144.o
+ .debug_line    0x00001750      0x292 ./SDK/platform/devices/startup.o
+ .debug_line    0x000019e2      0xb94 ./SDK/platform/drivers/src/clock/S32K144/clock_S32K144.o
+ .debug_line    0x00002576      0x570 ./SDK/platform/drivers/src/clock/clock_manager.o
+ .debug_line    0x00002ae6     0x13df ./SDK/platform/drivers/src/ftm/ftm_driver.o
+ .debug_line    0x00003ec5      0x36b ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
+ .debug_line    0x00004230      0x5d0 ./SDK/platform/drivers/src/pins/pins_driver.o
+ .debug_line    0x00004800      0x3de ./SDK/platform/hal/src/ftm/ftm_hal.o
+ .debug_line    0x00004bde      0x392 ./SDK/platform/hal/src/pcc/pcc_hal.o
+ .debug_line    0x00004f70      0x75b ./SDK/platform/hal/src/scg/scg_hal.o
+ .debug_line    0x000056cb      0x72c ./SDK/platform/hal/src/sim/S32K144/sim_hal_S32K144.o
+ .debug_line    0x00005df7      0x4eb ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
+ .debug_line    0x000062e2      0x3d0 ./SDK/rtos/FreeRTOS_S32K/Source/portable/MemMang/heap_2.o
+ .debug_line    0x000066b2      0x60d ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
+ .debug_line    0x00006cbf      0xe38 ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
+ .debug_line    0x00007af7      0xaa5 ./SDK/rtos/FreeRTOS_S32K/Source/queue.o
+ .debug_line    0x0000859c      0x37e ./SDK/rtos/FreeRTOS_S32K/Source/list.o
+ .debug_line    0x0000891a      0x598 ./SDK/rtos/FreeRTOS_S32K/Source/event_groups.o
+ .debug_line    0x00008eb2      0x257 ./Sources/transceiver.o
+ .debug_line    0x00009109      0xb89 ./Sources/rtos_driver.o
+ .debug_line    0x00009c92      0x7bc ./Sources/main.o
+ .debug_line    0x0000a44e      0x210 ./Sources/clocks_and_modes.o
+ .debug_line    0x0000a65e      0x2b8 ./Sources/can_driver.o
+ .debug_line    0x0000a916      0x1e3 ./Sources/ADC.o
 
-.debug_str      0x00000000    0x6fe1e
+.debug_str      0x00000000    0x6fede
  .debug_str     0x00000000    0x60d70 ./Generated_Code/pin_mux.o
                               0x60e01 (size before relaxing)
- .debug_str     0x00060d70     0x1743 ./Generated_Code/flexTimer1.o
+ .debug_str     0x00060d70     0x1743 ./Generated_Code/flexTimer2.o
                               0x622a2 (size before relaxing)
- .debug_str     0x000624b3     0x13db ./Generated_Code/clockMan1.o
+ .debug_str     0x000624b3       0xa7 ./Generated_Code/flexTimer1.o
+                              0x622a2 (size before relaxing)
+ .debug_str     0x0006255a     0x13db ./Generated_Code/clockMan1.o
                               0x62e34 (size before relaxing)
- .debug_str     0x0006388e      0x1f2 ./SDK/platform/devices/S32K144/startup/system_S32K144.o
+ .debug_str     0x00063935      0x1f2 ./SDK/platform/devices/S32K144/startup/system_S32K144.o
                               0x60cb2 (size before relaxing)
- .debug_str     0x00063a80      0x117 ./SDK/platform/devices/startup.o
+ .debug_str     0x00063b27      0x117 ./SDK/platform/devices/startup.o
                               0x60bdf (size before relaxing)
- .debug_str     0x00063b97      0x8d1 ./SDK/platform/drivers/src/clock/S32K144/clock_S32K144.o
+ .debug_str     0x00063c3e      0x8d1 ./SDK/platform/drivers/src/clock/S32K144/clock_S32K144.o
                               0x62be9 (size before relaxing)
- .debug_str     0x00064468      0x191 ./SDK/platform/drivers/src/clock/clock_manager.o
+ .debug_str     0x0006450f      0x191 ./SDK/platform/drivers/src/clock/clock_manager.o
                               0x625b5 (size before relaxing)
- .debug_str     0x000645f9     0x1c54 ./SDK/platform/drivers/src/ftm/ftm_driver.o
+ .debug_str     0x000646a0     0x1c54 ./SDK/platform/drivers/src/ftm/ftm_driver.o
                               0x64235 (size before relaxing)
- .debug_str     0x0006624d      0x111 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
+ .debug_str     0x000662f4      0x111 ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
                               0x6116a (size before relaxing)
- .debug_str     0x0006635e      0x174 ./SDK/platform/drivers/src/pins/pins_driver.o
+ .debug_str     0x00066405      0x174 ./SDK/platform/drivers/src/pins/pins_driver.o
                               0x614f5 (size before relaxing)
- .debug_str     0x000664d2       0xa9 ./SDK/platform/hal/src/ftm/ftm_hal.o
+ .debug_str     0x00066579       0xa9 ./SDK/platform/hal/src/ftm/ftm_hal.o
                               0x61678 (size before relaxing)
- .debug_str     0x0006657b       0x5f ./SDK/platform/hal/src/pcc/pcc_hal.o
+ .debug_str     0x00066622       0x5f ./SDK/platform/hal/src/pcc/pcc_hal.o
                               0x61205 (size before relaxing)
- .debug_str     0x000665da      0x38e ./SDK/platform/hal/src/scg/scg_hal.o
+ .debug_str     0x00066681      0x38e ./SDK/platform/hal/src/scg/scg_hal.o
                               0x61b93 (size before relaxing)
- .debug_str     0x00066968      0x5d1 ./SDK/platform/hal/src/sim/S32K144/sim_hal_S32K144.o
+ .debug_str     0x00066a0f      0x5d1 ./SDK/platform/hal/src/sim/S32K144/sim_hal_S32K144.o
                               0x61526 (size before relaxing)
- .debug_str     0x00066f39     0x3cf4 ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
+ .debug_str     0x00066fe0     0x3cf4 ./SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.o
                                0x79f5 (size before relaxing)
- .debug_str     0x0006ac2d      0x463 ./SDK/rtos/FreeRTOS_S32K/Source/portable/MemMang/heap_2.o
+ .debug_str     0x0006acd4      0x463 ./SDK/rtos/FreeRTOS_S32K/Source/portable/MemMang/heap_2.o
                                0x75c3 (size before relaxing)
- .debug_str     0x0006b090     0x16d5 ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
+ .debug_str     0x0006b137     0x16d5 ./SDK/rtos/FreeRTOS_S32K/Source/timers.o
                                0x89f9 (size before relaxing)
- .debug_str     0x0006c765     0x10cf ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
+ .debug_str     0x0006c80c     0x10cf ./SDK/rtos/FreeRTOS_S32K/Source/tasks.o
                                0x8c9e (size before relaxing)
- .debug_str     0x0006d834      0x5f9 ./SDK/rtos/FreeRTOS_S32K/Source/queue.o
+ .debug_str     0x0006d8db      0x5f9 ./SDK/rtos/FreeRTOS_S32K/Source/queue.o
                                0x849f (size before relaxing)
- .debug_str     0x0006de2d       0xb1 ./SDK/rtos/FreeRTOS_S32K/Source/list.o
+ .debug_str     0x0006ded4       0xb1 ./SDK/rtos/FreeRTOS_S32K/Source/list.o
                                0x6d97 (size before relaxing)
- .debug_str     0x0006dede      0x4e9 ./SDK/rtos/FreeRTOS_S32K/Source/event_groups.o
+ .debug_str     0x0006df85      0x4e9 ./SDK/rtos/FreeRTOS_S32K/Source/event_groups.o
                                0x8044 (size before relaxing)
- .debug_str     0x0006e3c7       0xe6 ./Sources/transceiver.o
+ .debug_str     0x0006e46e       0xe6 ./Sources/transceiver.o
                               0x5d943 (size before relaxing)
- .debug_str     0x0006e4ad     0x12ad ./Sources/rtos_driver.o
+ .debug_str     0x0006e554     0x12ad ./Sources/rtos_driver.o
                               0x67f98 (size before relaxing)
- .debug_str     0x0006f75a      0x13a ./Sources/main.o
-                              0x68e4e (size before relaxing)
- .debug_str     0x0006f894       0x52 ./Sources/clocks_and_modes.o
+ .debug_str     0x0006f801      0x153 ./Sources/main.o
+                              0x68eb3 (size before relaxing)
+ .debug_str     0x0006f954       0x52 ./Sources/clocks_and_modes.o
                               0x5d8c4 (size before relaxing)
- .debug_str     0x0006f8e6      0x44d ./Sources/can_driver.o
+ .debug_str     0x0006f9a6      0x44d ./Sources/can_driver.o
                               0x5de9c (size before relaxing)
- .debug_str     0x0006fd33       0xeb ./Sources/ADC.o
+ .debug_str     0x0006fdf3       0xeb ./Sources/ADC.o
                               0x5d8a6 (size before relaxing)
 
 .comment        0x00000000       0x70
  .comment       0x00000000       0x70 ./Generated_Code/pin_mux.o
                                  0x71 (size before relaxing)
+ .comment       0x00000000       0x71 ./Generated_Code/flexTimer2.o
  .comment       0x00000000       0x71 ./Generated_Code/flexTimer1.o
  .comment       0x00000000       0x71 ./Generated_Code/clockMan1.o
  .comment       0x00000000       0x71 ./SDK/platform/devices/S32K144/startup/system_S32K144.o

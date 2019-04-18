@@ -51,6 +51,7 @@
 #include "pin_mux.h"
 #include "FreeRTOS.h"
 #include "flexTimer1.h"
+#include "flexTimer2.h"
 #if CPU_INIT_CONFIG
   #include "Init_Config.h"
 #endif
@@ -62,6 +63,7 @@
 #include "task.h"
 
 #include "flexTimer1.h"
+#include "flexTimer2.h"
 
 volatile int exit_code = 0;
 /* User includes (#include below this line is not maintained by Processor Expert) */
@@ -125,7 +127,8 @@ int main(void)
 	static can_message_tx_config_t periodic_msg;
 
     /* Variables used to store PWM duty cycle */
-    ftm_state_t ftmStateStruct;
+    ftm_state_t ftmStateStruct_ftm0;
+    ftm_state_t ftmStateStruct_ftm1;
     uint16_t dutyCycle = 0x4000;
     bool increaseDutyCycle = false;
 
@@ -150,11 +153,14 @@ int main(void)
     /* Initialize FTM PWM channel 0 PTD15
      *  -   See ftm component for more info
      */
-    FTM_DRV_Init(INST_FLEXTIMER1, &flexTimer1_InitConfig, &ftmStateStruct);
+    FTM_DRV_Init(INST_FLEXTIMER1, &flexTimer1_InitConfig, &ftmStateStruct_ftm0);
+    FTM_DRV_Init(INST_FLEXTIMER2, &flexTimer2_InitConfig, &ftmStateStruct_ftm1);
     /* Initialize FTM PWM channel */
     FTM_DRV_InitPwm(INST_FLEXTIMER1, &flexTimer1_PwmConfig);
+    FTM_DRV_InitPwm(INST_FLEXTIMER2, &flexTimer2_PwmConfig);
 
     FTM_DRV_UpdatePwmChannel(INST_FLEXTIMER1, 0U, FTM_PWM_UPDATE_IN_DUTY_CYCLE, dutyCycle, 0U, true);
+    FTM_DRV_UpdatePwmChannel(INST_FLEXTIMER2, 0U, FTM_PWM_UPDATE_IN_DUTY_CYCLE, dutyCycle, 0U, true);
 
 	/** Sets the base and the speed for CAN*/
 	can_init.base = CAN0;

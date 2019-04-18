@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : SDK_S32K144_04
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2019-04-17, 20:40, # CodeGen: 8
+**     Date/Time   : 2019-04-17, 21:11, # CodeGen: 13
 **     Abstract    :
 **
 **     Settings    :
@@ -139,8 +139,8 @@
 **                  External Clock 1                       : <Automatic>
 **                  Quadrature Decoder Phase A Input       : <Automatic>
 **                  Quadrature Decoder Phase B Input       : <Automatic>
-**                  Channel 0                              : <Automatic>
-**                  Direction                              : <Automatic>
+**                  Channel 0                              : PTB2
+**                  Direction                              : Output
 **                  Channel 1                              : <Automatic>
 **                  Direction                              : <Automatic>
 **                  Channel 2                              : <Automatic>

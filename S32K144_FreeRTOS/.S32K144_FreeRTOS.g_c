@@ -548,25 +548,27 @@
       <GenMethodsInEvents lines_count="1">
         <Line>FreeRTOS_vApplicationStackOverflowHook</Line>
       </GenMethodsInEvents>
-      <GenAllModules lines_count="6">
+      <GenAllModules lines_count="7">
         <Line>clockMan1</Line>
         <Line>Cpu</Line>
         <Line>Events</Line>
         <Line>flexTimer1</Line>
+        <Line>flexTimer2</Line>
         <Line>FreeRTOS</Line>
         <Line>pin_mux</Line>
       </GenAllModules>
       <GenExternModules lines_count="0" />
-      <GenBeanModules lines_count="4">
+      <GenBeanModules lines_count="5">
         <Line>pin_mux</Line>
         <Line>clockMan1</Line>
         <Line>FreeRTOS</Line>
         <Line>flexTimer1</Line>
+        <Line>flexTimer2</Line>
       </GenBeanModules>
     </GenFiles>
     <SignalListFile />
     <DestinationCompiler>GNUC</DestinationCompiler>
-    <ProjectModificationStamp>10</ProjectModificationStamp>
+    <ProjectModificationStamp>13</ProjectModificationStamp>
   </Options>
   <CpuID_1>
     <Generated>true</Generated>
@@ -575,7 +577,7 @@
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule>Events</GenEventModule>
     <HeaderAge>1318167690</HeaderAge>
-    <CodeAge>1318167690</CodeAge>
+    <CodeAge>1318168685</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>3</GenNumMethods>
     <SystemInit>true</SystemInit>
@@ -606,8 +608,8 @@
     <GenComponentVersion>1.2.0</GenComponentVersion>
     <GenDriverVersion>1.4</GenDriverVersion>
     <GenEventModule />
-    <HeaderAge>1318167827</HeaderAge>
-    <CodeAge>1318167827</CodeAge>
+    <HeaderAge>1318168944</HeaderAge>
+    <CodeAge>1318168944</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>1</GenNumMethods>
     <PINS_DRV_Init>true</PINS_DRV_Init>
@@ -1146,7 +1148,7 @@
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule />
     <HeaderAge>1318167690</HeaderAge>
-    <CodeAge>1318168162</CodeAge>
+    <CodeAge>1318168944</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>30</GenNumMethods>
     <FTM_DRV_Init>true</FTM_DRV_Init>
@@ -1356,6 +1358,223 @@
       <ExtraFile1>SDK\platform\hal\src\ftm\ftm_hal.c</ExtraFile1>
     </InhrCompID_14>
   </ComponentID_13>
+  <ComponentID_15>
+    <Generated>true</Generated>
+    <GenCompName>flexTimer2</GenCompName>
+    <GenComponentVersion>SDK_S32K144_04</GenComponentVersion>
+    <GenDriverVersion>01.00</GenDriverVersion>
+    <GenEventModule />
+    <HeaderAge>1318168685</HeaderAge>
+    <CodeAge>1318169012</CodeAge>
+    <AsemblAge>-1</AsemblAge>
+    <GenNumMethods>30</GenNumMethods>
+    <FTM_DRV_Init>true</FTM_DRV_Init>
+    <FTM_DRV_Deinit>true</FTM_DRV_Deinit>
+    <FTM_DRV_InitCounter>true</FTM_DRV_InitCounter>
+    <FTM_DRV_CounterStart>true</FTM_DRV_CounterStart>
+    <FTM_DRV_CounterStop>true</FTM_DRV_CounterStop>
+    <FTM_DRV_CounterRead>true</FTM_DRV_CounterRead>
+    <FTM_DRV_DeinitPwm>true</FTM_DRV_DeinitPwm>
+    <FTM_DRV_InitPwm>true</FTM_DRV_InitPwm>
+    <FTM_DRV_UpdatePwmChannel>true</FTM_DRV_UpdatePwmChannel>
+    <FTM_DRV_UpdatePwmPeriod>true</FTM_DRV_UpdatePwmPeriod>
+    <FTM_DRV_MaskOutputChannels>true</FTM_DRV_MaskOutputChannels>
+    <FTM_DRV_SetInitialCounterValue>true</FTM_DRV_SetInitialCounterValue>
+    <FTM_DRV_SetHalfCycleReloadPoint>true</FTM_DRV_SetHalfCycleReloadPoint>
+    <FTM_DRV_SetSoftOutChnValue>true</FTM_DRV_SetSoftOutChnValue>
+    <FTM_DRV_SetSoftwareOutputChannelControl>true</FTM_DRV_SetSoftwareOutputChannelControl>
+    <FTM_DRV_SetInvertingControl>true</FTM_DRV_SetInvertingControl>
+    <FTM_DRV_SetModuloCounterValue>true</FTM_DRV_SetModuloCounterValue>
+    <FTM_DRV_SetSync>true</FTM_DRV_SetSync>
+    <FTM_DRV_InitOutputCompare>true</FTM_DRV_InitOutputCompare>
+    <FTM_DRV_DeinitOutputCompare>true</FTM_DRV_DeinitOutputCompare>
+    <FTM_DRV_UpdateOutputCompareChannel>true</FTM_DRV_UpdateOutputCompareChannel>
+    <FTM_DRV_InitInputCapture>true</FTM_DRV_InitInputCapture>
+    <FTM_DRV_DeinitInputCapture>true</FTM_DRV_DeinitInputCapture>
+    <FTM_DRV_GetInputCaptureMeasurement>true</FTM_DRV_GetInputCaptureMeasurement>
+    <FTM_DRV_StartNewSignalMeasurement>true</FTM_DRV_StartNewSignalMeasurement>
+    <FTM_DRV_QuadDecodeStart>true</FTM_DRV_QuadDecodeStart>
+    <FTM_DRV_QuadDecodeStop>true</FTM_DRV_QuadDecodeStop>
+    <FTM_DRV_QuadGetState>true</FTM_DRV_QuadGetState>
+    <FTM_DRV_GetFrequency>true</FTM_DRV_GetFrequency>
+    <FTM_DRV_ConvertFreqToPeriodTicks>true</FTM_DRV_ConvertFreqToPeriodTicks>
+    <GenNumEvents>0</GenNumEvents>
+    <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
+    <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
+    <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
+    <GenMethodPos>1</GenMethodPos>
+    <MethodPos>
+      <MethodPos0>IrqHandler</MethodPos0>
+      <MethodType>method</MethodType>
+      <ModuleType>Code</ModuleType>
+      <LineBeg>146</LineBeg>
+      <LineEnd>146</LineEnd>
+    </MethodPos>
+    <GenExtraFilesCount>2</GenExtraFilesCount>
+    <ExtraFile0>SDK\platform\drivers\inc\ftm_driver.h</ExtraFile0>
+    <ExtraFile1>SDK\platform\drivers\src\ftm\ftm_driver.c</ExtraFile1>
+    <InhrCompID_16>
+      <Generated>true</Generated>
+      <GenCompName>ftm_hal2</GenCompName>
+      <GenComponentVersion>SDK_S32K144_04</GenComponentVersion>
+      <GenDriverVersion>01.00</GenDriverVersion>
+      <GenEventModule />
+      <HeaderAge>-1</HeaderAge>
+      <CodeAge>-1</CodeAge>
+      <AsemblAge>-1</AsemblAge>
+      <GenNumMethods>142</GenNumMethods>
+      <FTM_HAL_SetHalfCycleValue>true</FTM_HAL_SetHalfCycleValue>
+      <FTM_HAL_SetClockFilterPs>true</FTM_HAL_SetClockFilterPs>
+      <FTM_HAL_GetClockFilterPs>true</FTM_HAL_GetClockFilterPs>
+      <FTM_HAL_SetClockSource>true</FTM_HAL_SetClockSource>
+      <FTM_HAL_GetClockSource>true</FTM_HAL_GetClockSource>
+      <FTM_HAL_SetClockPs>true</FTM_HAL_SetClockPs>
+      <FTM_HAL_GetClockPs>true</FTM_HAL_GetClockPs>
+      <FTM_HAL_SetTimerOverflowInt>true</FTM_HAL_SetTimerOverflowInt>
+      <FTM_HAL_IsOverflowIntEnabled>true</FTM_HAL_IsOverflowIntEnabled>
+      <FTM_HAL_EnablePwmChannelOutputs>true</FTM_HAL_EnablePwmChannelOutputs>
+      <FTM_HAL_DisablePwmChannelOutputs>true</FTM_HAL_DisablePwmChannelOutputs>
+      <FTM_HAL_ClearTimerOverflow>true</FTM_HAL_ClearTimerOverflow>
+      <FTM_HAL_HasTimerOverflowed>true</FTM_HAL_HasTimerOverflowed>
+      <FTM_HAL_SetCpwms>true</FTM_HAL_SetCpwms>
+      <FTM_HAL_GetCpwms>true</FTM_HAL_GetCpwms>
+      <FTM_HAL_SetReIntEnabledCmd>true</FTM_HAL_SetReIntEnabledCmd>
+      <FTM_HAL_GetReloadFlag>true</FTM_HAL_GetReloadFlag>
+      <FTM_HAL_ClearReloadFlag>true</FTM_HAL_ClearReloadFlag>
+      <FTM_HAL_SetCounter>true</FTM_HAL_SetCounter>
+      <FTM_HAL_GetCounter>true</FTM_HAL_GetCounter>
+      <FTM_HAL_SetMod>true</FTM_HAL_SetMod>
+      <FTM_HAL_GetMod>true</FTM_HAL_GetMod>
+      <FTM_HAL_SetCounterInitVal>true</FTM_HAL_SetCounterInitVal>
+      <FTM_HAL_GetCounterInitVal>true</FTM_HAL_GetCounterInitVal>
+      <FTM_HAL_SetChnMSnBAMode>true</FTM_HAL_SetChnMSnBAMode>
+      <FTM_HAL_SetChnEdgeLevel>true</FTM_HAL_SetChnEdgeLevel>
+      <FTM_HAL_ClearChSC>true</FTM_HAL_ClearChSC>
+      <FTM_HAL_GetChnMode>true</FTM_HAL_GetChnMode>
+      <FTM_HAL_GetChnEdgeLevel>true</FTM_HAL_GetChnEdgeLevel>
+      <FTM_HAL_SetChnIcrstCmd>true</FTM_HAL_SetChnIcrstCmd>
+      <FTM_HAL_IsChnIcrst>true</FTM_HAL_IsChnIcrst>
+      <FTM_HAL_SetChnDmaCmd>true</FTM_HAL_SetChnDmaCmd>
+      <FTM_HAL_IsChnDma>true</FTM_HAL_IsChnDma>
+      <FTM_HAL_IsChnIntEnabled>true</FTM_HAL_IsChnIntEnabled>
+      <FTM_HAL_EnableChnInt>true</FTM_HAL_EnableChnInt>
+      <FTM_HAL_DisableChnInt>true</FTM_HAL_DisableChnInt>
+      <FTM_HAL_HasChnEventOccurred>true</FTM_HAL_HasChnEventOccurred>
+      <FTM_HAL_ClearChnEventFlag>true</FTM_HAL_ClearChnEventFlag>
+      <FTM_HAL_SetTrigModeControlCmd>true</FTM_HAL_SetTrigModeControlCmd>
+      <FTM_HAL_GetTriggerControled>true</FTM_HAL_GetTriggerControled>
+      <FTM_HAL_GetChInputState>true</FTM_HAL_GetChInputState>
+      <FTM_HAL_GetChOutputValue>true</FTM_HAL_GetChOutputValue>
+      <FTM_HAL_SetChnCountVal>true</FTM_HAL_SetChnCountVal>
+      <FTM_HAL_GetChnCountVal>true</FTM_HAL_GetChnCountVal>
+      <FTM_HAL_GetChnEventStatus>true</FTM_HAL_GetChnEventStatus>
+      <FTM_HAL_GetEventStatus>true</FTM_HAL_GetEventStatus>
+      <FTM_HAL_ClearChnEventStatus>true</FTM_HAL_ClearChnEventStatus>
+      <FTM_HAL_SetOutmaskReg>true</FTM_HAL_SetOutmaskReg>
+      <FTM_HAL_SetChnOutputMask>true</FTM_HAL_SetChnOutputMask>
+      <FTM_HAL_SetChnOutputInitStateCmd>true</FTM_HAL_SetChnOutputInitStateCmd>
+      <FTM_HAL_SetChnOutputPolarityCmd>true</FTM_HAL_SetChnOutputPolarityCmd>
+      <FTM_HAL_SetChnFaultInputPolarityCmd>true</FTM_HAL_SetChnFaultInputPolarityCmd>
+      <FTM_HAL_SetFaultInt>true</FTM_HAL_SetFaultInt>
+      <FTM_HAL_DisableFaultInt>true</FTM_HAL_DisableFaultInt>
+      <FTM_HAL_IsFaultIntEnabled>true</FTM_HAL_IsFaultIntEnabled>
+      <FTM_HAL_ClearFaultsIsr>true</FTM_HAL_ClearFaultsIsr>
+      <FTM_HAL_SetFaultControlMode>true</FTM_HAL_SetFaultControlMode>
+      <FTM_HAL_SetCaptureTestCmd>true</FTM_HAL_SetCaptureTestCmd>
+      <FTM_HAL_SetWriteProtectionCmd>true</FTM_HAL_SetWriteProtectionCmd>
+      <FTM_HAL_Enable>true</FTM_HAL_Enable>
+      <FTM_HAL_IsFtmEnable>true</FTM_HAL_IsFtmEnable>
+      <FTM_HAL_SetInitChnOutputCmd>true</FTM_HAL_SetInitChnOutputCmd>
+      <FTM_HAL_SetPwmSyncMode>true</FTM_HAL_SetPwmSyncMode>
+      <FTM_HAL_SetSoftwareTriggerCmd>true</FTM_HAL_SetSoftwareTriggerCmd>
+      <FTM_HAL_SetHardwareSyncTriggerSrc>true</FTM_HAL_SetHardwareSyncTriggerSrc>
+      <FTM_HAL_SetOutmaskPwmSyncModeCmd>true</FTM_HAL_SetOutmaskPwmSyncModeCmd>
+      <FTM_HAL_SetCountReinitSyncCmd>true</FTM_HAL_SetCountReinitSyncCmd>
+      <FTM_HAL_SetMaxLoadingCmd>true</FTM_HAL_SetMaxLoadingCmd>
+      <FTM_HAL_SetMinLoadingCmd>true</FTM_HAL_SetMinLoadingCmd>
+      <FTM_HAL_SetDualChnMofCombineCmd>true</FTM_HAL_SetDualChnMofCombineCmd>
+      <FTM_HAL_SetDualChnFaultCmd>true</FTM_HAL_SetDualChnFaultCmd>
+      <FTM_HAL_SetDualChnPwmSyncCmd>true</FTM_HAL_SetDualChnPwmSyncCmd>
+      <FTM_HAL_SetDualChnDeadtimeCmd>true</FTM_HAL_SetDualChnDeadtimeCmd>
+      <FTM_HAL_SetDualChnDecapCmd>true</FTM_HAL_SetDualChnDecapCmd>
+      <FTM_HAL_SetDualEdgeCaptureCmd>true</FTM_HAL_SetDualEdgeCaptureCmd>
+      <FTM_HAL_GetDualEdgeCaptureBit>true</FTM_HAL_GetDualEdgeCaptureBit>
+      <FTM_HAL_SetDualChnCompCmd>true</FTM_HAL_SetDualChnCompCmd>
+      <FTM_HAL_SetDualChnCombineCmd>true</FTM_HAL_SetDualChnCombineCmd>
+      <FTM_HAL_GetDualChnCombineCmd>true</FTM_HAL_GetDualChnCombineCmd>
+      <FTM_HAL_GetDualChnMofCombineCmd>true</FTM_HAL_GetDualChnMofCombineCmd>
+      <FTM_HAL_SetExtDeadtimeValue>true</FTM_HAL_SetExtDeadtimeValue>
+      <FTM_HAL_SetDeadtimePrescale>true</FTM_HAL_SetDeadtimePrescale>
+      <FTM_HAL_SetDeadtimeCount>true</FTM_HAL_SetDeadtimeCount>
+      <FTM_HAL_SetInitTriggerCmd>true</FTM_HAL_SetInitTriggerCmd>
+      <FTM_HAL_IsChnTriggerGenerated>true</FTM_HAL_IsChnTriggerGenerated>
+      <FTM_HAL_ClearChnTriggerFlag>true</FTM_HAL_ClearChnTriggerFlag>
+      <FTM_HAL_GetDetectedFaultInput>true</FTM_HAL_GetDetectedFaultInput>
+      <FTM_HAL_IsWriteProtectionEnabled>true</FTM_HAL_IsWriteProtectionEnabled>
+      <FTM_HAL_IsFaultInputEnabled>true</FTM_HAL_IsFaultInputEnabled>
+      <FTM_HAL_IsFaultFlagDetected>true</FTM_HAL_IsFaultFlagDetected>
+      <FTM_HAL_ClearFaultFlagDetected>true</FTM_HAL_ClearFaultFlagDetected>
+      <FTM_HAL_SetQuadDecoderCmd>true</FTM_HAL_SetQuadDecoderCmd>
+      <FTM_HAL_SetQuadPhaseAFilterCmd>true</FTM_HAL_SetQuadPhaseAFilterCmd>
+      <FTM_HAL_SetQuadPhaseBFilterCmd>true</FTM_HAL_SetQuadPhaseBFilterCmd>
+      <FTM_HAL_SetQuadPhaseAPolarity>true</FTM_HAL_SetQuadPhaseAPolarity>
+      <FTM_HAL_SetQuadPhaseBPolarity>true</FTM_HAL_SetQuadPhaseBPolarity>
+      <FTM_HAL_SetQuadMode>true</FTM_HAL_SetQuadMode>
+      <FTM_HAL_GetQuadDir>true</FTM_HAL_GetQuadDir>
+      <FTM_HAL_GetQuadTimerOverflowDir>true</FTM_HAL_GetQuadTimerOverflowDir>
+      <FTM_HAL_SetFaultInputFilterVal>true</FTM_HAL_SetFaultInputFilterVal>
+      <FTM_HAL_SetFaultInputFilterCmd>true</FTM_HAL_SetFaultInputFilterCmd>
+      <FTM_HAL_ClearFaultControl>true</FTM_HAL_ClearFaultControl>
+      <FTM_HAL_SetFaultInputCmd>true</FTM_HAL_SetFaultInputCmd>
+      <FTM_HAL_SetPwmFaultBehavior>true</FTM_HAL_SetPwmFaultBehavior>
+      <FTM_HAL_SetDualChnInvertCmd>true</FTM_HAL_SetDualChnInvertCmd>
+      <FTM_HAL_SetInvctrlReg>true</FTM_HAL_SetInvctrlReg>
+      <FTM_HAL_SetChnSoftwareCtrlCmd>true</FTM_HAL_SetChnSoftwareCtrlCmd>
+      <FTM_HAL_SetAllChnSoftwareCtrlCmd>true</FTM_HAL_SetAllChnSoftwareCtrlCmd>
+      <FTM_HAL_SetChnSoftwareCtrlVal>true</FTM_HAL_SetChnSoftwareCtrlVal>
+      <FTM_HAL_SetAllChnSoftwareCtrlVal>true</FTM_HAL_SetAllChnSoftwareCtrlVal>
+      <FTM_HAL_SetGlobalLoadCmd>true</FTM_HAL_SetGlobalLoadCmd>
+      <FTM_HAL_SetLoadCmd>true</FTM_HAL_SetLoadCmd>
+      <FTM_HAL_SetHalfCycleCmd>true</FTM_HAL_SetHalfCycleCmd>
+      <FTM_HAL_SetPwmLoadCmd>true</FTM_HAL_SetPwmLoadCmd>
+      <FTM_HAL_SetPwmLoadChnSelCmd>true</FTM_HAL_SetPwmLoadChnSelCmd>
+      <FTM_HAL_SetInitTrigOnReloadCmd>true</FTM_HAL_SetInitTrigOnReloadCmd>
+      <FTM_HAL_SetGlobalTimeBaseOutputCmd>true</FTM_HAL_SetGlobalTimeBaseOutputCmd>
+      <FTM_HAL_SetGlobalTimeBaseCmd>true</FTM_HAL_SetGlobalTimeBaseCmd>
+      <FTM_HAL_SetBdmMode>true</FTM_HAL_SetBdmMode>
+      <FTM_HAL_SetLoadFreq>true</FTM_HAL_SetLoadFreq>
+      <FTM_HAL_SetSwoctrlHardwareSyncModeCmd>true</FTM_HAL_SetSwoctrlHardwareSyncModeCmd>
+      <FTM_HAL_SetInvctrlHardwareSyncModeCmd>true</FTM_HAL_SetInvctrlHardwareSyncModeCmd>
+      <FTM_HAL_SetOutmaskHardwareSyncModeCmd>true</FTM_HAL_SetOutmaskHardwareSyncModeCmd>
+      <FTM_HAL_SetModCntinCvHardwareSyncModeCmd>true</FTM_HAL_SetModCntinCvHardwareSyncModeCmd>
+      <FTM_HAL_SetCounterHardwareSyncModeCmd>true</FTM_HAL_SetCounterHardwareSyncModeCmd>
+      <FTM_HAL_SetSwoctrlSoftwareSyncModeCmd>true</FTM_HAL_SetSwoctrlSoftwareSyncModeCmd>
+      <FTM_HAL_SetInvctrlSoftwareSyncModeCmd>true</FTM_HAL_SetInvctrlSoftwareSyncModeCmd>
+      <FTM_HAL_SetOutmaskSoftwareSyncModeCmd>true</FTM_HAL_SetOutmaskSoftwareSyncModeCmd>
+      <FTM_HAL_SetModCntinCvSoftwareSyncModeCmd>true</FTM_HAL_SetModCntinCvSoftwareSyncModeCmd>
+      <FTM_HAL_SetHwTriggerSyncModeCmd>true</FTM_HAL_SetHwTriggerSyncModeCmd>
+      <FTM_HAL_SetCounterSoftwareSyncModeCmd>true</FTM_HAL_SetCounterSoftwareSyncModeCmd>
+      <FTM_HAL_SetPwmSyncModeCmd>true</FTM_HAL_SetPwmSyncModeCmd>
+      <FTM_HAL_SetSwoctrlPwmSyncModeCmd>true</FTM_HAL_SetSwoctrlPwmSyncModeCmd>
+      <FTM_HAL_SetInvctrlPwmSyncModeCmd>true</FTM_HAL_SetInvctrlPwmSyncModeCmd>
+      <FTM_HAL_SetCntinPwmSyncModeCmd>true</FTM_HAL_SetCntinPwmSyncModeCmd>
+      <FTM_HAL_Reset>true</FTM_HAL_Reset>
+      <FTM_HAL_Init>true</FTM_HAL_Init>
+      <FTM_HAL_SetChnTriggerCmd>true</FTM_HAL_SetChnTriggerCmd>
+      <FTM_HAL_SetChnInputCaptureFilter>true</FTM_HAL_SetChnInputCaptureFilter>
+      <FTM_HAL_SetExtPairDeadtimeValue>true</FTM_HAL_SetExtPairDeadtimeValue>
+      <FTM_HAL_SetPairDeadtimePrescale>true</FTM_HAL_SetPairDeadtimePrescale>
+      <FTM_HAL_SetPairDeadtimeCount>true</FTM_HAL_SetPairDeadtimeCount>
+      <GenNumEvents>0</GenNumEvents>
+      <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
+      <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
+      <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
+      <GenMethodPos>0</GenMethodPos>
+      <GenExtraFilesCount>2</GenExtraFilesCount>
+      <ExtraFile0>SDK\platform\hal\inc\ftm_hal.h</ExtraFile0>
+      <ExtraFile1>SDK\platform\hal\src\ftm\ftm_hal.c</ExtraFile1>
+    </InhrCompID_16>
+  </ComponentID_15>
   <UsedSrcFiles>
     <SrcFile0>Drivers\interrupt_manager.src=-1</SrcFile0>
     <SrcFile1>Drivers\S32K\S32K144_SDK01\port_hal.drv=1250267652</SrcFile1>
