@@ -50,6 +50,7 @@
 #include "clockMan1.h"
 #include "pin_mux.h"
 #include "FreeRTOS.h"
+#include "flexTimer1.h"
 #if CPU_INIT_CONFIG
   #include "Init_Config.h"
 #endif
@@ -59,6 +60,8 @@
 #include "clocks_and_modes.h"
 #include "rtos_driver.h"
 #include "task.h"
+
+#include "flexTimer1.h"
 
 volatile int exit_code = 0;
 /* User includes (#include below this line is not maintained by Processor Expert) */
@@ -85,6 +88,7 @@ volatile int exit_code = 0;
 /** Period for the ADC thread*/
 #define ADC_THREAD_PERIOD		(250)
 
+
 /** Test callback function*/
 void test_function(can_message_rx_config_t can_message_rx)
 {
@@ -103,6 +107,7 @@ void test_function(can_message_rx_config_t can_message_rx)
 	rtos_can_transmit(msg_test_function);
 }
 
+
 int main(void)
 {
 	/** SW3 message*/
@@ -118,6 +123,38 @@ int main(void)
 	can_message_tx_config_t tx_msg_init;
 	/** Periodic message structure*/
 	static can_message_tx_config_t periodic_msg;
+
+    /* Variables used to store PWM duty cycle */
+    ftm_state_t ftmStateStruct;
+    uint16_t dutyCycle = 0x4000;
+    bool increaseDutyCycle = false;
+
+  /*** Processor Expert internal initialization. DON'T REMOVE THIS CODE!!! ***/
+  #ifdef PEX_RTOS_INIT
+    PEX_RTOS_INIT();                   /* Initialization of the selected RTOS. Macro is defined by the RTOS component. */
+  #endif
+  /*** End of Processor Expert internal initialization.                    ***/
+
+    /* Initialize and configure clocks
+     *  -   see clock manager component for details
+     */
+    CLOCK_SYS_Init(g_clockManConfigsArr, CLOCK_MANAGER_CONFIG_CNT,
+                   g_clockManCallbacksArr, CLOCK_MANAGER_CALLBACK_CNT);
+    CLOCK_SYS_UpdateConfiguration(0U, CLOCK_MANAGER_POLICY_AGREEMENT);
+
+    /* Initialize pins
+     *  -   See PinSettings component for more info
+     */
+	PINS_DRV_Init(NUM_OF_CONFIGURED_PINS, g_pin_mux_InitConfigArr);
+
+    /* Initialize FTM PWM channel 0 PTD15
+     *  -   See ftm component for more info
+     */
+    FTM_DRV_Init(INST_FLEXTIMER1, &flexTimer1_InitConfig, &ftmStateStruct);
+    /* Initialize FTM PWM channel */
+    FTM_DRV_InitPwm(INST_FLEXTIMER1, &flexTimer1_PwmConfig);
+
+    FTM_DRV_UpdatePwmChannel(INST_FLEXTIMER1, 0U, FTM_PWM_UPDATE_IN_DUTY_CYCLE, dutyCycle, 0U, true);
 
 	/** Sets the base and the speed for CAN*/
 	can_init.base = CAN0;
@@ -178,8 +215,21 @@ int main(void)
 
 	for(;;);
 
-	return 0;
-}
+    /*** Don't write any code pass this line, or it will be deleted during code generation. ***/
+  /*** RTOS startup code. Macro PEX_RTOS_START is defined by the RTOS component. DON'T MODIFY THIS CODE!!! ***/
+  #ifdef PEX_RTOS_START
+    PEX_RTOS_START();                  /* Startup of the selected RTOS. Macro is defined by the RTOS component. */
+  #endif
+  /*** End of RTOS startup code.  ***/
+  /*** Processor Expert end of main routine. DON'T MODIFY THIS CODE!!! ***/
+  for(;;) {
+    if(exit_code != 0) {
+      break;
+    }
+  }
+  return exit_code;
+  /*** Processor Expert end of main routine. DON'T WRITE CODE BELOW!!! ***/
+} /*** End of main routine. DO NOT MODIFY THIS TEXT!!! ***/
 /* END main */
 /*!
 ** @}

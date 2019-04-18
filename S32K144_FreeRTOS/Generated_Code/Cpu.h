@@ -7,7 +7,7 @@
 **     Version     : Component 01.197, Driver 01.00, CPU db: 3.00.000
 **     Datasheet   : S32K14XRM Rev. 2, 02/2017
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2019-03-31, 16:08, # CodeGen: 0
+**     Date/Time   : 2019-04-17, 20:36, # CodeGen: 7
 **     Abstract    :
 **
 **     Settings    :
@@ -63,6 +63,8 @@
 #include "smc_hal.h"
 #include "port_hal.h"
 #include "gpio_hal.h"
+#include "ftm_hal.h"
+#include "ftm_driver.h"
 #include "system_S32K144.h"
 
 #ifdef __cplusplus

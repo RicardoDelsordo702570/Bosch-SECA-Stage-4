@@ -286,6 +286,53 @@ Module "FreeRTOS"  (component FreeRTOS)
    - FreeRTOS_xTaskCallApplicationTaskHook -Calls the hook function associated with xTask. Passing xTask as NULL has the effect 
                 of calling the Running tasks (the calling task) hook function.
 
+Module "flexTimer1" (component ftm)
+   - flexTimer1_FTM_DRV_Init -Initializes the FTM driver.
+   - flexTimer1_FTM_DRV_Deinit -Shuts down the FTM driver.
+   - flexTimer1_FTM_DRV_InitCounter -Initialize the FTM counter.
+   - flexTimer1_FTM_DRV_CounterStart -Starts the FTM counter.
+   - flexTimer1_FTM_DRV_CounterStop -Stops the FTM counter.
+   - flexTimer1_FTM_DRV_CounterRead -Reads back the current value of the FTM counter.
+   - flexTimer1_FTM_DRV_DeinitPwm -Stops all PWM channels configured in param.
+   - flexTimer1_FTM_DRV_InitPwm -Configures the duty cycle and frequency and starts outputting the PWM on all channels 
+                configured in param .
+   - flexTimer1_FTM_DRV_UpdatePwmChannel -This function updates the waveform output in PWM mode (duty cycle and phase).
+   - flexTimer1_FTM_DRV_UpdatePwmPeriod -This function will update the period of PWM signal in the channel output.
+   - flexTimer1_FTM_DRV_MaskOutputChannels -This function will mask the output of the channels and at match events will be 
+                ignored by the masked channels.
+   - flexTimer1_FTM_DRV_SetInitialCounterValue -This function configure the initial counter value. The counter will get this 
+                value after an overflow event.
+   - flexTimer1_FTM_DRV_SetHalfCycleReloadPoint -This function configure the value of the counter which will generates an 
+                reload point.
+   - flexTimer1_FTM_DRV_SetSoftOutChnValue -This function will force the output value of a channel to a specific value. Before 
+                using this function it's mandatory to mask the match events using FTM_DRV_MaskOutputChannels and to enable 
+                software output control using FTM_DRV_SetSoftwareOutputChannelControl.
+   - flexTimer1_FTM_DRV_SetSoftwareOutputChannelControl -This function will configure which output channel can be software 
+                controlled.
+   - flexTimer1_FTM_DRV_SetInvertingControl -This function will configure if the second channel of a pair will be inverted or 
+                not.
+   - flexTimer1_FTM_DRV_SetModuloCounterValue -This function configure the maximum counter value.
+   - flexTimer1_FTM_DRV_SetSync -This function configures sync mechanism for some FTM registers ( MOD, CNINT, HCR, CnV, OUTMASK,
+                INVCTRL, SWOCTRL).
+   - flexTimer1_FTM_DRV_InitOutputCompare -Configures the FTM to generate timed pulses(Output compare mode).
+   - flexTimer1_FTM_DRV_DeinitOutputCompare -Disables compare match output control and clears FTM timer configuration.
+   - flexTimer1_FTM_DRV_UpdateOutputCompareChannel -Sets the next compare match value based on the current counter value.
+   - flexTimer1_FTM_DRV_InitInputCapture -Configures Channel Input Capture for either getting time-stamps on edge detection or 
+                on signal measurement . When the edge specified in the captureMode argument occurs on the channel the FTM 
+                counter is captured into the CnV register. The user will have to read the CnV register separately to get this 
+                value. The filter function is disabled if the filterVal argument passed in is 0. The filter function is 
+                available only on channels 0,1,2,3.
+   - flexTimer1_FTM_DRV_DeinitInputCapture -Disables input capture mode and clears FTM timer configuration.
+   - flexTimer1_FTM_DRV_GetInputCaptureMeasurement -This function is used to calculate the measurement and/or time stamps 
+                values which are read from the C(n, n+1)V registers and stored to the static buffers.
+   - flexTimer1_FTM_DRV_StartNewSignalMeasurement -Starts new single-shot signal measurement of the given channel.
+   - flexTimer1_FTM_DRV_QuadDecodeStart -Configures the quadrature mode and starts measurement.
+   - flexTimer1_FTM_DRV_QuadDecodeStop -De-activates the quadrature decode mode.
+   - flexTimer1_FTM_DRV_QuadGetState -Return the current quadrature decoder state (counter value, overflow flag and overflow 
+                direction)
+   - flexTimer1_FTM_DRV_GetFrequency -Retrieves the frequency of the clock source feeding the FTM counter.
+   - flexTimer1_FTM_DRV_ConvertFreqToPeriodTicks -This function is used to covert the given frequency to period in ticks.
+
 Module "Cpu"       (component S32K144_100)
    - Cpu_SystemInit -This function disables the watchdog, enables FPU and the power mode protection. SystemInit is called from 
                 startup_device file.

@@ -1,4 +1,5 @@
 "./Generated_Code/pin_mux.o"
+"./Generated_Code/flexTimer1.o"
 "./Generated_Code/clockMan1.o"
 "./Generated_Code/Cpu.o"
 "./Project_Settings/Startup_Code/startup_S32K144.o"
@@ -6,8 +7,10 @@
 "./SDK/platform/devices/startup.o"
 "./SDK/platform/drivers/src/clock/S32K144/clock_S32K144.o"
 "./SDK/platform/drivers/src/clock/clock_manager.o"
+"./SDK/platform/drivers/src/ftm/ftm_driver.o"
 "./SDK/platform/drivers/src/interrupt/interrupt_manager.o"
 "./SDK/platform/drivers/src/pins/pins_driver.o"
+"./SDK/platform/hal/src/ftm/ftm_hal.o"
 "./SDK/platform/hal/src/pcc/pcc_hal.o"
 "./SDK/platform/hal/src/pmc/pmc_hal.o"
 "./SDK/platform/hal/src/port/port_hal.o"
@@ -29,7 +32,7 @@
 "./Sources/can_driver.o"
 "./Sources/ADC.o"
 -T
-"C:/BoschProject/SECA_workspace/S32K144_FreeRTOS/Project_Settings/Linker_Files/S32K144_64_flash.ld"
+"D:/Desktop/S32K144_FreeRTOS/S32K144_FreeRTOS/Project_Settings/Linker_Files/S32K144_64_flash.ld"
 -Wl,-Map,"S32K144_FreeRTOS.map"
 -Xlinker
 --gc-sections
@@ -39,4 +42,4 @@
 -mfpu=fpv4-sp-d16
 -specs=nano.specs
 -specs=nosys.specs
---sysroot="C:/nxp/S32DS_ARM_v1.3/Cross_Tools/gcc-arm-none-eabi-4_9/arm-none-eabi/newlib"
+--sysroot="C:/NXP/S32DS_ARM_v1.3/Cross_Tools/gcc-arm-none-eabi-4_9/arm-none-eabi/newlib"

@@ -2,7 +2,7 @@
 <GenerationInfo_G_C>
   <Options>
     <ProjectName>S32K144_FreeRTOS</ProjectName>
-    <ProjectDirectory>E:\S32\workspaceS32DS.ARM\S32K144_FreeRTOS\</ProjectDirectory>
+    <ProjectDirectory>D:\Desktop\S32K144_FreeRTOS\S32K144_FreeRTOS\</ProjectDirectory>
     <ProjectMainModuleName>main</ProjectMainModuleName>
     <DestEventsDirectory>Sources\</DestEventsDirectory>
     <DestDriversSubDirectory>..\Generated_Code\</DestDriversSubDirectory>
@@ -17,11 +17,11 @@
       <GenExtraFiles lines_count="1">
         <Line>Generated_Code\FreeRTOSConfig.h</Line>
       </GenExtraFiles>
-      <XtraAge0>1316979029</XtraAge0>
+      <XtraAge0>1316981078</XtraAge0>
       <GenExtraFileType0>4</GenExtraFileType0>
       <GenLinkedFiles lines_count="0" />
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\drivers\src\interrupt\interrupt_manager.c</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\drivers\src\interrupt\interrupt_manager.c</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\drivers\src\interrupt\interrupt_manager.c</PrjFileName>
@@ -30,7 +30,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\drivers\inc\interrupt_manager.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\drivers\inc\interrupt_manager.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\drivers\inc\interrupt_manager.h</PrjFileName>
@@ -39,7 +39,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\hal\inc\sim_hal.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\hal\inc\sim_hal.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\hal\inc\sim_hal.h</PrjFileName>
@@ -48,7 +48,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\hal\src\sim\S32K144\sim_hal_S32K144.c</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\hal\src\sim\S32K144\sim_hal_S32K144.c</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\hal\src\sim\S32K144\sim_hal_S32K144.c</PrjFileName>
@@ -57,7 +57,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\hal\src\sim\S32K144\sim_hal_S32K144.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\hal\src\sim\S32K144\sim_hal_S32K144.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\hal\src\sim\S32K144\sim_hal_S32K144.h</PrjFileName>
@@ -66,7 +66,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\hal\src\scg\scg_hal.c</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\hal\src\scg\scg_hal.c</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\hal\src\scg\scg_hal.c</PrjFileName>
@@ -75,7 +75,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\hal\inc\scg_hal.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\hal\inc\scg_hal.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\hal\inc\scg_hal.h</PrjFileName>
@@ -84,7 +84,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\hal\src\pcc\pcc_hal.c</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\hal\src\pcc\pcc_hal.c</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\hal\src\pcc\pcc_hal.c</PrjFileName>
@@ -93,7 +93,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\hal\inc\pcc_hal.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\hal\inc\pcc_hal.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\hal\inc\pcc_hal.h</PrjFileName>
@@ -102,7 +102,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\hal\src\pmc\pmc_hal.c</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\hal\src\pmc\pmc_hal.c</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\hal\src\pmc\pmc_hal.c</PrjFileName>
@@ -111,7 +111,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\hal\inc\pmc_hal.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\hal\inc\pmc_hal.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\hal\inc\pmc_hal.h</PrjFileName>
@@ -120,7 +120,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\hal\src\smc\smc_hal.c</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\hal\src\smc\smc_hal.c</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\hal\src\smc\smc_hal.c</PrjFileName>
@@ -129,7 +129,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\hal\inc\smc_hal.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\hal\inc\smc_hal.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\hal\inc\smc_hal.h</PrjFileName>
@@ -138,7 +138,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\drivers\src\clock\clock_manager.c</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\drivers\src\clock\clock_manager.c</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\drivers\src\clock\clock_manager.c</PrjFileName>
@@ -147,7 +147,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\drivers\src\clock\S32K144\clock_S32K144.c</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\drivers\src\clock\S32K144\clock_S32K144.c</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\drivers\src\clock\S32K144\clock_S32K144.c</PrjFileName>
@@ -156,7 +156,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\drivers\src\clock\S32K144\clock_S32K144.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\drivers\src\clock\S32K144\clock_S32K144.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\drivers\src\clock\S32K144\clock_S32K144.h</PrjFileName>
@@ -165,7 +165,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\drivers\inc\clock_manager.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\drivers\inc\clock_manager.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\drivers\inc\clock_manager.h</PrjFileName>
@@ -174,7 +174,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\hal\src\port\port_hal.c</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\hal\src\port\port_hal.c</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\hal\src\port\port_hal.c</PrjFileName>
@@ -183,7 +183,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\hal\inc\port_hal.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\hal\inc\port_hal.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\hal\inc\port_hal.h</PrjFileName>
@@ -192,7 +192,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\hal\inc\gpio_hal.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\hal\inc\gpio_hal.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\hal\inc\gpio_hal.h</PrjFileName>
@@ -201,7 +201,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\drivers\inc\pins_driver.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\drivers\inc\pins_driver.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\drivers\inc\pins_driver.h</PrjFileName>
@@ -210,7 +210,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\drivers\src\pins\pins_driver.c</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\drivers\src\pins\pins_driver.c</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\drivers\src\pins\pins_driver.c</PrjFileName>
@@ -219,7 +219,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\croutine.c</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\croutine.c</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\rtos\FreeRTOS_S32K\Source\croutine.c</PrjFileName>
@@ -228,7 +228,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\event_groups.c</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\event_groups.c</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\rtos\FreeRTOS_S32K\Source\event_groups.c</PrjFileName>
@@ -237,7 +237,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\list.c</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\list.c</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\rtos\FreeRTOS_S32K\Source\list.c</PrjFileName>
@@ -246,7 +246,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\queue.c</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\queue.c</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\rtos\FreeRTOS_S32K\Source\queue.c</PrjFileName>
@@ -255,7 +255,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\tasks.c</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\tasks.c</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\rtos\FreeRTOS_S32K\Source\tasks.c</PrjFileName>
@@ -264,7 +264,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\timers.c</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\timers.c</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\rtos\FreeRTOS_S32K\Source\timers.c</PrjFileName>
@@ -273,7 +273,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\portable\GCC\ARM_CM4F\port.c</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\portable\GCC\ARM_CM4F\port.c</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\rtos\FreeRTOS_S32K\Source\portable\GCC\ARM_CM4F\port.c</PrjFileName>
@@ -282,7 +282,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\portable\MemMang\heap_2.c</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\portable\MemMang\heap_2.c</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\rtos\FreeRTOS_S32K\Source\portable\MemMang\heap_2.c</PrjFileName>
@@ -291,7 +291,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\include\croutine.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\include\croutine.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\rtos\FreeRTOS_S32K\Source\include\croutine.h</PrjFileName>
@@ -300,7 +300,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\include\deprecated_definitions.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\include\deprecated_definitions.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\rtos\FreeRTOS_S32K\Source\include\deprecated_definitions.h</PrjFileName>
@@ -309,7 +309,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\include\event_groups.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\include\event_groups.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\rtos\FreeRTOS_S32K\Source\include\event_groups.h</PrjFileName>
@@ -318,7 +318,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\include\FreeRTOS.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\include\FreeRTOS.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\rtos\FreeRTOS_S32K\Source\include\FreeRTOS.h</PrjFileName>
@@ -327,7 +327,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\include\list.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\include\list.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\rtos\FreeRTOS_S32K\Source\include\list.h</PrjFileName>
@@ -336,7 +336,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\include\mpu_wrappers.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\include\mpu_wrappers.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\rtos\FreeRTOS_S32K\Source\include\mpu_wrappers.h</PrjFileName>
@@ -345,7 +345,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\include\portable.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\include\portable.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\rtos\FreeRTOS_S32K\Source\include\portable.h</PrjFileName>
@@ -354,7 +354,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\include\projdefs.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\include\projdefs.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\rtos\FreeRTOS_S32K\Source\include\projdefs.h</PrjFileName>
@@ -363,7 +363,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\include\queue.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\include\queue.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\rtos\FreeRTOS_S32K\Source\include\queue.h</PrjFileName>
@@ -372,7 +372,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\include\semphr.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\include\semphr.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\rtos\FreeRTOS_S32K\Source\include\semphr.h</PrjFileName>
@@ -381,7 +381,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\include\StackMacros.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\include\StackMacros.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\rtos\FreeRTOS_S32K\Source\include\StackMacros.h</PrjFileName>
@@ -390,7 +390,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\include\task.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\include\task.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\rtos\FreeRTOS_S32K\Source\include\task.h</PrjFileName>
@@ -399,7 +399,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\include\timers.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\include\timers.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\rtos\FreeRTOS_S32K\Source\include\timers.h</PrjFileName>
@@ -408,7 +408,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\portable\GCC\ARM_CM4F\portmacro.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\rtos\FreeRTOS_S32K\Source\portable\GCC\ARM_CM4F\portmacro.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\rtos\FreeRTOS_S32K\Source\portable\GCC\ARM_CM4F\portmacro.h</PrjFileName>
@@ -417,7 +417,43 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\devices\devassert.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\hal\src\ftm\ftm_hal.c</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\hal\src\ftm\ftm_hal.c</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\hal\inc\ftm_hal.h</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\hal\inc\ftm_hal.h</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\drivers\src\ftm\ftm_driver.c</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\drivers\src\ftm\ftm_driver.c</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\drivers\inc\ftm_driver.h</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\drivers\inc\ftm_driver.h</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\devices\devassert.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\devices\devassert.h</PrjFileName>
@@ -426,7 +462,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\devices\status.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\devices\status.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\devices\status.h</PrjFileName>
@@ -435,7 +471,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\devices\device_registers.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\devices\device_registers.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\devices\device_registers.h</PrjFileName>
@@ -444,7 +480,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\devices\common\s32_core_cm4.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\devices\common\s32_core_cm4.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\devices\common\s32_core_cm4.h</PrjFileName>
@@ -453,7 +489,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\devices\startup.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\devices\startup.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\devices\startup.h</PrjFileName>
@@ -462,7 +498,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\devices\startup.c</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\devices\startup.c</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\devices\startup.c</PrjFileName>
@@ -471,7 +507,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\devices\S32K144\startup\system_S32K144.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\devices\S32K144\startup\system_S32K144.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\devices\S32K144\startup\system_S32K144.h</PrjFileName>
@@ -480,7 +516,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\devices\S32K144\startup\system_S32K144.c</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\devices\S32K144\startup\system_S32K144.c</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\devices\S32K144\startup\system_S32K144.c</PrjFileName>
@@ -489,7 +525,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\devices\S32K144\include\S32K144_features.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\devices\S32K144\include\S32K144_features.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\devices\S32K144\include\S32K144_features.h</PrjFileName>
@@ -498,7 +534,7 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
-        <SrcFileName>E:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\devices\S32K144\include\S32K144.h</SrcFileName>
+        <SrcFileName>C:\NXP\S32DS_ARM_v1.3\eclipse\ProcessorExpert\..\..\S32DS\S32SDK_S32K144_RTM_1.0.0\platform\devices\S32K144\include\S32K144.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
         <PrjFileName>SDK\platform\devices\S32K144\include\S32K144.h</PrjFileName>
@@ -512,23 +548,25 @@
       <GenMethodsInEvents lines_count="1">
         <Line>FreeRTOS_vApplicationStackOverflowHook</Line>
       </GenMethodsInEvents>
-      <GenAllModules lines_count="5">
+      <GenAllModules lines_count="6">
         <Line>clockMan1</Line>
         <Line>Cpu</Line>
         <Line>Events</Line>
+        <Line>flexTimer1</Line>
         <Line>FreeRTOS</Line>
         <Line>pin_mux</Line>
       </GenAllModules>
       <GenExternModules lines_count="0" />
-      <GenBeanModules lines_count="3">
+      <GenBeanModules lines_count="4">
         <Line>pin_mux</Line>
         <Line>clockMan1</Line>
         <Line>FreeRTOS</Line>
+        <Line>flexTimer1</Line>
       </GenBeanModules>
     </GenFiles>
     <SignalListFile />
     <DestinationCompiler>GNUC</DestinationCompiler>
-    <ProjectModificationStamp>2</ProjectModificationStamp>
+    <ProjectModificationStamp>10</ProjectModificationStamp>
   </Options>
   <CpuID_1>
     <Generated>true</Generated>
@@ -536,8 +574,8 @@
     <GenComponentVersion>01.197</GenComponentVersion>
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule>Events</GenEventModule>
-    <HeaderAge>1316978953</HeaderAge>
-    <CodeAge>1316978953</CodeAge>
+    <HeaderAge>1318167690</HeaderAge>
+    <CodeAge>1318167690</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>3</GenNumMethods>
     <SystemInit>true</SystemInit>
@@ -568,8 +606,8 @@
     <GenComponentVersion>1.2.0</GenComponentVersion>
     <GenDriverVersion>1.4</GenDriverVersion>
     <GenEventModule />
-    <HeaderAge>1316978953</HeaderAge>
-    <CodeAge>1316978953</CodeAge>
+    <HeaderAge>1318167827</HeaderAge>
+    <CodeAge>1318167827</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>1</GenNumMethods>
     <PINS_DRV_Init>true</PINS_DRV_Init>
@@ -653,8 +691,8 @@
     <GenComponentVersion>SDK_S32K144_04</GenComponentVersion>
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule />
-    <HeaderAge>1316978953</HeaderAge>
-    <CodeAge>1316978953</CodeAge>
+    <HeaderAge>1318167690</HeaderAge>
+    <CodeAge>1318167690</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>10</GenNumMethods>
     <CLOCK_SYS_SetScgConfiguration>true</CLOCK_SYS_SetScgConfiguration>
@@ -1101,6 +1139,223 @@
     <ExtraFile21>SDK\rtos\FreeRTOS_S32K\Source\event_groups.c</ExtraFile21>
     <ExtraFile22>SDK\rtos\FreeRTOS_S32K\Source\croutine.c</ExtraFile22>
   </ComponentID_12>
+  <ComponentID_13>
+    <Generated>true</Generated>
+    <GenCompName>flexTimer1</GenCompName>
+    <GenComponentVersion>SDK_S32K144_04</GenComponentVersion>
+    <GenDriverVersion>01.00</GenDriverVersion>
+    <GenEventModule />
+    <HeaderAge>1318167690</HeaderAge>
+    <CodeAge>1318168162</CodeAge>
+    <AsemblAge>-1</AsemblAge>
+    <GenNumMethods>30</GenNumMethods>
+    <FTM_DRV_Init>true</FTM_DRV_Init>
+    <FTM_DRV_Deinit>true</FTM_DRV_Deinit>
+    <FTM_DRV_InitCounter>true</FTM_DRV_InitCounter>
+    <FTM_DRV_CounterStart>true</FTM_DRV_CounterStart>
+    <FTM_DRV_CounterStop>true</FTM_DRV_CounterStop>
+    <FTM_DRV_CounterRead>true</FTM_DRV_CounterRead>
+    <FTM_DRV_DeinitPwm>true</FTM_DRV_DeinitPwm>
+    <FTM_DRV_InitPwm>true</FTM_DRV_InitPwm>
+    <FTM_DRV_UpdatePwmChannel>true</FTM_DRV_UpdatePwmChannel>
+    <FTM_DRV_UpdatePwmPeriod>true</FTM_DRV_UpdatePwmPeriod>
+    <FTM_DRV_MaskOutputChannels>true</FTM_DRV_MaskOutputChannels>
+    <FTM_DRV_SetInitialCounterValue>true</FTM_DRV_SetInitialCounterValue>
+    <FTM_DRV_SetHalfCycleReloadPoint>true</FTM_DRV_SetHalfCycleReloadPoint>
+    <FTM_DRV_SetSoftOutChnValue>true</FTM_DRV_SetSoftOutChnValue>
+    <FTM_DRV_SetSoftwareOutputChannelControl>true</FTM_DRV_SetSoftwareOutputChannelControl>
+    <FTM_DRV_SetInvertingControl>true</FTM_DRV_SetInvertingControl>
+    <FTM_DRV_SetModuloCounterValue>true</FTM_DRV_SetModuloCounterValue>
+    <FTM_DRV_SetSync>true</FTM_DRV_SetSync>
+    <FTM_DRV_InitOutputCompare>true</FTM_DRV_InitOutputCompare>
+    <FTM_DRV_DeinitOutputCompare>true</FTM_DRV_DeinitOutputCompare>
+    <FTM_DRV_UpdateOutputCompareChannel>true</FTM_DRV_UpdateOutputCompareChannel>
+    <FTM_DRV_InitInputCapture>true</FTM_DRV_InitInputCapture>
+    <FTM_DRV_DeinitInputCapture>true</FTM_DRV_DeinitInputCapture>
+    <FTM_DRV_GetInputCaptureMeasurement>true</FTM_DRV_GetInputCaptureMeasurement>
+    <FTM_DRV_StartNewSignalMeasurement>true</FTM_DRV_StartNewSignalMeasurement>
+    <FTM_DRV_QuadDecodeStart>true</FTM_DRV_QuadDecodeStart>
+    <FTM_DRV_QuadDecodeStop>true</FTM_DRV_QuadDecodeStop>
+    <FTM_DRV_QuadGetState>true</FTM_DRV_QuadGetState>
+    <FTM_DRV_GetFrequency>true</FTM_DRV_GetFrequency>
+    <FTM_DRV_ConvertFreqToPeriodTicks>true</FTM_DRV_ConvertFreqToPeriodTicks>
+    <GenNumEvents>0</GenNumEvents>
+    <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
+    <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
+    <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
+    <GenMethodPos>1</GenMethodPos>
+    <MethodPos>
+      <MethodPos0>IrqHandler</MethodPos0>
+      <MethodType>method</MethodType>
+      <ModuleType>Code</ModuleType>
+      <LineBeg>146</LineBeg>
+      <LineEnd>146</LineEnd>
+    </MethodPos>
+    <GenExtraFilesCount>2</GenExtraFilesCount>
+    <ExtraFile0>SDK\platform\drivers\inc\ftm_driver.h</ExtraFile0>
+    <ExtraFile1>SDK\platform\drivers\src\ftm\ftm_driver.c</ExtraFile1>
+    <InhrCompID_14>
+      <Generated>true</Generated>
+      <GenCompName>ftm_hal1</GenCompName>
+      <GenComponentVersion>SDK_S32K144_04</GenComponentVersion>
+      <GenDriverVersion>01.00</GenDriverVersion>
+      <GenEventModule />
+      <HeaderAge>-1</HeaderAge>
+      <CodeAge>-1</CodeAge>
+      <AsemblAge>-1</AsemblAge>
+      <GenNumMethods>142</GenNumMethods>
+      <FTM_HAL_SetHalfCycleValue>true</FTM_HAL_SetHalfCycleValue>
+      <FTM_HAL_SetClockFilterPs>true</FTM_HAL_SetClockFilterPs>
+      <FTM_HAL_GetClockFilterPs>true</FTM_HAL_GetClockFilterPs>
+      <FTM_HAL_SetClockSource>true</FTM_HAL_SetClockSource>
+      <FTM_HAL_GetClockSource>true</FTM_HAL_GetClockSource>
+      <FTM_HAL_SetClockPs>true</FTM_HAL_SetClockPs>
+      <FTM_HAL_GetClockPs>true</FTM_HAL_GetClockPs>
+      <FTM_HAL_SetTimerOverflowInt>true</FTM_HAL_SetTimerOverflowInt>
+      <FTM_HAL_IsOverflowIntEnabled>true</FTM_HAL_IsOverflowIntEnabled>
+      <FTM_HAL_EnablePwmChannelOutputs>true</FTM_HAL_EnablePwmChannelOutputs>
+      <FTM_HAL_DisablePwmChannelOutputs>true</FTM_HAL_DisablePwmChannelOutputs>
+      <FTM_HAL_ClearTimerOverflow>true</FTM_HAL_ClearTimerOverflow>
+      <FTM_HAL_HasTimerOverflowed>true</FTM_HAL_HasTimerOverflowed>
+      <FTM_HAL_SetCpwms>true</FTM_HAL_SetCpwms>
+      <FTM_HAL_GetCpwms>true</FTM_HAL_GetCpwms>
+      <FTM_HAL_SetReIntEnabledCmd>true</FTM_HAL_SetReIntEnabledCmd>
+      <FTM_HAL_GetReloadFlag>true</FTM_HAL_GetReloadFlag>
+      <FTM_HAL_ClearReloadFlag>true</FTM_HAL_ClearReloadFlag>
+      <FTM_HAL_SetCounter>true</FTM_HAL_SetCounter>
+      <FTM_HAL_GetCounter>true</FTM_HAL_GetCounter>
+      <FTM_HAL_SetMod>true</FTM_HAL_SetMod>
+      <FTM_HAL_GetMod>true</FTM_HAL_GetMod>
+      <FTM_HAL_SetCounterInitVal>true</FTM_HAL_SetCounterInitVal>
+      <FTM_HAL_GetCounterInitVal>true</FTM_HAL_GetCounterInitVal>
+      <FTM_HAL_SetChnMSnBAMode>true</FTM_HAL_SetChnMSnBAMode>
+      <FTM_HAL_SetChnEdgeLevel>true</FTM_HAL_SetChnEdgeLevel>
+      <FTM_HAL_ClearChSC>true</FTM_HAL_ClearChSC>
+      <FTM_HAL_GetChnMode>true</FTM_HAL_GetChnMode>
+      <FTM_HAL_GetChnEdgeLevel>true</FTM_HAL_GetChnEdgeLevel>
+      <FTM_HAL_SetChnIcrstCmd>true</FTM_HAL_SetChnIcrstCmd>
+      <FTM_HAL_IsChnIcrst>true</FTM_HAL_IsChnIcrst>
+      <FTM_HAL_SetChnDmaCmd>true</FTM_HAL_SetChnDmaCmd>
+      <FTM_HAL_IsChnDma>true</FTM_HAL_IsChnDma>
+      <FTM_HAL_IsChnIntEnabled>true</FTM_HAL_IsChnIntEnabled>
+      <FTM_HAL_EnableChnInt>true</FTM_HAL_EnableChnInt>
+      <FTM_HAL_DisableChnInt>true</FTM_HAL_DisableChnInt>
+      <FTM_HAL_HasChnEventOccurred>true</FTM_HAL_HasChnEventOccurred>
+      <FTM_HAL_ClearChnEventFlag>true</FTM_HAL_ClearChnEventFlag>
+      <FTM_HAL_SetTrigModeControlCmd>true</FTM_HAL_SetTrigModeControlCmd>
+      <FTM_HAL_GetTriggerControled>true</FTM_HAL_GetTriggerControled>
+      <FTM_HAL_GetChInputState>true</FTM_HAL_GetChInputState>
+      <FTM_HAL_GetChOutputValue>true</FTM_HAL_GetChOutputValue>
+      <FTM_HAL_SetChnCountVal>true</FTM_HAL_SetChnCountVal>
+      <FTM_HAL_GetChnCountVal>true</FTM_HAL_GetChnCountVal>
+      <FTM_HAL_GetChnEventStatus>true</FTM_HAL_GetChnEventStatus>
+      <FTM_HAL_GetEventStatus>true</FTM_HAL_GetEventStatus>
+      <FTM_HAL_ClearChnEventStatus>true</FTM_HAL_ClearChnEventStatus>
+      <FTM_HAL_SetOutmaskReg>true</FTM_HAL_SetOutmaskReg>
+      <FTM_HAL_SetChnOutputMask>true</FTM_HAL_SetChnOutputMask>
+      <FTM_HAL_SetChnOutputInitStateCmd>true</FTM_HAL_SetChnOutputInitStateCmd>
+      <FTM_HAL_SetChnOutputPolarityCmd>true</FTM_HAL_SetChnOutputPolarityCmd>
+      <FTM_HAL_SetChnFaultInputPolarityCmd>true</FTM_HAL_SetChnFaultInputPolarityCmd>
+      <FTM_HAL_SetFaultInt>true</FTM_HAL_SetFaultInt>
+      <FTM_HAL_DisableFaultInt>true</FTM_HAL_DisableFaultInt>
+      <FTM_HAL_IsFaultIntEnabled>true</FTM_HAL_IsFaultIntEnabled>
+      <FTM_HAL_ClearFaultsIsr>true</FTM_HAL_ClearFaultsIsr>
+      <FTM_HAL_SetFaultControlMode>true</FTM_HAL_SetFaultControlMode>
+      <FTM_HAL_SetCaptureTestCmd>true</FTM_HAL_SetCaptureTestCmd>
+      <FTM_HAL_SetWriteProtectionCmd>true</FTM_HAL_SetWriteProtectionCmd>
+      <FTM_HAL_Enable>true</FTM_HAL_Enable>
+      <FTM_HAL_IsFtmEnable>true</FTM_HAL_IsFtmEnable>
+      <FTM_HAL_SetInitChnOutputCmd>true</FTM_HAL_SetInitChnOutputCmd>
+      <FTM_HAL_SetPwmSyncMode>true</FTM_HAL_SetPwmSyncMode>
+      <FTM_HAL_SetSoftwareTriggerCmd>true</FTM_HAL_SetSoftwareTriggerCmd>
+      <FTM_HAL_SetHardwareSyncTriggerSrc>true</FTM_HAL_SetHardwareSyncTriggerSrc>
+      <FTM_HAL_SetOutmaskPwmSyncModeCmd>true</FTM_HAL_SetOutmaskPwmSyncModeCmd>
+      <FTM_HAL_SetCountReinitSyncCmd>true</FTM_HAL_SetCountReinitSyncCmd>
+      <FTM_HAL_SetMaxLoadingCmd>true</FTM_HAL_SetMaxLoadingCmd>
+      <FTM_HAL_SetMinLoadingCmd>true</FTM_HAL_SetMinLoadingCmd>
+      <FTM_HAL_SetDualChnMofCombineCmd>true</FTM_HAL_SetDualChnMofCombineCmd>
+      <FTM_HAL_SetDualChnFaultCmd>true</FTM_HAL_SetDualChnFaultCmd>
+      <FTM_HAL_SetDualChnPwmSyncCmd>true</FTM_HAL_SetDualChnPwmSyncCmd>
+      <FTM_HAL_SetDualChnDeadtimeCmd>true</FTM_HAL_SetDualChnDeadtimeCmd>
+      <FTM_HAL_SetDualChnDecapCmd>true</FTM_HAL_SetDualChnDecapCmd>
+      <FTM_HAL_SetDualEdgeCaptureCmd>true</FTM_HAL_SetDualEdgeCaptureCmd>
+      <FTM_HAL_GetDualEdgeCaptureBit>true</FTM_HAL_GetDualEdgeCaptureBit>
+      <FTM_HAL_SetDualChnCompCmd>true</FTM_HAL_SetDualChnCompCmd>
+      <FTM_HAL_SetDualChnCombineCmd>true</FTM_HAL_SetDualChnCombineCmd>
+      <FTM_HAL_GetDualChnCombineCmd>true</FTM_HAL_GetDualChnCombineCmd>
+      <FTM_HAL_GetDualChnMofCombineCmd>true</FTM_HAL_GetDualChnMofCombineCmd>
+      <FTM_HAL_SetExtDeadtimeValue>true</FTM_HAL_SetExtDeadtimeValue>
+      <FTM_HAL_SetDeadtimePrescale>true</FTM_HAL_SetDeadtimePrescale>
+      <FTM_HAL_SetDeadtimeCount>true</FTM_HAL_SetDeadtimeCount>
+      <FTM_HAL_SetInitTriggerCmd>true</FTM_HAL_SetInitTriggerCmd>
+      <FTM_HAL_IsChnTriggerGenerated>true</FTM_HAL_IsChnTriggerGenerated>
+      <FTM_HAL_ClearChnTriggerFlag>true</FTM_HAL_ClearChnTriggerFlag>
+      <FTM_HAL_GetDetectedFaultInput>true</FTM_HAL_GetDetectedFaultInput>
+      <FTM_HAL_IsWriteProtectionEnabled>true</FTM_HAL_IsWriteProtectionEnabled>
+      <FTM_HAL_IsFaultInputEnabled>true</FTM_HAL_IsFaultInputEnabled>
+      <FTM_HAL_IsFaultFlagDetected>true</FTM_HAL_IsFaultFlagDetected>
+      <FTM_HAL_ClearFaultFlagDetected>true</FTM_HAL_ClearFaultFlagDetected>
+      <FTM_HAL_SetQuadDecoderCmd>true</FTM_HAL_SetQuadDecoderCmd>
+      <FTM_HAL_SetQuadPhaseAFilterCmd>true</FTM_HAL_SetQuadPhaseAFilterCmd>
+      <FTM_HAL_SetQuadPhaseBFilterCmd>true</FTM_HAL_SetQuadPhaseBFilterCmd>
+      <FTM_HAL_SetQuadPhaseAPolarity>true</FTM_HAL_SetQuadPhaseAPolarity>
+      <FTM_HAL_SetQuadPhaseBPolarity>true</FTM_HAL_SetQuadPhaseBPolarity>
+      <FTM_HAL_SetQuadMode>true</FTM_HAL_SetQuadMode>
+      <FTM_HAL_GetQuadDir>true</FTM_HAL_GetQuadDir>
+      <FTM_HAL_GetQuadTimerOverflowDir>true</FTM_HAL_GetQuadTimerOverflowDir>
+      <FTM_HAL_SetFaultInputFilterVal>true</FTM_HAL_SetFaultInputFilterVal>
+      <FTM_HAL_SetFaultInputFilterCmd>true</FTM_HAL_SetFaultInputFilterCmd>
+      <FTM_HAL_ClearFaultControl>true</FTM_HAL_ClearFaultControl>
+      <FTM_HAL_SetFaultInputCmd>true</FTM_HAL_SetFaultInputCmd>
+      <FTM_HAL_SetPwmFaultBehavior>true</FTM_HAL_SetPwmFaultBehavior>
+      <FTM_HAL_SetDualChnInvertCmd>true</FTM_HAL_SetDualChnInvertCmd>
+      <FTM_HAL_SetInvctrlReg>true</FTM_HAL_SetInvctrlReg>
+      <FTM_HAL_SetChnSoftwareCtrlCmd>true</FTM_HAL_SetChnSoftwareCtrlCmd>
+      <FTM_HAL_SetAllChnSoftwareCtrlCmd>true</FTM_HAL_SetAllChnSoftwareCtrlCmd>
+      <FTM_HAL_SetChnSoftwareCtrlVal>true</FTM_HAL_SetChnSoftwareCtrlVal>
+      <FTM_HAL_SetAllChnSoftwareCtrlVal>true</FTM_HAL_SetAllChnSoftwareCtrlVal>
+      <FTM_HAL_SetGlobalLoadCmd>true</FTM_HAL_SetGlobalLoadCmd>
+      <FTM_HAL_SetLoadCmd>true</FTM_HAL_SetLoadCmd>
+      <FTM_HAL_SetHalfCycleCmd>true</FTM_HAL_SetHalfCycleCmd>
+      <FTM_HAL_SetPwmLoadCmd>true</FTM_HAL_SetPwmLoadCmd>
+      <FTM_HAL_SetPwmLoadChnSelCmd>true</FTM_HAL_SetPwmLoadChnSelCmd>
+      <FTM_HAL_SetInitTrigOnReloadCmd>true</FTM_HAL_SetInitTrigOnReloadCmd>
+      <FTM_HAL_SetGlobalTimeBaseOutputCmd>true</FTM_HAL_SetGlobalTimeBaseOutputCmd>
+      <FTM_HAL_SetGlobalTimeBaseCmd>true</FTM_HAL_SetGlobalTimeBaseCmd>
+      <FTM_HAL_SetBdmMode>true</FTM_HAL_SetBdmMode>
+      <FTM_HAL_SetLoadFreq>true</FTM_HAL_SetLoadFreq>
+      <FTM_HAL_SetSwoctrlHardwareSyncModeCmd>true</FTM_HAL_SetSwoctrlHardwareSyncModeCmd>
+      <FTM_HAL_SetInvctrlHardwareSyncModeCmd>true</FTM_HAL_SetInvctrlHardwareSyncModeCmd>
+      <FTM_HAL_SetOutmaskHardwareSyncModeCmd>true</FTM_HAL_SetOutmaskHardwareSyncModeCmd>
+      <FTM_HAL_SetModCntinCvHardwareSyncModeCmd>true</FTM_HAL_SetModCntinCvHardwareSyncModeCmd>
+      <FTM_HAL_SetCounterHardwareSyncModeCmd>true</FTM_HAL_SetCounterHardwareSyncModeCmd>
+      <FTM_HAL_SetSwoctrlSoftwareSyncModeCmd>true</FTM_HAL_SetSwoctrlSoftwareSyncModeCmd>
+      <FTM_HAL_SetInvctrlSoftwareSyncModeCmd>true</FTM_HAL_SetInvctrlSoftwareSyncModeCmd>
+      <FTM_HAL_SetOutmaskSoftwareSyncModeCmd>true</FTM_HAL_SetOutmaskSoftwareSyncModeCmd>
+      <FTM_HAL_SetModCntinCvSoftwareSyncModeCmd>true</FTM_HAL_SetModCntinCvSoftwareSyncModeCmd>
+      <FTM_HAL_SetHwTriggerSyncModeCmd>true</FTM_HAL_SetHwTriggerSyncModeCmd>
+      <FTM_HAL_SetCounterSoftwareSyncModeCmd>true</FTM_HAL_SetCounterSoftwareSyncModeCmd>
+      <FTM_HAL_SetPwmSyncModeCmd>true</FTM_HAL_SetPwmSyncModeCmd>
+      <FTM_HAL_SetSwoctrlPwmSyncModeCmd>true</FTM_HAL_SetSwoctrlPwmSyncModeCmd>
+      <FTM_HAL_SetInvctrlPwmSyncModeCmd>true</FTM_HAL_SetInvctrlPwmSyncModeCmd>
+      <FTM_HAL_SetCntinPwmSyncModeCmd>true</FTM_HAL_SetCntinPwmSyncModeCmd>
+      <FTM_HAL_Reset>true</FTM_HAL_Reset>
+      <FTM_HAL_Init>true</FTM_HAL_Init>
+      <FTM_HAL_SetChnTriggerCmd>true</FTM_HAL_SetChnTriggerCmd>
+      <FTM_HAL_SetChnInputCaptureFilter>true</FTM_HAL_SetChnInputCaptureFilter>
+      <FTM_HAL_SetExtPairDeadtimeValue>true</FTM_HAL_SetExtPairDeadtimeValue>
+      <FTM_HAL_SetPairDeadtimePrescale>true</FTM_HAL_SetPairDeadtimePrescale>
+      <FTM_HAL_SetPairDeadtimeCount>true</FTM_HAL_SetPairDeadtimeCount>
+      <GenNumEvents>0</GenNumEvents>
+      <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
+      <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
+      <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
+      <GenMethodPos>0</GenMethodPos>
+      <GenExtraFilesCount>2</GenExtraFilesCount>
+      <ExtraFile0>SDK\platform\hal\inc\ftm_hal.h</ExtraFile0>
+      <ExtraFile1>SDK\platform\hal\src\ftm\ftm_hal.c</ExtraFile1>
+    </InhrCompID_14>
+  </ComponentID_13>
   <UsedSrcFiles>
     <SrcFile0>Drivers\interrupt_manager.src=-1</SrcFile0>
     <SrcFile1>Drivers\S32K\S32K144_SDK01\port_hal.drv=1250267652</SrcFile1>
@@ -1110,51 +1365,56 @@
     <SrcFile5>Drivers\Common\S32KSettings.inc=1250267651</SrcFile5>
     <SrcFile6>Drivers\S32K\PinSettings_S32K144_100.prg=-1</SrcFile6>
     <SrcFile7>Drivers\S32K\S32K144_SDK01\clock_manager_code.drv=-1</SrcFile7>
-    <SrcFile8>Drivers\Common\HeaderFreescale.C=1250267651</SrcFile8>
-    <SrcFile9>Drivers\S32K\S32K144_SDK01\gpio_hal.drv=-1</SrcFile9>
-    <SrcFile10>Drivers\Common\RTOSAdaptor.prg=1250267651</SrcFile10>
-    <SrcFile11>Drivers\S32K\S32K144_SDK01\HAL_Port_Bridge.prg=1250267652</SrcFile11>
-    <SrcFile12>Drivers\sw\PinSettings.drv=-1</SrcFile12>
-    <SrcFile13>Drivers\Common\Header.doxy=1316601392</SrcFile13>
-    <SrcFile14>Drivers\S32K\S32K144_SDK01\pmc_hal.drv=-1</SrcFile14>
-    <SrcFile15>Drivers\Common\GenInitConfigSequence.prg=1250267651</SrcFile15>
-    <SrcFile16>Drivers\S32K\S32K144_SDK01\StaticSdk_S32K.prg=1250267652</SrcFile16>
-    <SrcFile17>Drivers\PinSettings.src=-1</SrcFile17>
-    <SrcFile18>Drivers\Common\PinSettingsAbstract.inc=-1</SrcFile18>
-    <SrcFile19>Drivers\S32K\HAL_Port_Bridge_V2.prg=1250267652</SrcFile19>
-    <SrcFile20>Drivers\smc_hal.src=-1</SrcFile20>
-    <SrcFile21>Drivers\Common\InitReg32Block.prg=1250267651</SrcFile21>
-    <SrcFile22>Drivers\S32K\S32K144_SDK01\sim_hal.drv=-1</SrcFile22>
-    <SrcFile23>Drivers\S32K\StaticSdk_S32K_V4.drv=1250267652</SrcFile23>
-    <SrcFile24>Drivers\Common\ToolChain_Settings.prg=1250267651</SrcFile24>
-    <SrcFile25>Drivers\S32K\S32K144_SDK01\FreeRTOS.drv=-1</SrcFile25>
-    <SrcFile26>Drivers\Common\HeaderFreescale.h=1250267651</SrcFile26>
-    <SrcFile27>Drivers\sim_hal.src=-1</SrcFile27>
-    <SrcFile28>Drivers\Common\EBGNSupport\TimingLib.prg=1250267652</SrcFile28>
-    <SrcFile29>Drivers\S32K\S32K144_SDK01\scg_hal.drv=-1</SrcFile29>
-    <SrcFile30>Drivers\FreeRTOS.src=-1</SrcFile30>
-    <SrcFile31>Drivers\Common\Header.h=1250267651</SrcFile31>
-    <SrcFile32>Drivers\sw\RTOSAdaptor\Common_RTOSAdaptor.prg=1316601392</SrcFile32>
-    <SrcFile33>Drivers\scg_hal.src=-1</SrcFile33>
-    <SrcFile34>Drivers\S32K\S32K144_SDK01\pcc_hal.drv=-1</SrcFile34>
-    <SrcFile35>Drivers\Common\Header.c=1250267651</SrcFile35>
-    <SrcFile36>Drivers\S32K\S32K144_SDK01\_FreeRTOS.drv=-1</SrcFile36>
-    <SrcFile37>Drivers\sw\RTOSAdaptor\Default_RTOSAdaptor.prg=1316601392</SrcFile37>
-    <SrcFile38>Drivers\pcc_hal.src=-1</SrcFile38>
-    <SrcFile39>Drivers\Common\WriteBlock_NotRst.prg=1250267651</SrcFile39>
-    <SrcFile40>Drivers\S32K\S32K144_SDK01\interrupt_manager.drv=1250267652</SrcFile40>
-    <SrcFile41>Drivers\gpio_hal.src=-1</SrcFile41>
-    <SrcFile42>Drivers\Common\InitRegBlock.prg=1250267651</SrcFile42>
-    <SrcFile43>Drivers\S32K\S32K144_SDK01\smc_hal.drv=-1</SrcFile43>
-    <SrcFile44>Drivers\PEx_S32K.src=1250267651</SrcFile44>
-    <SrcFile45>Drivers\Common\Static_SupportSubroutines.prg=1250267651</SrcFile45>
-    <SrcFile46>Drivers\port_hal.src=-1</SrcFile46>
-    <SrcFile47>Drivers\Common\S32KAbstract.inc=1250267651</SrcFile47>
-    <SrcFile48>Drivers\S32K\S32K144_SDK01\clock_manager.drv=-1</SrcFile48>
-    <SrcFile49>Drivers\Common\HeaderCopyright.inc=1250267651</SrcFile49>
-    <SrcFile50>Drivers\S32K\StaticSdk_S32K.drv=1250267652</SrcFile50>
-    <SrcFile51>Drivers\clock_manager.src=-1</SrcFile51>
-    <SrcFile52>Drivers\Common\Header.end=1250267651</SrcFile52>
+    <SrcFile8>Drivers\S32K\S32K144_SDK01\ftm_code.drv=-1</SrcFile8>
+    <SrcFile9>Drivers\Common\HeaderFreescale.C=1250267651</SrcFile9>
+    <SrcFile10>Drivers\S32K\S32K144_SDK01\gpio_hal.drv=-1</SrcFile10>
+    <SrcFile11>Drivers\Common\RTOSAdaptor.prg=1250267651</SrcFile11>
+    <SrcFile12>Drivers\S32K\S32K144_SDK01\HAL_Port_Bridge.prg=1250267652</SrcFile12>
+    <SrcFile13>Drivers\sw\PinSettings.drv=-1</SrcFile13>
+    <SrcFile14>Drivers\Common\Header.doxy=1316980075</SrcFile14>
+    <SrcFile15>Drivers\S32K\S32K144_SDK01\pmc_hal.drv=-1</SrcFile15>
+    <SrcFile16>Drivers\Common\GenInitConfigSequence.prg=1250267651</SrcFile16>
+    <SrcFile17>Drivers\S32K\S32K144_SDK01\StaticSdk_S32K.prg=1250267652</SrcFile17>
+    <SrcFile18>Drivers\PinSettings.src=-1</SrcFile18>
+    <SrcFile19>Drivers\Common\PinSettingsAbstract.inc=-1</SrcFile19>
+    <SrcFile20>Drivers\S32K\HAL_Port_Bridge_V2.prg=1250267652</SrcFile20>
+    <SrcFile21>Drivers\ftm_hal.src=-1</SrcFile21>
+    <SrcFile22>Drivers\smc_hal.src=-1</SrcFile22>
+    <SrcFile23>Drivers\Common\InitReg32Block.prg=1250267651</SrcFile23>
+    <SrcFile24>Drivers\S32K\S32K144_SDK01\sim_hal.drv=-1</SrcFile24>
+    <SrcFile25>Drivers\S32K\StaticSdk_S32K_V4.drv=1250267652</SrcFile25>
+    <SrcFile26>Drivers\Common\ToolChain_Settings.prg=1250267651</SrcFile26>
+    <SrcFile27>Drivers\ftm.src=-1</SrcFile27>
+    <SrcFile28>Drivers\S32K\S32K144_SDK01\FreeRTOS.drv=-1</SrcFile28>
+    <SrcFile29>Drivers\S32K\S32K144_SDK01\ftm.drv=-1</SrcFile29>
+    <SrcFile30>Drivers\Common\HeaderFreescale.h=1250267651</SrcFile30>
+    <SrcFile31>Drivers\sim_hal.src=-1</SrcFile31>
+    <SrcFile32>Drivers\Common\EBGNSupport\TimingLib.prg=1250267652</SrcFile32>
+    <SrcFile33>Drivers\S32K\S32K144_SDK01\ftm_hal.drv=-1</SrcFile33>
+    <SrcFile34>Drivers\S32K\S32K144_SDK01\scg_hal.drv=-1</SrcFile34>
+    <SrcFile35>Drivers\FreeRTOS.src=-1</SrcFile35>
+    <SrcFile36>Drivers\Common\Header.h=1250267651</SrcFile36>
+    <SrcFile37>Drivers\sw\RTOSAdaptor\Common_RTOSAdaptor.prg=1316980075</SrcFile37>
+    <SrcFile38>Drivers\scg_hal.src=-1</SrcFile38>
+    <SrcFile39>Drivers\S32K\S32K144_SDK01\pcc_hal.drv=-1</SrcFile39>
+    <SrcFile40>Drivers\Common\Header.c=1250267651</SrcFile40>
+    <SrcFile41>Drivers\S32K\S32K144_SDK01\_FreeRTOS.drv=-1</SrcFile41>
+    <SrcFile42>Drivers\sw\RTOSAdaptor\Default_RTOSAdaptor.prg=1316980075</SrcFile42>
+    <SrcFile43>Drivers\pcc_hal.src=-1</SrcFile43>
+    <SrcFile44>Drivers\Common\WriteBlock_NotRst.prg=1250267651</SrcFile44>
+    <SrcFile45>Drivers\S32K\S32K144_SDK01\interrupt_manager.drv=1250267652</SrcFile45>
+    <SrcFile46>Drivers\gpio_hal.src=-1</SrcFile46>
+    <SrcFile47>Drivers\Common\InitRegBlock.prg=1250267651</SrcFile47>
+    <SrcFile48>Drivers\S32K\S32K144_SDK01\smc_hal.drv=-1</SrcFile48>
+    <SrcFile49>Drivers\PEx_S32K.src=1250267651</SrcFile49>
+    <SrcFile50>Drivers\Common\Static_SupportSubroutines.prg=1250267651</SrcFile50>
+    <SrcFile51>Drivers\port_hal.src=-1</SrcFile51>
+    <SrcFile52>Drivers\Common\S32KAbstract.inc=1250267651</SrcFile52>
+    <SrcFile53>Drivers\S32K\S32K144_SDK01\clock_manager.drv=-1</SrcFile53>
+    <SrcFile54>Drivers\Common\HeaderCopyright.inc=1250267651</SrcFile54>
+    <SrcFile55>Drivers\S32K\StaticSdk_S32K.drv=1250267652</SrcFile55>
+    <SrcFile56>Drivers\clock_manager.src=-1</SrcFile56>
+    <SrcFile57>Drivers\Common\Header.end=1250267651</SrcFile57>
   </UsedSrcFiles>
 </GenerationInfo_G_C>
 

@@ -2,7 +2,7 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-#Progress monitor hint: 30
+#Progress monitor hint: 33
 first : all
 -include ../makefile.init
 
@@ -24,8 +24,10 @@ RM := rm -rf
 -include SDK/platform/hal/src/port/subdir.mk
 -include SDK/platform/hal/src/pmc/subdir.mk
 -include SDK/platform/hal/src/pcc/subdir.mk
+-include SDK/platform/hal/src/ftm/subdir.mk
 -include SDK/platform/drivers/src/pins/subdir.mk
 -include SDK/platform/drivers/src/interrupt/subdir.mk
+-include SDK/platform/drivers/src/ftm/subdir.mk
 -include SDK/platform/drivers/src/clock/subdir.mk
 -include SDK/platform/drivers/src/clock/S32K144/subdir.mk
 -include SDK/platform/devices/subdir.mk
@@ -66,16 +68,16 @@ S32K144_FreeRTOS.siz \
 all: warning-messages explicit-dependencies S32K144_FreeRTOS.elf secondary-outputs
 
 # Tool invocations
-S32K144_FreeRTOS.elf: $(OBJS) C:/BoschProject/SECA_workspace/S32K144_FreeRTOS/Project_Settings/Linker_Files/S32K144_64_flash.ld $(USER_OBJS)
+S32K144_FreeRTOS.elf: $(OBJS) D:/Desktop/S32K144_FreeRTOS/S32K144_FreeRTOS/Project_Settings/Linker_Files/S32K144_64_flash.ld $(USER_OBJS)
 	@echo 'Building target: $@'
-	@echo 'Executing target #31 $@'
+	@echo 'Executing target #34 $@'
 	@echo 'Invoking: Standard S32DS C Linker'
 	arm-none-eabi-gcc -o "S32K144_FreeRTOS.elf" "@S32K144_FreeRTOS.args"  $(USER_OBJS_QUOTED) $(LIBS_QUOTED)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 S32K144_FreeRTOS.siz: $(EXECUTABLES)
-	@echo 'Executing target #32 $@'
+	@echo 'Executing target #35 $@'
 	@echo 'Invoking: Standard S32DS Print Size'
 	arm-none-eabi-size --format=berkeley $(EXECUTABLES)
 	@echo 'Finished building: $@'

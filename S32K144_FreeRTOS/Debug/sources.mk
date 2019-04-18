@@ -60,8 +60,10 @@ SDK/platform/hal/src/scg \
 SDK/platform/hal/src/port \
 SDK/platform/hal/src/pmc \
 SDK/platform/hal/src/pcc \
+SDK/platform/hal/src/ftm \
 SDK/platform/drivers/src/pins \
 SDK/platform/drivers/src/interrupt \
+SDK/platform/drivers/src/ftm \
 SDK/platform/drivers/src/clock \
 SDK/platform/drivers/src/clock/S32K144 \
 SDK/platform/devices \

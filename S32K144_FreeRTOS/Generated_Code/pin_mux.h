@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : SDK_S32K144_04
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2019-03-31, 16:08, # CodeGen: 0
+**     Date/Time   : 2019-04-17, 20:40, # CodeGen: 8
 **     Abstract    :
 **
 **     Settings    :
@@ -114,8 +114,8 @@
 **                Custom name                              : FTM0
 **                FTM0                                     : 
 **                  External Clock 0                       : <Automatic>
-**                  Channel 0                              : <Automatic>
-**                  Direction                              : <Automatic>
+**                  Channel 0                              : PTC0
+**                  Direction                              : Output
 **                  Channel 1                              : <Automatic>
 **                  Direction                              : <Automatic>
 **                  Channel 2                              : <Automatic>
@@ -153,8 +153,8 @@
 **                  Direction                              : <Automatic>
 **                  Channel 6                              : <Automatic>
 **                  Direction                              : <Automatic>
-**                  Channel 7                              : <Automatic>
-**                  Direction                              : <Automatic>
+**                  Channel 7                              : PTC1
+**                  Direction                              : Output
 **                  Fault Input 0                          : <Automatic>
 **                  Fault Input 1                          : <Automatic>
 **                  Fault Input 2                          : <Automatic>
