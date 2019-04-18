@@ -27,38 +27,40 @@
       <File Name="SDK/platform/devices/device_registers.h" FileDate="2019-03-31, 17:08:20" FileAge="1554073700000" FileType="1048576" CompNumb="1" />
       <File Name="Generated_Code/FreeRTOSConfig.h" FileDate="2019-03-31, 17:10:44" FileAge="1554073844000" FileType="45637" CompNumb="12" />
       <File Name="SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/port.c" FileDate="2019-03-31, 17:10:44" FileAge="1554073844000" FileType="1048576" CompNumb="12" />
+      <File Name="SDK/platform/hal/src/ftm/ftm_hal.c" FileDate="2019-04-17, 20:36:20" FileAge="1555551380113" FileType="1048576" CompNumb="0" />
       <File Name="SDK/platform/hal/inc/smc_hal.h" FileDate="2019-03-31, 17:08:20" FileAge="1554073700000" FileType="1048576" CompNumb="11" />
       <File Name="SDK/platform/hal/inc/port_hal.h" FileDate="2019-03-31, 17:08:20" FileAge="1554073700000" FileType="1048576" CompNumb="3" />
       <File Name="SDK/rtos/FreeRTOS_S32K/Source/include/event_groups.h" FileDate="2019-03-31, 17:10:44" FileAge="1554073844000" FileType="1048576" CompNumb="12" />
       <File Name="SDK/rtos/FreeRTOS_S32K/Source/include/StackMacros.h" FileDate="2019-03-31, 17:10:44" FileAge="1554073844000" FileType="1048576" CompNumb="12" />
-      <File Name="Documentation/S32K144_FreeRTOS.txt" FileDate="2019-04-17, 21:03:27" FileAge="1555553007739" FileType="3072" />
-      <File Name="Sources/main.c" FileDate="2019-04-17, 21:10:59" FileAge="1555553459107" FileType="128" />
-      <File Name="SDK/platform/hal/src/ftm/ftm_hal.c" FileDate="2019-04-17, 20:36:20" FileAge="1555551380113" FileType="1048576" />
+      <File Name="Documentation/S32K144_FreeRTOS.txt" FileDate="2019-04-17, 21:20:28" FileAge="1555554028613" FileType="3072" />
+      <File Name="Sources/main.c" FileDate="2019-04-17, 21:34:28" FileAge="1555554868718" FileType="128" />
       <File Name="SDK/platform/devices/startup.h" FileDate="2019-03-31, 17:08:20" FileAge="1554073700000" FileType="1048576" CompNumb="1" />
       <File Name="SDK/rtos/FreeRTOS_S32K/Source/include/queue.h" FileDate="2019-03-31, 17:10:44" FileAge="1554073844000" FileType="1048576" CompNumb="12" />
       <File Name="SDK/platform/devices/startup.c" FileDate="2019-03-31, 17:08:20" FileAge="1554073700000" FileType="1048576" CompNumb="1" />
       <File Name="SDK/platform/devices/status.h" FileDate="2019-03-31, 17:08:20" FileAge="1554073700000" FileType="1048576" CompNumb="1" />
       <File Name="SDK/rtos/FreeRTOS_S32K/Source/croutine.c" FileDate="2019-03-31, 17:10:44" FileAge="1554073844000" FileType="1048576" CompNumb="12" />
+      <File Name="SDK/platform/drivers/inc/ftm_driver.h" FileDate="2019-04-17, 20:36:20" FileAge="1555551380175" FileType="1048576" CompNumb="0" />
       <File Name="SDK/platform/hal/src/scg/scg_hal.c" FileDate="2019-03-31, 17:08:20" FileAge="1554073700000" FileType="1048576" CompNumb="7" />
       <File Name="SDK/rtos/FreeRTOS_S32K/Source/include/FreeRTOS.h" FileDate="2019-03-31, 17:10:44" FileAge="1554073844000" FileType="1048576" CompNumb="12" />
       <File Name="SDK/rtos/FreeRTOS_S32K/Source/include/croutine.h" FileDate="2019-03-31, 17:10:44" FileAge="1554073844000" FileType="1048576" CompNumb="12" />
       <File Name="SDK/rtos/FreeRTOS_S32K/Source/list.c" FileDate="2019-03-31, 17:10:44" FileAge="1554073844000" FileType="1048576" CompNumb="12" />
-      <File Name="Documentation/S32K144_FreeRTOS_Settings.xml" FileDate="2019-04-17, 21:03:27" FileAge="1555553007696" FileType="3072" />
+      <File Name="Documentation/S32K144_FreeRTOS_Settings.xml" FileDate="2019-04-17, 21:20:28" FileAge="1555554028577" FileType="3072" />
+      <File Name="Generated_Code/flexTimer3.h" FileDate="2019-04-17, 21:20:28" FileAge="1555554028223" FileType="45637" CompNumb="17" />
+      <File Name="Generated_Code/flexTimer3.c" FileDate="2019-04-17, 21:35:07" FileAge="1555554907304" FileType="45637" CompNumb="17" />
       <File Name="Generated_Code/flexTimer2.h" FileDate="2019-04-17, 21:03:27" FileAge="1555553007522" FileType="45637" CompNumb="15" />
-      <File Name="SDK/platform/drivers/src/ftm/ftm_driver.c" FileDate="2019-04-17, 20:36:20" FileAge="1555551380127" FileType="1048576" />
       <File Name="Generated_Code/flexTimer2.c" FileDate="2019-04-17, 21:13:41" FileAge="1555553621767" FileType="45637" CompNumb="15" />
       <File Name="Generated_Code/flexTimer1.h" FileDate="2019-04-17, 20:36:20" FileAge="1555551380243" FileType="45637" CompNumb="13" />
       <File Name="SDK/platform/hal/inc/sim_hal.h" FileDate="2019-03-31, 17:08:20" FileAge="1554073700000" FileType="1048576" CompNumb="6" />
-      <File Name="Generated_Code/flexTimer1.c" FileDate="2019-04-17, 21:11:33" FileAge="1555553493960" FileType="45637" CompNumb="13" />
+      <File Name="Generated_Code/flexTimer1.c" FileDate="2019-04-17, 21:20:28" FileAge="1555554028299" FileType="45637" CompNumb="13" />
       <File Name="SDK/rtos/FreeRTOS_S32K/Source/event_groups.c" FileDate="2019-03-31, 17:10:44" FileAge="1554073844000" FileType="1048576" CompNumb="12" />
       <File Name="Generated_Code/clockMan1.h" FileDate="2019-04-17, 20:36:20" FileAge="1555551380259" FileType="45637" CompNumb="5" />
+      <File Name="SDK/platform/hal/inc/ftm_hal.h" FileDate="2019-04-17, 20:36:20" FileAge="1555551380116" FileType="1048576" CompNumb="0" />
       <File Name="SDK/rtos/FreeRTOS_S32K/Source/include/mpu_wrappers.h" FileDate="2019-03-31, 17:10:44" FileAge="1554073844000" FileType="1048576" CompNumb="12" />
       <File Name="Generated_Code/clockMan1.c" FileDate="2019-04-17, 20:36:20" FileAge="1555551380265" FileType="45637" CompNumb="5" />
       <File Name="Generated_Code/Cpu.h" FileDate="2019-04-17, 20:36:20" FileAge="1555551380279" FileType="45637" CompNumb="1" />
-      <File Name="SDK/platform/drivers/inc/ftm_driver.h" FileDate="2019-04-17, 20:36:20" FileAge="1555551380175" FileType="1048576" />
       <File Name="SDK/platform/hal/inc/gpio_hal.h" FileDate="2019-03-31, 17:08:20" FileAge="1554073700000" FileType="1048576" CompNumb="4" />
       <File Name="SDK/platform/hal/src/smc/smc_hal.c" FileDate="2019-03-31, 17:08:20" FileAge="1554073700000" FileType="1048576" CompNumb="11" />
-      <File Name="Generated_Code/Cpu.c" FileDate="2019-04-17, 21:03:27" FileAge="1555553007550" FileType="45637" CompNumb="1" />
+      <File Name="Generated_Code/Cpu.c" FileDate="2019-04-17, 21:20:28" FileAge="1555554028313" FileType="45637" CompNumb="1" />
       <File Name="SDK/platform/hal/src/sim/S32K144/sim_hal_S32K144.h" FileDate="2019-03-31, 17:08:20" FileAge="1554073700000" FileType="1048576" CompNumb="6" />
       <File Name="SDK/platform/drivers/src/clock/S32K144/clock_S32K144.h" FileDate="2019-03-31, 17:08:20" FileAge="1554073700000" FileType="1048576" CompNumb="5" />
       <File Name="SDK/platform/hal/src/sim/S32K144/sim_hal_S32K144.c" FileDate="2019-03-31, 17:08:20" FileAge="1554073700000" FileType="1048576" CompNumb="6" />
@@ -69,7 +71,6 @@
       <File Name="SDK/rtos/FreeRTOS_S32K/Source/include/semphr.h" FileDate="2019-03-31, 17:10:44" FileAge="1554073844000" FileType="1048576" CompNumb="12" />
       <File Name="SDK/rtos/FreeRTOS_S32K/Source/include/deprecated_definitions.h" FileDate="2019-03-31, 17:10:44" FileAge="1554073844000" FileType="1048576" CompNumb="12" />
       <File Name="Generated_Code/FreeRTOS.c" FileDate="1969-12-31, 17:59:59" FileAge="-1" FileType="45637" CompNumb="12" />
-      <File Name="SDK/platform/hal/inc/ftm_hal.h" FileDate="2019-04-17, 20:36:20" FileAge="1555551380116" FileType="1048576" />
       <File Name="SDK/platform/hal/inc/pmc_hal.h" FileDate="2019-03-31, 17:08:20" FileAge="1554073700000" FileType="1048576" CompNumb="10" />
       <File Name="SDK/platform/devices/devassert.h" FileDate="2019-03-31, 17:08:20" FileAge="1554073700000" FileType="1048576" CompNumb="1" />
       <File Name="SDK/platform/hal/inc/scg_hal.h" FileDate="2019-03-31, 17:08:20" FileAge="1554073700000" FileType="1048576" CompNumb="7" />
@@ -92,12 +93,13 @@
       <File Name="SDK/platform/devices/S32K144/startup/system_S32K144.h" FileDate="2019-03-31, 17:08:20" FileAge="1554073700000" FileType="1048576" CompNumb="1" />
       <File Name="SDK/platform/drivers/inc/pins_driver.h" FileDate="2019-03-31, 17:08:20" FileAge="1554073700000" FileType="1048576" CompNumb="2" />
       <File Name="SDK/rtos/FreeRTOS_S32K/Source/timers.c" FileDate="2019-03-31, 17:10:44" FileAge="1554073844000" FileType="1048576" CompNumb="12" />
-      <File Name="SDK/platform/devices/S32K144/startup/system_S32K144.c" FileDate="2019-03-31, 17:08:20" FileAge="1554073700000" FileType="1048576" CompNumb="1" />
       <File Name="SDK/platform/hal/inc/pcc_hal.h" FileDate="2019-03-31, 17:08:20" FileAge="1554073700000" FileType="1048576" CompNumb="8" />
-      <File Name="Generated_Code/pin_mux.h" FileDate="2019-04-17, 21:11:33" FileAge="1555553493938" FileType="45637" CompNumb="2" />
-      <File Name="Generated_Code/pin_mux.c" FileDate="2019-04-17, 21:11:33" FileAge="1555553493953" FileType="45637" CompNumb="2" />
+      <File Name="SDK/platform/devices/S32K144/startup/system_S32K144.c" FileDate="2019-03-31, 17:08:20" FileAge="1554073700000" FileType="1048576" CompNumb="1" />
+      <File Name="Generated_Code/pin_mux.h" FileDate="2019-04-17, 21:20:28" FileAge="1555554028267" FileType="45637" CompNumb="2" />
+      <File Name="SDK/platform/drivers/src/ftm/ftm_driver.c" FileDate="2019-04-17, 20:36:20" FileAge="1555551380127" FileType="1048576" CompNumb="0" />
+      <File Name="Generated_Code/pin_mux.c" FileDate="2019-04-17, 21:20:28" FileAge="1555554028284" FileType="45637" CompNumb="2" />
       <File Name="SDK/platform/devices/common/s32_core_cm4.h" FileDate="2019-03-31, 17:08:20" FileAge="1554073700000" FileType="1048576" CompNumb="1" />
     </GeneratedByPE>
   </GeneratedFilesList>
-  <CodeGenReference>15</CodeGenReference>
+  <CodeGenReference>18</CodeGenReference>
 </CodeGenerationInfo>

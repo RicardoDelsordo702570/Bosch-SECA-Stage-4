@@ -1,4 +1,5 @@
 "./Generated_Code/pin_mux.o"
+"./Generated_Code/flexTimer3.o"
 "./Generated_Code/flexTimer2.o"
 "./Generated_Code/flexTimer1.o"
 "./Generated_Code/clockMan1.o"

@@ -10,6 +10,7 @@ C_SRCS_QUOTED += \
 "../Generated_Code/clockMan1.c" \
 "../Generated_Code/flexTimer1.c" \
 "../Generated_Code/flexTimer2.c" \
+"../Generated_Code/flexTimer3.c" \
 "../Generated_Code/pin_mux.c" \
 
 C_SRCS += \
@@ -17,6 +18,7 @@ C_SRCS += \
 ../Generated_Code/clockMan1.c \
 ../Generated_Code/flexTimer1.c \
 ../Generated_Code/flexTimer2.c \
+../Generated_Code/flexTimer3.c \
 ../Generated_Code/pin_mux.c \
 
 OBJS_OS_FORMAT += \
@@ -24,6 +26,7 @@ OBJS_OS_FORMAT += \
 ./Generated_Code/clockMan1.o \
 ./Generated_Code/flexTimer1.o \
 ./Generated_Code/flexTimer2.o \
+./Generated_Code/flexTimer3.o \
 ./Generated_Code/pin_mux.o \
 
 C_DEPS_QUOTED += \
@@ -31,6 +34,7 @@ C_DEPS_QUOTED += \
 "./Generated_Code/clockMan1.d" \
 "./Generated_Code/flexTimer1.d" \
 "./Generated_Code/flexTimer2.d" \
+"./Generated_Code/flexTimer3.d" \
 "./Generated_Code/pin_mux.d" \
 
 OBJS += \
@@ -38,6 +42,7 @@ OBJS += \
 ./Generated_Code/clockMan1.o \
 ./Generated_Code/flexTimer1.o \
 ./Generated_Code/flexTimer2.o \
+./Generated_Code/flexTimer3.o \
 ./Generated_Code/pin_mux.o \
 
 OBJS_QUOTED += \
@@ -45,6 +50,7 @@ OBJS_QUOTED += \
 "./Generated_Code/clockMan1.o" \
 "./Generated_Code/flexTimer1.o" \
 "./Generated_Code/flexTimer2.o" \
+"./Generated_Code/flexTimer3.o" \
 "./Generated_Code/pin_mux.o" \
 
 C_DEPS += \
@@ -52,6 +58,7 @@ C_DEPS += \
 ./Generated_Code/clockMan1.d \
 ./Generated_Code/flexTimer1.d \
 ./Generated_Code/flexTimer2.d \
+./Generated_Code/flexTimer3.d \
 ./Generated_Code/pin_mux.d \
 
 
@@ -88,9 +95,17 @@ Generated_Code/flexTimer2.o: ../Generated_Code/flexTimer2.c
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Generated_Code/pin_mux.o: ../Generated_Code/pin_mux.c
+Generated_Code/flexTimer3.o: ../Generated_Code/flexTimer3.c
 	@echo 'Building file: $<'
 	@echo 'Executing target #34 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Generated_Code/flexTimer3.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "Generated_Code/flexTimer3.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Generated_Code/pin_mux.o: ../Generated_Code/pin_mux.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #35 $<'
 	@echo 'Invoking: Standard S32DS C Compiler'
 	arm-none-eabi-gcc "@Generated_Code/pin_mux.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "Generated_Code/pin_mux.o" "$<"
 	@echo 'Finished building: $<'

@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : SDK_S32K144_04
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2019-04-17, 21:11, # CodeGen: 13
+**     Date/Time   : 2019-04-17, 21:20, # CodeGen: 15
 **     Abstract    :
 **
 **     Settings    :
@@ -164,8 +164,8 @@
 **                  External Clock 2                       : <Automatic>
 **                  Quadrature Decoder Phase A Input       : <Automatic>
 **                  Quadrature Decoder Phase B Input       : <Automatic>
-**                  Channel 0                              : <Automatic>
-**                  Direction                              : <Automatic>
+**                  Channel 0                              : PTC5
+**                  Direction                              : Input
 **                  Channel 1                              : <Automatic>
 **                  Direction                              : <Automatic>
 **                  Channel 2                              : <Automatic>
@@ -2309,7 +2309,7 @@ pin_settings_config_t g_pin_mux_InitConfigArr[NUM_OF_CONFIGURED_PINS] = {
            .pullConfig    = PORT_INTERNAL_PULL_UP_ENABLED,
            .passiveFilter = false,
            .driveSelect   = PORT_LOW_DRIVE_STRENGTH,
-           .mux           = PORT_MUX_ALT7,
+           .mux           = PORT_MUX_ALT2,
            .pinLock       = false,
            .intConfig     = PORT_DMA_INT_DISABLED,
            .clearIntFlag  = false,
