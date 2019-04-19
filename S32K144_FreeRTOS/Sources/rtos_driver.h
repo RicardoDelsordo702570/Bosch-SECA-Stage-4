@@ -41,6 +41,8 @@
 #include "transceiver.h"
 #include "clocks_and_modes.h"
 
+#include "motor_control.h"
+
 /** Defines the RX thread to work by semaphores (Aperiodically)*/
 #define RX_INTERRUPT						(0)
 /** Defines the RX thread to work periodically*/
@@ -82,10 +84,10 @@ typedef struct
 void rtos_can_init(can_init_config_t can_init);
 
 /*!
- 	 \brief CAN tx thread that transmits either the message of the ADC, or the
+ 	 \brief CAN tx thread that transmits either the message of the speed, or the
  	 	 	 message set with rtos_can_set_sw_msg.
 
- 	 \note The ADC message is sent periodically, and the SW message is sent
+ 	 \note The speed message is sent periodically, and the SW message is sent
  	 	 	 when SW3 is pressed.
 
  	 \note The ADC message period can be set with set_adc_tx_thread_period.
@@ -162,21 +164,18 @@ void set_rx_thread_period(uint32_t new_value);
 #endif
 
 /*!
- 	 \brief This thread reads the ADC periodically, and sets the EG for the value
- 	 	 	 to be sent.
 
- 	 \param[in] args Thread arguments. Set to NULL.
+ */
+void rtos_speed_read_thread(void *args);
+
+/*!
+ 	 \brief This function sets the period of the speed thread.
+
+ 	 \param[in] new_value New period, in milliseconds, of the ADC thread.
 
  	 \return void.
  */
-void rtos_adc_read_thread(void *args);
-
-/*!
- 	 \brief This function sets the period of the ADC thread.
-
- 	 \param[in] new_value New period, in milliseconds, of the ADC thread.
- */
-void set_adc_tx_thread_period(uint32_t new_value);
+void set_speed_tx_thread_period(uint32_t new_value);
 
 
 /*!
@@ -209,14 +208,14 @@ void rtos_can_receive(can_message_rx_config_t *can_message_tx);
 void rtos_can_transmit(can_message_tx_config_t can_message_tx);
 
 /*!
- 	 \brief This function turns on the LEDs according to the thresholds set for
- 	 	 	 each color LED.
+ 	 \brief This function turns on the LEDs according to the RPM and direction
+ 	 	 	 of the motor
 
- 	 \param[in] adc_received Value to decide which LED will be turned on.
+ 	 \param[in] speed_received Value to decide which LED will be turned on.
 
  	 \return void.
  */
-void rtos_turn_on_leds(uint16_t adc_received);
+void rtos_turn_on_leds(motor_speed_t speed_received);
 
 /*!
  	 \brief This function adds an ID and a callback to be executed when the ID set
@@ -287,22 +286,5 @@ void turn_on_yellow_LED(void);
  	 \return void.
  */
 void turn_off_LEDS(void);
-
-/*!
- 	 \brief This function sets the threshold values of the LED. E.g. If the
- 	 	 	 threshold value of the red LED is 1500, when the ADC message receives
- 	 	 	 2000, the red LED will be turned on.
-
- 	 \note If any variable receives 0, the threshold will not be changed.
-
- 	 \warning Make sure that red > yellow > green, otherwise, the LEDs will malfunction.
-
- 	 \param[in] red New threshold value for the red LED.
- 	 \param[in] yellow New threshold value for the yellow LED.
- 	 \param[in] green New threshold value for the green LED.
-
- 	 \return void.
- */
-void LED_treshold_values(uint16_t red, uint16_t yellow, uint16_t green);
 
 #endif /* RTOS_DRIVER_H_ */

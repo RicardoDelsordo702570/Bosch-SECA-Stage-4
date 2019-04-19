@@ -52,6 +52,7 @@
 #include "FreeRTOS.h"
 #include "flexTimer1.h"
 #include "flexTimer2.h"
+#include "flexTimer3.h"
 #if CPU_INIT_CONFIG
   #include "Init_Config.h"
 #endif
@@ -61,10 +62,6 @@
 #include "clocks_and_modes.h"
 #include "rtos_driver.h"
 #include "task.h"
-
-#include "flexTimer1.h"
-#include "flexTimer2.h"
-#include "flexTimer3.h"
 
 volatile int exit_code = 0;
 /* User includes (#include below this line is not maintained by Processor Expert) */
@@ -82,14 +79,14 @@ volatile int exit_code = 0;
 /** RX thread priority*/
 #define RX_THREAD_PRIO			(3)
 /** ADC thread priority*/
-#define ADC_THREAD_PRIO			(4)
+#define SPEED_THREAD_PRIO		(4)
 /** TX thread priority*/
 #define TX_THREAD_PRIO			(5)
 
 /** Period for the TX thread*/
 #define TX_THREAD_PERIOD		(1000)
 /** Period for the ADC thread*/
-#define ADC_THREAD_PERIOD		(250)
+#define SPEED_THREAD_PERIOD		(250)
 
 
 /** Test callback function*/
@@ -127,127 +124,110 @@ int main(void)
 	/** Periodic message structure*/
 	static can_message_tx_config_t periodic_msg;
 
-    /* Variables used to store PWM duty cycle */
-    ftm_state_t ftmStateStruct_ftm0;
-    ftm_state_t ftmStateStruct_ftm1;
-    ftm_state_t ftmStateStruct_ftm2;
+	/* Variables used to store PWM duty cycle */
+	ftm_state_t ftmStateStruct_ftm0;
+	ftm_state_t ftmStateStruct_ftm1;
+	ftm_state_t ftmStateStruct_ftm2;
 
-    uint16_t dutyCycle = 0x4000;
-    bool increaseDutyCycle = false;
+#ifdef PEX_RTOS_INIT
+	PEX_RTOS_INIT();                   /* Initialization of the selected RTOS. Macro is defined by the RTOS component. */
+#endif
+	/*** End of Processor Expert internal initialization.                    ***/
 
-  /*** Processor Expert internal initialization. DON'T REMOVE THIS CODE!!! ***/
-  #ifdef PEX_RTOS_INIT
-    PEX_RTOS_INIT();                   /* Initialization of the selected RTOS. Macro is defined by the RTOS component. */
-  #endif
-  /*** End of Processor Expert internal initialization.                    ***/
-
-    /* Initialize and configure clocks
-     *  -   see clock manager component for details
-     */
-    CLOCK_SYS_Init(g_clockManConfigsArr, CLOCK_MANAGER_CONFIG_CNT,
-                   g_clockManCallbacksArr, CLOCK_MANAGER_CALLBACK_CNT);
-    CLOCK_SYS_UpdateConfiguration(0U, CLOCK_MANAGER_POLICY_AGREEMENT);
-
-    /* Initialize pins
-     *  -   See PinSettings component for more info
-     */
+	/*********************** NOTE *******************************************/
+	/** This module is taken from the driver example ftm_signale_measurement*/
+	/************************************************************************/
+	/** From here *****************************************************************************/
+	/* Initialize and configure clocks
+	 *  -   see clock manager component for details
+	 */
+	CLOCK_SYS_Init(g_clockManConfigsArr, CLOCK_MANAGER_CONFIG_CNT,
+			g_clockManCallbacksArr, CLOCK_MANAGER_CALLBACK_CNT);
+	CLOCK_SYS_UpdateConfiguration(0U, CLOCK_MANAGER_POLICY_AGREEMENT);
+	/* Initialize pins
+	 *  -   See PinSettings component for more info
+	 */
 	PINS_DRV_Init(NUM_OF_CONFIGURED_PINS, g_pin_mux_InitConfigArr);
 
-    /* Initialize FTM PWM channel 0 PTD15
-     *  -   See ftm component for more info
-     */
-    FTM_DRV_Init(INST_FLEXTIMER1, &flexTimer1_InitConfig, &ftmStateStruct_ftm0);
-    FTM_DRV_Init(INST_FLEXTIMER2, &flexTimer2_InitConfig, &ftmStateStruct_ftm1);
-    FTM_DRV_Init(INST_FLEXTIMER3, &flexTimer3_InitConfig, &ftmStateStruct_ftm2);
+	/* Initialize FTM PWM channel 0 PTD15
+	 *  -   See ftm component for more info
+	 */
+	FTM_DRV_Init(INST_FLEXTIMER1, &flexTimer1_InitConfig, &ftmStateStruct_ftm0);
+	FTM_DRV_Init(INST_FLEXTIMER2, &flexTimer2_InitConfig, &ftmStateStruct_ftm1);
+	FTM_DRV_Init(INST_FLEXTIMER3, &flexTimer3_InitConfig, &ftmStateStruct_ftm2);
 
-    /* Initialize FTM PWM channel */
-    FTM_DRV_InitPwm(INST_FLEXTIMER1, &flexTimer1_PwmConfig);
-    FTM_DRV_InitPwm(INST_FLEXTIMER2, &flexTimer2_PwmConfig);
+	/* Initialize FTM PWM channel */
+	FTM_DRV_InitPwm(INST_FLEXTIMER1, &flexTimer1_PwmConfig);
+	FTM_DRV_InitPwm(INST_FLEXTIMER2, &flexTimer2_PwmConfig);
 
-    /* Setup input capture for FTM 2 channel 0  - PTC5 */
-    FTM_DRV_InitInputCapture(INST_FLEXTIMER3, &flexTimer3_InputCaptureConfig);
+	/* Setup input capture for FTM 2 channel 0  - PTC5 */
+	FTM_DRV_InitInputCapture(INST_FLEXTIMER3, &flexTimer3_InputCaptureConfig);
 
-    FTM_DRV_UpdatePwmChannel(INST_FLEXTIMER1, 0U, FTM_PWM_UPDATE_IN_DUTY_CYCLE, dutyCycle, 0U, true);
-    FTM_DRV_UpdatePwmChannel(INST_FLEXTIMER2, 0U, FTM_PWM_UPDATE_IN_DUTY_CYCLE, dutyCycle, 0U, true);
+	FTM_DRV_UpdatePwmChannel(INST_FLEXTIMER1, PWM_CHANNEL, FTM_PWM_UPDATE_IN_DUTY_CYCLE, DUTY_CYCLE_INV, PWM_EDGE, true);
+	FTM_DRV_UpdatePwmChannel(INST_FLEXTIMER2, PWM_CHANNEL, FTM_PWM_UPDATE_IN_DUTY_CYCLE, DUTY_CYCLE_INV, PWM_EDGE, true);
 
-//	/** Sets the base and the speed for CAN*/
-//	can_init.base = CAN0;
-//	can_init.speed = CAN_CTRL1_SPEED_500KBPS;
-//
-//	/** Sets the SW3 message*/
-//	tx_msg_init.base = CAN0;
-//	tx_msg_init.ID = SW3_MSG_ID;
-//	tx_msg_init.msg = msg;
-//	tx_msg_init.DLC = sizeof(msg);
-//
+	/** To here *******************************************************************************/
+
+	/** Sets the base and the speed for CAN*/
+	can_init.base = CAN0;
+	can_init.speed = CAN_CTRL1_SPEED_500KBPS;
+
+	/** Sets the SW3 message*/
+	tx_msg_init.base = CAN0;
+	tx_msg_init.ID = SW3_MSG_ID;
+	tx_msg_init.msg = msg;
+	tx_msg_init.DLC = sizeof(msg);
+
 //	/** Sets the periodic message*/
 //	periodic_msg.base = CAN0;
 //	periodic_msg.ID = PERIODIC_MSG_ID;
 //	periodic_msg.msg = per_msg;
 //	periodic_msg.DLC = sizeof(per_msg);
-//
-//	/** Sets the ID and the callback function*/
-//	test_ID_func.ID = TEST_CALLBACK_ID;
-//	test_ID_func.ID_func = test_function;
-//
-//	/** Defines the tx messages (Periodic and SW3*/
-//	rtos_define_tx_periodic_msg(periodic_msg);
-//	rtos_can_set_sw_msg(tx_msg_init);
-//
-//	/** Adds the RX ID and function*/
-//	rtos_add_ID_function(test_ID_func);
-//
-//	/** Sets the periods for tx and ADC*/
-//	set_tx_thread_period(TX_THREAD_PERIOD);
-//	set_adc_tx_thread_period(ADC_THREAD_PERIOD);
-//
-//	/** Initializes the rtos can*/
-//	rtos_can_init(can_init);
-//
-//	/** Creates the TX thread by interrupt*/
-//	sys_thread_new("TX_interrupt_thread", rtos_can_tx_thread_EG, NULL, configMINIMAL_STACK_SIZE, TX_THREAD_PRIO);
-//	/** Creates the TX periodic thread*/
-//	sys_thread_new("TX_periodic_thread", rtos_can_tx_thread_periodic, NULL, configMINIMAL_STACK_SIZE, TX_THREAD_PRIO);
-//
-//	/*******************************************************************************************************************/
-//	/** NOTE: To test both the periodic RX and the RX by interrupt, please the value of RX_MODE, found in rtos_driver.h*/
-//	/*******************************************************************************************************************/
-//#if(!RX_MODE)
-//	/** Creates the RX thread by interrupt*/
-//	sys_thread_new("RX", rtos_can_rx_thread_interruption, NULL, configMINIMAL_STACK_SIZE, RX_THREAD_PRIO);
-//#endif
-//#if(RX_MODE)
-//	/** Creates the RX periodic thread*/
-//	sys_thread_new("RX", rtos_can_rx_thread_periodic, NULL, configMINIMAL_STACK_SIZE, RX_THREAD_PRIO);
-//#endif
-//
-//	/** Creates the ADC thread*/
-//	sys_thread_new("ADC", rtos_adc_read_thread, NULL, configMINIMAL_STACK_SIZE, ADC_THREAD_PRIO);
-//
-//	/* Start the tasks and timer running. */
-//	vTaskStartScheduler();
-//
-//	for(;;);
+
+	/** Sets the ID and the callback function*/
+	test_ID_func.ID = TEST_CALLBACK_ID;
+	test_ID_func.ID_func = test_function;
+
+	/** Defines the tx messages (Periodic and SW3*/
+	rtos_define_tx_periodic_msg(periodic_msg);
+	rtos_can_set_sw_msg(tx_msg_init);
+
+	/** Adds the RX ID and function*/
+	rtos_add_ID_function(test_ID_func);
+
+	/** Sets the periods for tx and speed threads*/
+	set_tx_thread_period(TX_THREAD_PERIOD);
+	set_speed_tx_thread_period(SPEED_THREAD_PERIOD);
+
+	/** Initializes the rtos can*/
+	rtos_can_init(can_init);
+
+	/** Creates the TX thread by interrupt*/
+	sys_thread_new("TX_interrupt_thread", rtos_can_tx_thread_EG, NULL, configMINIMAL_STACK_SIZE, TX_THREAD_PRIO);
+
+	/*******************************************************************************************************************/
+	/** NOTE: To test both the periodic RX and the RX by interrupt, please the value of RX_MODE, found in rtos_driver.h*/
+	/*******************************************************************************************************************/
+#if(!RX_MODE)
+	/** Creates the RX thread by interrupt*/
+	sys_thread_new("RX", rtos_can_rx_thread_interruption, NULL, configMINIMAL_STACK_SIZE, RX_THREAD_PRIO);
+#endif
+#if(RX_MODE)
+	/** Creates the RX periodic thread*/
+	sys_thread_new("RX", rtos_can_rx_thread_periodic, NULL, configMINIMAL_STACK_SIZE, RX_THREAD_PRIO);
+#endif
+
+	/** Creates the ADC thread*/
+	sys_thread_new("Speed", rtos_speed_read_thread, NULL, configMINIMAL_STACK_SIZE, SPEED_THREAD_PRIO);
+
+	/* Start the tasks and timer running. */
+	vTaskStartScheduler();
+
+	for(;;);
 
     /* Variables used to store PWM frequency,
      * input capture measurement value
      */
-    uint16_t inputCaptureMeas = 0;
-    uint32_t frequency;
-
-    /* Get the FTM1 frequency to calculate
-     * the frequency of the measured signal.
-     */
-    frequency = FTM_DRV_GetFrequency(INST_FLEXTIMER2);
-
-    while (1)
-    {
-            /* Get values */
-            inputCaptureMeas = FTM_DRV_GetInputCaptureMeasurement(INST_FLEXTIMER3, 0U);
-            /* Calculate the signal frequency using recorded data*/
-            inputCaptureMeas = frequency / (inputCaptureMeas);
-    }
-
     /*** Don't write any code pass this line, or it will be deleted during code generation. ***/
   /*** RTOS startup code. Macro PEX_RTOS_START is defined by the RTOS component. DON'T MODIFY THIS CODE!!! ***/
   #ifdef PEX_RTOS_START

@@ -1,5 +1,5 @@
 /*!
- 	 \file rtos_driver.hc
+ 	 \file rtos_driver.c
 
  	 \brief This is the source file of the CAN device driver using
  	 	 	 FreeRTOS. All the initialization
@@ -16,13 +16,14 @@
 
 #include "rtos_driver.h"
 #include "ADC.h"
+#include "motor_control.h"
 
 /** Defines the CAN hanlder as initialized*/
 #define IS_INIT								(1)
 /** Defines the CAN handler as not initialzied*/
 #define NOT_INIT							(0)
 /** Defines the bits for the ADC event group*/
-#define EVENT_GROUP_ADC						(0x01)
+#define EVENT_GROUP_RPM						(0x01)
 /** Defines the bits for the SW3 event group*/
 #define EVENT_GROUP_SW						(0x02)
 
@@ -65,7 +66,7 @@
 #define CLEAR_ALL_FLAGS						(0xFFFFFFFE)
 
 /** Defines the ID of the ADC message*/
-#define ADC_TX_ID							(0x10)
+#define RPM_TX_ID							(0x11)
 
 /** Defines a mask to get a low byte*/
 #define LOW_BYTE_MASK						(0x00FF)
@@ -73,7 +74,7 @@
 #define HIGH_BYTE_MASK						(0xFF00)
 
 /** Defines the ID of the ADC message*/
-#define ADC_RX_ID							(0x10)
+#define RPM_RX_ID							(0x10)
 /** Defines the maximum possible ID*/
 #define MAX_ID								(0x7FF)
 
@@ -129,7 +130,8 @@
 /*!
  	 \brief Structure for the RTOS handler.
  */
-typedef struct {
+typedef struct
+{
 	uint8_t init_val;					/*!< Defines whether the handler has been initialized or not*/
 	SemaphoreHandle_t sem_rx_binary;	/*!< Binary semaphore for the Rx task*/
 	SemaphoreHandle_t mutex;			/*!< Mutex to protect the CAN when sending and receiving*/
@@ -146,8 +148,8 @@ static RTOS_CAN_Handler_t can_handler = { INIT_VAL };
 static uint32_t rx_task_period = RX_TASK_INIT_PERIOD;
 /** Variable for the tx thread period*/
 static uint32_t tx_task_period = TX_TASK_INIT_PERIOD;
-/** Variable for the ADC thread period*/
-static uint32_t adc_tx_task_period = ADC_TX_TASK_INIT_PERIOD;
+/** Variable for the speed thread period*/
+static uint32_t speed_tx_task_period = ADC_TX_TASK_INIT_PERIOD;
 
 /** ID for the SW3 message*/
 static uint8_t ID_SW = INIT_VAL;
@@ -155,8 +157,8 @@ static uint8_t ID_SW = INIT_VAL;
 static uint8_t msg_SW[CAN_MESSAGE_MAX_SIZE] = {INIT_VAL};
 /** DLC of the SW3 message*/
 static uint8_t DLC_SW = INIT_VAL;
-/** Variable for the value read from the ADC*/
-static uint16_t adc_read = INIT_VAL;
+/** Variable for the value read from the motor*/
+static motor_speed_t speed = {INIT_VAL, motor_forward};
 
 /** ID function vector*/
 static ID_function_t ID_function[ID_VECTOR_MAX_SIZE] = {{INIT_VAL, NULL}};
@@ -168,12 +170,6 @@ static can_message_rx_config_t rx_message;
 /** Variable to transmit messages*/
 static can_message_tx_config_t tx_message;
 
-/** Variable for the threshold of the red LED*/
-static uint16_t red_treshold = RED_LED_INIT_THRESHOLD;
-/** Variable for the threshold of the yellow LED*/
-static uint16_t yellow_treshold = YELLOW_LED_INIT_THRESHOLD;
-/** Variable for the threshold of the green LED*/
-static uint16_t green_treshold = GREEN_LED_INIT_THRESHOLD;
 /** Variable for the SW3 message*/
 static can_message_tx_config_t message_to_send;
 
@@ -230,8 +226,6 @@ void rtos_can_init(can_init_config_t can_init)
 
 	/** Initializes the CAN*/
 	CAN_Init(can_init);
-	/** Initializes the ADC*/
-	ADC_init();
 
 #if(!RX_MODE)
 	/** Enables the CAN RX message buffer interruption*/
@@ -309,7 +303,7 @@ void rtos_can_init(can_init_config_t can_init)
 void rtos_can_tx_thread_EG(void* args)
 {
 	/** Initializes the ADC message array*/
-	uint8_t adc_tx_msg[2] = {INIT_VAL};
+	uint8_t speed_tx_msg[2] = {INIT_VAL};
 	/** Variable to get the event group bits*/
 	EventBits_t tx_event;
 
@@ -320,24 +314,23 @@ void rtos_can_tx_thread_EG(void* args)
 		for(;;)
 		{
 			/** Waits for any of the event group bits to be released*/
-			xEventGroupWaitBits(can_handler.event_group, EVENT_GROUP_ADC | EVENT_GROUP_SW, pdFALSE, pdFALSE, portMAX_DELAY);
+			xEventGroupWaitBits(can_handler.event_group, EVENT_GROUP_RPM | EVENT_GROUP_SW, pdFALSE, pdFALSE, portMAX_DELAY);
 			/** Gets the event group bits*/
 			tx_event = xEventGroupGetBits(can_handler.event_group);
 			/** Clears the event group bits*/
 			xEventGroupClearBits(can_handler.event_group, tx_event);
 
 			/** For the ADC event group*/
-			if(EVENT_GROUP_ADC == (tx_event & EVENT_GROUP_ADC))
+			if(EVENT_GROUP_RPM == (tx_event & EVENT_GROUP_RPM))
 			{
-				/** Sets the ADC read in the message array*/
-				adc_tx_msg[ADC_LOW_BYTE_POS] = (uint8_t)(adc_read & LOW_BYTE_MASK);
-				adc_tx_msg[ADC_HIGH_BYTE_POS] = (uint8_t)((adc_read & HIGH_BYTE_MASK) >> BYTE_SHIFT);
+				speed_tx_msg[0] = (uint8_t)speed.direction;
+				speed_tx_msg[1] = speed.RPM;
 
 				/** Sets the values for the tx message*/
 				tx_message.base = can_base;
-				tx_message.ID = ADC_TX_ID;
-				tx_message.msg = adc_tx_msg;
-				tx_message.DLC = sizeof(adc_tx_msg);
+				tx_message.ID = RPM_TX_ID;
+				tx_message.msg = speed_tx_msg;
+				tx_message.DLC = sizeof(speed_tx_msg);
 
 				/** Sends the message protecting the CAN with a mutex*/
 				xSemaphoreTake(can_handler.mutex, portMAX_DELAY);
@@ -400,7 +393,7 @@ void rtos_can_tx_thread_periodic(void *args)
 void rtos_can_rx_thread_interruption(void *args)
 {
 	/** Variable for the received ADC value*/
-	uint16_t received_ADC_val = INIT_VAL;
+	motor_speed_t received_speed_val = {INIT_VAL, motor_forward};
 	/** Counter for the ID function vector*/
 	uint8_t ID_counter = INIT_VAL;
 
@@ -424,14 +417,20 @@ void rtos_can_rx_thread_interruption(void *args)
 			/** Checks the received IDs*/
 			switch(rx_message.ID)
 			{
-				/** Specific case for the ADC ID*/
-				case ADC_RX_ID:
-					/** Sets the value received into one variable*/
-					received_ADC_val = (uint16_t)(rx_message.msg[ADC_LOW_BYTE_POS]);
-					received_ADC_val |= (uint16_t)(rx_message.msg[ADC_HIGH_BYTE_POS] << BYTE_SHIFT);
+				/** Specific case for the RPM ID*/
+				case RPM_RX_ID:
+					/** Sets the value received the speed variable*/
+					received_speed_val.direction = (motor_direction_t)(rx_message.msg[ADC_LOW_BYTE_POS]);
+					received_speed_val.RPM = (uint8_t)(rx_message.msg[ADC_HIGH_BYTE_POS]);
 
-					/** Turns on the LED according to the received ADC value*/
-					rtos_turn_on_leds(received_ADC_val);
+					/** Turns on the LED according to the received speed value*/
+					rtos_turn_on_leds(received_speed_val);
+
+					/** Updates the duty cycle according to the values received*/
+					MC_update_duty_cycle(received_speed_val);
+
+				    /* Wait a number of cycles for the PWM to reach stability */
+					vTaskDelay(10);
 				break;
 
 				/** For any other ID*/
@@ -458,10 +457,10 @@ void rtos_can_rx_thread_interruption(void *args)
  	 periodically (Polling). The default period is 100ms.*/
 void rtos_can_rx_thread_periodic(void *args)
 {
-	/** Counter for the ID vector*/
+	/** Variable for the received ADC value*/
+	motor_speed_t received_speed_val = {INIT_VAL, motor_forward};
+	/** Counter for the ID function vector*/
 	uint8_t ID_counter = INIT_VAL;
-	/** Variable for the received ADC*/
-	uint16_t received_ADC_val = INIT_VAL;
 	/** Variable to count the ticks passed since the delay*/
 	TickType_t xLastWakeTime;
 
@@ -491,14 +490,20 @@ void rtos_can_rx_thread_periodic(void *args)
 				/** Checks the received ID*/
 				switch(rx_message.ID)
 				{
-					/** For the ADC ID*/
-					case ADC_RX_ID:
-						/** Concatenates the ADC received into a variable*/
-						received_ADC_val = (uint16_t)(rx_message.msg[ADC_LOW_BYTE_POS]);
-						received_ADC_val |= (uint16_t)(rx_message.msg[ADC_HIGH_BYTE_POS] << BYTE_SHIFT);
+					/** For the RPM ID*/
+					case RPM_RX_ID:
+						/** Sets the value received into one variable*/
+						received_speed_val.direction = (motor_direction_t)(rx_message.msg[ADC_LOW_BYTE_POS]);
+						received_speed_val.RPM = (uint8_t)(rx_message.msg[ADC_HIGH_BYTE_POS]);
 
-						/** Turns the LED on according to the ADC received*/
-						rtos_turn_on_leds(received_ADC_val);
+						/** Turns on the LED according to the received speed value*/
+						rtos_turn_on_leds(received_speed_val);
+
+						/** Updates the duty cycle according to the received value*/
+						MC_update_duty_cycle(received_speed_val);
+
+					    /* Wait a number of cycles for the PWM to reach stability */
+						vTaskDelay(10);
 					break;
 
 					/** For any other ID*/
@@ -564,8 +569,8 @@ void rtos_can_transmit(can_message_tx_config_t can_message_tx)
 	xSemaphoreGive(can_handler.mutex);
 }
 
-/** This function reads periodically the ADC*/
-void rtos_adc_read_thread(void *args)
+/** This function reads periodically the frequency of the motor*/
+void rtos_speed_read_thread(void *args)
 {
 	/** Variable to count the ticks passed since the delay*/
 	TickType_t xLastWakeTime;
@@ -579,42 +584,37 @@ void rtos_adc_read_thread(void *args)
 		/** Infinite cycle*/
 		for(;;)
 		{
-			/** Converts the ADC value from the potentiometer channel*/
-			convertAdcChan(ADC_POT_CHANNEL);
-
-			/** Waits for the ADC to finish the conversion*/
-			while(0 == adc_complete());
-			/** Reads the ADC*/
-			adc_read = read_adc_chx();
+			/** Gets the speed using input capture*/
+			MC_get_RPM(&speed);
 
 			/** Releases the event group*/
-			xEventGroupSetBits(can_handler.event_group, EVENT_GROUP_ADC);
+			xEventGroupSetBits(can_handler.event_group, EVENT_GROUP_RPM);
 
 			/** Delay to make the task periodically*/
-			vTaskDelayUntil(&xLastWakeTime, (adc_tx_task_period * FIX_PERIOD));
+			vTaskDelayUntil(&xLastWakeTime, (speed_tx_task_period * FIX_PERIOD));
 		}
 	}
 }
 
-/** This function turns on the LEDs according to the ADC value received from CAN*/
-void rtos_turn_on_leds(uint16_t adc_received)
+/** This function turns on the LEDs according to the RPM and direction of the motor*/
+void rtos_turn_on_leds(motor_speed_t speed_received)
 {
-	/** For values bigger than the red threshold*/
-    if (adc_received > red_treshold)
+	/** When the motor has stopped*/
+    if (INIT_VAL == speed_received.RPM)
     {
     	/** Turns on the red LED*/
     	turn_on_red_LED();
     }
 
-	/** For values bigger than the yellow threshold*/
-    else if (adc_received > yellow_treshold)
+	/** When the motor is in reverse*/
+    else if (motor_reverse == speed_received.direction)
     {
     	/** Turns on the yellow LED*/
     	turn_on_yellow_LED();
     }
 
-	/** For values bigger than the green threshold*/
-    else if (adc_received > green_treshold)
+    /** When the motor is going forward*/
+    else if(motor_forward == speed_received.direction)
     {
     	/** Turns on the green LED*/
     	turn_on_green_LED();
@@ -640,10 +640,10 @@ void set_tx_thread_period(uint32_t new_value)
 	tx_task_period = new_value;
 }
 
-/** This function sets the period for the ADC thread*/
-void set_adc_tx_thread_period(uint32_t new_value)
+/** This function sets the period for the speed thread*/
+void set_speed_tx_thread_period(uint32_t new_value)
 {
-	adc_tx_task_period = new_value;
+	speed_tx_task_period = new_value;
 }
 
 /** This function turns on the red LED, turning off other LEDs*/
@@ -705,9 +705,9 @@ ID_func_vector_state_t rtos_add_ID_function(ID_function_t ID_func)
 
 	/** If the ID is outside of the limits
 	 	 The limits used were the following
-	 	 	 ADC_RX_ID as the highest priority, for the lower limit
+	 	 	 RPM_RX_ID as the highest priority, for the lower limit
 	 	 	 11-bit value for the upper limit*/
-	else if(ADC_RX_ID >= ID_func.ID || MAX_ID < ID_func.ID)
+	else if(RPM_RX_ID >= ID_func.ID || MAX_ID < ID_func.ID)
 	{
 		/** Sets the ID as not allowed*/
 		retval = ID_not_allowed;
@@ -768,9 +768,9 @@ ID_func_vector_state_t rtos_remove_ID_function(ID_function_t ID_func)
 
 	/** If the ID is outside of the limits
 	 	 The limits used were the following
-	 	 	 ADC_RX_ID as the highest priority, for the lower limit
+	 	 	 RPM_RX_ID as the highest priority, for the lower limit
 	 	 	 11-bit value for the upper limit*/
-	else if(ADC_RX_ID >= ID_func.ID || MAX_ID < ID_func.ID)
+	else if(RPM_RX_ID >= ID_func.ID || MAX_ID < ID_func.ID)
 	{
 		retval = ID_not_allowed;
 	}
@@ -834,7 +834,7 @@ ID_func_vector_state_t rtos_change_ID_function(ID_function_t ID_func_old, ID_fun
 
 	/** If the new ID is outside of the limits
 	 	 The limits used were the following
-	 	 	 ADC_RX_ID as the highest priority, for the lower limit
+	 	 	 RPM_RX_ID as the highest priority, for the lower limit
 	 	 	 11-bit value for the upper limit*/
 	if(ID_func_new.ID || MAX_ID < ID_func_new.ID)
 	{
@@ -875,31 +875,6 @@ ID_func_vector_state_t rtos_change_ID_function(ID_function_t ID_func_old, ID_fun
 uint8_t rtos_get_ID_function_vector_size(void)
 {
 	return ID_func_counter;
-}
-
-/** This function sets the LED thresholds*/
-void LED_treshold_values(uint16_t red, uint16_t yellow, uint16_t green)
-{
-	/** If the new red threshold is not 0*/
-	if(INIT_VAL != red)
-	{
-		/** Sets the threshold*/
-		red_treshold = red;
-	}
-
-	/** If the new green threshold is not 0*/
-	if(INIT_VAL != green)
-	{
-		/** Sets the threshold*/
-		green_treshold = green;
-	}
-
-	/** If the new yellow threshold is not 0*/
-	if(INIT_VAL != yellow)
-	{
-		/** Sets the threshold*/
-		yellow_treshold = yellow;
-	}
 }
 
 /** This function sets the periodic message for TX*/
