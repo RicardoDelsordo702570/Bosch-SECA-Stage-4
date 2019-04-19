@@ -68,8 +68,16 @@ void MC_update_duty_cycle(motor_speed_t new_speed)
 	/** Calculates the new duty cycle*/
 	new_duty_cycle = (uint16_t)(DUTY_CYCLE_INV - inv_duty_cycle);
 
+	/** If the motor has stopped*/
+	if(INIT_VAL == new_speed.RPM)
+	{
+        /** Stops both PWM*/
+        FTM_DRV_DeinitPwm(INST_FLEXTIMER1);
+        FTM_DRV_DeinitPwm(INST_FLEXTIMER2);
+	}
+
 	/** If the direction set is reverse*/
-	if(motor_reverse == new_speed.direction)
+	else if(motor_reverse == new_speed.direction)
 	{
         /** Stops both PWM*/
         FTM_DRV_DeinitPwm(INST_FLEXTIMER1);
@@ -85,11 +93,11 @@ void MC_update_duty_cycle(motor_speed_t new_speed)
 	else
 	{
         /** Stops both PWM*/
+		FTM_DRV_DeinitPwm(INST_FLEXTIMER2);
         FTM_DRV_DeinitPwm(INST_FLEXTIMER1);
-        FTM_DRV_DeinitPwm(INST_FLEXTIMER2);
 
         /** Restarts PWM 1 (Forward)*/
-        FTM_DRV_InitPwm(INST_FLEXTIMER1, &flexTimer1_PwmConfig);
+        FTM_DRV_InitPwm(INST_FLEXTIMER1, &flexTimer2_PwmConfig);
         /** Updates the PWM duty cycle*/
 	    FTM_DRV_UpdatePwmChannel(INST_FLEXTIMER1, PWM_CHANNEL, FTM_PWM_UPDATE_IN_DUTY_CYCLE, new_duty_cycle, PWM_EDGE, true);
 	}

@@ -152,12 +152,12 @@ int main(void)
 	/* Initialize FTM PWM channel 0 PTD15
 	 *  -   See ftm component for more info
 	 */
-	FTM_DRV_Init(INST_FLEXTIMER1, &flexTimer1_InitConfig, &ftmStateStruct_ftm0);
+	FTM_DRV_Init(INST_FLEXTIMER1, &flexTimer2_InitConfig, &ftmStateStruct_ftm1);
 	FTM_DRV_Init(INST_FLEXTIMER2, &flexTimer2_InitConfig, &ftmStateStruct_ftm1);
 	FTM_DRV_Init(INST_FLEXTIMER3, &flexTimer3_InitConfig, &ftmStateStruct_ftm2);
 
 	/* Initialize FTM PWM channel */
-	FTM_DRV_InitPwm(INST_FLEXTIMER1, &flexTimer1_PwmConfig);
+	FTM_DRV_InitPwm(INST_FLEXTIMER1, &flexTimer2_PwmConfig);
 	FTM_DRV_InitPwm(INST_FLEXTIMER2, &flexTimer2_PwmConfig);
 
 	/* Setup input capture for FTM 2 channel 0  - PTC5 */
